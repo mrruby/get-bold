@@ -1,13 +1,8 @@
 import React from "react";
+import { Layout } from "../components/layout";
 
 const IndexPage = () => {
-  return (
-    <main>
-      <p className="">GetBold</p>
-      <p className="font-montserrat">GetBold</p>
-      <p className="font-bebas">GetBold</p>
-    </main>
-  );
+  return <Layout>getbold</Layout>;
 };
 
 export default IndexPage;
