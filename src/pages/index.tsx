@@ -3,7 +3,9 @@ import React from "react";
 const IndexPage = () => {
   return (
     <main>
-      <h1>GetBold</h1>
+      <p className="">GetBold</p>
+      <p className="font-montserrat">GetBold</p>
+      <p className="font-bebas">GetBold</p>
     </main>
   );
 };

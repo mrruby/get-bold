@@ -11,6 +11,10 @@ module.exports = {
           "btn-blue": "#3B5AA0",
         },
       },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
+        bebas: ["'Bebas Neue'", "cursive"],
+      },
     },
   },
   plugins: [],
