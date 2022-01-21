@@ -9,6 +9,7 @@ module.exports = {
           bg: "#FFFFFF",
           "btn-pink": "#EF6278",
           "btn-blue": "#3B5AA0",
+          border: "rgb(112, 112, 112)",
         },
       },
       fontFamily: {
