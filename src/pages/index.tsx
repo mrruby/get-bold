@@ -1,8 +1,9 @@
 import React from "react";
-import { Layout } from "../components/layout";
+import { HeroHome } from "../components/Home/hero";
+import { Layout } from "../components/Layout/layout";
 
 const IndexPage = () => {
-  return <Layout>getbold</Layout>;
+  return <Layout screenComponent={<HeroHome />}>getbold</Layout>;
 };
 
 export default IndexPage;
