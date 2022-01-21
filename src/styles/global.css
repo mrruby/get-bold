@@ -9,3 +9,9 @@
   background-size: cover;
   background-position: bottom;
 }
+
+.bg-image-home-portfolio {
+  background-image: url("../../static/bg-portfolio.svg");
+  background-size: cover;
+  background-position: top;
+}

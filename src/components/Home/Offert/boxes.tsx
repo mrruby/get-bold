@@ -7,7 +7,7 @@ export const OffertBoxes = () => {
       <div className="flex flex-col items-center justify-center w-[13.625rem]">
         <div className="w-[6.25rem] h-[6.25rem] flex items-center justify-center">
           <StaticImage
-            src="../../images/offert/influencer.svg"
+            src="../../../images/offert/influencer.svg"
             alt="Influencer marketing"
             className="w-[4.4375rem] h-auto"
           />
@@ -22,7 +22,7 @@ export const OffertBoxes = () => {
       <div className="flex flex-col items-center justify-center w-[13.625rem]">
         <div className="w-[6.25rem] h-[6.25rem] flex items-center justify-center">
           <StaticImage
-            src="../../images/offert/socialmedia.svg"
+            src="../../../images/offert/socialmedia.svg"
             alt="Social media"
             className="w-[4.5625rem] h-auto"
           />
@@ -37,7 +37,7 @@ export const OffertBoxes = () => {
       <div className="flex flex-col items-center justify-center w-[13.625rem]">
         <div className="w-[6.25rem] h-[6.25rem] flex items-center justify-center">
           <StaticImage
-            src="../../images/offert/consultation.svg"
+            src="../../../images/offert/consultation.svg"
             alt="Konsultacje kreatywne"
             className="w-[5.6875rem] h-auto"
           />
@@ -52,7 +52,7 @@ export const OffertBoxes = () => {
       <div className="flex flex-col items-center justify-center w-[13.625rem]">
         <div className="w-[6.25rem] h-[6.25rem] flex items-center justify-center">
           <StaticImage
-            src="../../images/offert/fbads.png"
+            src="../../../images/offert/fbads.png"
             alt="Facebook Ads"
             className="w-[5.1875rem] h-auto"
           />
@@ -67,7 +67,7 @@ export const OffertBoxes = () => {
       <div className="flex flex-col items-center justify-center w-[13.625rem]">
         <div className="w-[6.25rem] h-[6.25rem] flex items-center justify-center">
           <StaticImage
-            src="../../images/offert/tiktokads.png"
+            src="../../../images/offert/tiktokads.png"
             alt="TikTok Ads"
             className="w-[4.875rem] h-auto"
           />

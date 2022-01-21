@@ -5,12 +5,12 @@ export const OffertContact = () => {
   return (
     <div className="flex flex-col items-center mt-14">
       <StaticImage
-        src="../../images/offert-circle.svg"
+        src="../../../images/offert-circle.svg"
         alt="circle"
         className="absolute ml-[380px] -mt-3 -z-10"
       />
       <StaticImage
-        src="../../images/offert-arrow.svg"
+        src="../../../images/offert-arrow.svg"
         alt="arrow"
         className="absolute ml-[320px] mt-9 -z-10"
       />
