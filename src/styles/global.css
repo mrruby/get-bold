@@ -15,3 +15,15 @@
   background-size: cover;
   background-position: top;
 }
+
+.bg-image-about-ada {
+  background-image: url("../../static/about-ada-bg.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-image-about-dawid {
+  background-image: url("../../static/about-dawid-bg.svg");
+  background-size: cover;
+  background-position: center;
+}
