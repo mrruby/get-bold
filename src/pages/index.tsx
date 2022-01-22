@@ -1,5 +1,6 @@
 import React from "react";
 import { AboutHome } from "../components/Home/about";
+import { BlogHome } from "../components/Home/blog";
 import { HeroHome } from "../components/Home/hero";
 import { OffertHome } from "../components/Home/offert";
 import { PortfolioHome } from "../components/Home/portfolio";
@@ -13,6 +14,7 @@ const IndexPage = () => {
       <PortfolioHome />
       <AboutHome />
       <ReferencesHome />
+      <BlogHome />
     </Layout>
   );
 };
