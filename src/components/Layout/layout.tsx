@@ -25,7 +25,7 @@ export const Layout: React.FC<Props> = ({ children, screenComponent }) => {
       />
       <div className="absolute top-[4681px] left-0 h-[1000px] w-full bg-image-home-references -z-10"></div>
 
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col px-[150px]">
         <Header />
         {screenComponent}
       </div>
