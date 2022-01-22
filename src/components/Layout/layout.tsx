@@ -1,3 +1,4 @@
+import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import Helmet from "react-helmet";
 import { Header } from "./header";
@@ -15,6 +16,14 @@ export const Layout: React.FC<Props> = ({ children, screenComponent }) => {
       </Helmet>
       <div className="absolute top-0 left-0 min-h-screen w-full bg-image-home -z-10"></div>
       <div className="absolute top-[1933px] left-0 h-[1800px] w-full bg-image-home-portfolio -z-10"></div>
+
+      <StaticImage
+        src="../../images/references-blue-square.svg"
+        alt="square"
+        className="absolute -z-30 top-[4600px] right-0"
+      />
+      <div className="absolute top-[4681px] left-0 h-[1000px] w-full bg-image-home-references -z-10"></div>
+
       <div className="min-h-screen flex flex-col">
         <Header />
         {screenComponent}
