@@ -15,22 +15,22 @@ export const Header = () => {
       </div>
       <nav>
         <ul className="flex space-x-12 font-bold items-center">
-          <Link to="">
+          <Link to="/">
             <li>Home</li>
           </Link>
-          <Link to="">
+          <Link to="/oferta">
             <li>Oferta</li>
           </Link>
-          <Link to="">
+          <Link to="/o-nas">
             <li>O Nas</li>
           </Link>
-          <Link to="">
+          <Link to="/portfolio">
             <li>Portfolio</li>
           </Link>
-          <Link to="">
+          <Link to="/blog">
             <li>Blog</li>
           </Link>
-          <Link to="">
+          <Link to="/kontakt">
             <li>Kontakt</li>
           </Link>
           <button className="rounded-3xl bg-getbold-blue px-8 py-3 text-white font-semibold pointer">
