@@ -4,7 +4,12 @@ import React from "react";
 export const HeroHome = () => {
   return (
     <main className="flex flex-grow items-center min-h-full">
-      <div className="w-1/2">
+      <div className="w-2/5 relative">
+        <StaticImage
+          src="../../images/hero-circle.svg"
+          alt="circle"
+          className="absolute ml-[11rem] mt-[11.75rem] -z-10"
+        />
         <h3 className="text-getbold-btn-pink font-bebas text-2xl mb-12">
           Getbold.Agency
         </h3>
@@ -18,11 +23,11 @@ export const HeroHome = () => {
           Sprawdź, co potrafimy!
         </button>
       </div>
-      <div className="w-1/2 flex justify-end">
+      <div className="w-3/5 flex items-center justify-end">
         <StaticImage
           src="../../images/hero.png"
           alt="Hero"
-          className="w-[48rem] h-auto"
+          className="w-full h-auto"
         />
       </div>
       <StaticImage
