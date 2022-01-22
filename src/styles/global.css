@@ -18,8 +18,8 @@
 
 .bg-image-home-references {
   background-image: url("../../static/bg-references.svg");
-  background-size: auto;
-  background-position: top;
+  background-size: cover;
+  background-position: top right;
   background-repeat: no-repeat;
 }
 
