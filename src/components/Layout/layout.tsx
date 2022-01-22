@@ -1,6 +1,7 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import Helmet from "react-helmet";
+import { Footer } from "./footer";
 import { Header } from "./header";
 
 interface Props {
@@ -9,7 +10,7 @@ interface Props {
 
 export const Layout: React.FC<Props> = ({ children, screenComponent }) => {
   return (
-    <div className="antialiased 2xl:container 2xl:mx-auto min-h-screen text-sm font-montserrat text-getbold-blue flex flex-col">
+    <div className="antialiased min-h-screen text-sm font-montserrat text-getbold-blue flex flex-col">
       <Helmet>
         <html lang="pl" />
         <title>GetBold</title>
@@ -29,6 +30,7 @@ export const Layout: React.FC<Props> = ({ children, screenComponent }) => {
         {screenComponent}
       </div>
       {children}
+      <Footer />
     </div>
   );
 };

@@ -23,6 +23,12 @@
   background-repeat: no-repeat;
 }
 
+.bg-image-home-footer {
+  background-image: url("../../static/bg-footer.svg");
+  background-size: cover;
+  background-position: center;
+}
+
 .bg-image-about-ada {
   background-image: url("../../static/about-ada-bg.svg");
   background-size: cover;
