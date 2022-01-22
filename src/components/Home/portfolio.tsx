@@ -1,6 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
-import { PortfolioBlog } from "./Portfolio/blog";
+import { PortfolioPortfolio } from "./Portfolio/portfolio";
 import { PortfolioButton } from "./Portfolio/button";
 import { PortfolioHeading } from "./Portfolio/heading";
 
@@ -26,7 +26,7 @@ export const PortfolioHome = () => {
       />
 
       <PortfolioHeading />
-      <PortfolioBlog />
+      <PortfolioPortfolio />
       <PortfolioButton />
     </main>
   );

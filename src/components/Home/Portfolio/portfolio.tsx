@@ -1,7 +1,7 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 
-export const PortfolioBlog = () => {
+export const PortfolioPortfolio = () => {
   return (
     <div className="grid gap-12 grid-cols-3">
       <div className="relative bg-white h-[27rem] w-[24.65rem] flex flex-col items-center drop-shadow-md rounded-2xl">
