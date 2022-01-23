@@ -6,18 +6,6 @@ export const Footer = () => {
     <footer className="px-[21rem] py-40 relative">
       <div className="absolute bottom-0 left-0 h-full w-full bg-image-home-footer -z-10"></div>
 
-      <StaticImage
-        src="../../images/footer-cloud-right.svg"
-        alt="cloud"
-        className="absolute -top-20 -right-64"
-      />
-
-      <StaticImage
-        src="../../images/footer-cloud-left.svg"
-        alt="cloud"
-        className="absolute bottom-20 -left-40"
-      />
-
       <div className="flex">
         <div className="w-1/3">
           <StaticImage

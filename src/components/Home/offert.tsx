@@ -10,11 +10,6 @@ export const OffertHome = () => {
       <OffertHeading />
       <OffertBoxes />
       <OffertContact />
-      <StaticImage
-        src="../../images/offert-gray-triangle.svg"
-        alt="triangle"
-        className="absolute -left-40 top-[32rem]"
-      />
     </main>
   );
 };

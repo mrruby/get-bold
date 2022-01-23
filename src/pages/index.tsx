@@ -8,15 +8,7 @@ import { ReferencesHome } from "../components/Home/references";
 import { Layout } from "../components/Layout/layout";
 
 const IndexPage = () => {
-  return (
-    <Layout screenComponent={<HeroHome />}>
-      <OffertHome />
-      <PortfolioHome />
-      <AboutHome />
-      <ReferencesHome />
-      <BlogHome />
-    </Layout>
-  );
+  return <Layout screenComponent={<HeroHome />}></Layout>;
 };
 
 export default IndexPage;
