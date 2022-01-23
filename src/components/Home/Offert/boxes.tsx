@@ -3,8 +3,8 @@ import React from "react";
 
 export const OffertBoxes = () => {
   return (
-    <div className="flex items-center py-10 border-y border-black border-opacity-[.05]">
-      <div className="flex flex-col items-center justify-center w-[13.625rem]">
+    <div className="flex flex-col lg:flex-row items-center px-8 py-10 border-y border-black border-opacity-[.05]">
+      <div className="flex flex-col items-center justify-center h-[13.625rem] lg:w-[13.625rem]">
         <div className="w-[6.25rem] h-[6.25rem] flex items-center justify-center">
           <StaticImage
             src="../../../images/offert/influencer.svg"
@@ -17,9 +17,9 @@ export const OffertBoxes = () => {
         </p>
       </div>
 
-      <span className="w-[1px] h-[4.6875rem] bg-getbold-border opacity-[.09]"></span>
+      <span className="w-[4.6875rem] h-[1px] lg:w-[1px] lg:h-[4.6875rem] bg-getbold-border opacity-[.09]"></span>
 
-      <div className="flex flex-col items-center justify-center w-[13.625rem]">
+      <div className="flex flex-col items-center justify-center h-[13.625rem] lg:w-[13.625rem]">
         <div className="w-[6.25rem] h-[6.25rem] flex items-center justify-center">
           <StaticImage
             src="../../../images/offert/socialmedia.svg"
@@ -32,9 +32,9 @@ export const OffertBoxes = () => {
         </p>
       </div>
 
-      <span className="w-[1px] h-[4.6875rem] bg-getbold-border opacity-[.09]"></span>
+      <span className="w-[4.6875rem] h-[1px] lg:w-[1px] lg:h-[4.6875rem] bg-getbold-border opacity-[.09]"></span>
 
-      <div className="flex flex-col items-center justify-center w-[13.625rem]">
+      <div className="flex flex-col items-center justify-center h-[13.625rem] lg:w-[13.625rem]">
         <div className="w-[6.25rem] h-[6.25rem] flex items-center justify-center">
           <StaticImage
             src="../../../images/offert/consultation.svg"
@@ -47,9 +47,9 @@ export const OffertBoxes = () => {
         </p>
       </div>
 
-      <span className="w-[1px] h-[4.6875rem] bg-getbold-border opacity-[.09]"></span>
+      <span className="w-[4.6875rem] h-[1px] lg:w-[1px] lg:h-[4.6875rem] bg-getbold-border opacity-[.09]"></span>
 
-      <div className="flex flex-col items-center justify-center w-[13.625rem]">
+      <div className="flex flex-col items-center justify-center h-[13.625rem] lg:w-[13.625rem]">
         <div className="w-[6.25rem] h-[6.25rem] flex items-center justify-center">
           <StaticImage
             src="../../../images/offert/fbads.png"
@@ -62,9 +62,9 @@ export const OffertBoxes = () => {
         </p>
       </div>
 
-      <span className="w-[1px] h-[4.6875rem] bg-getbold-border opacity-[.09]"></span>
+      <span className="w-[4.6875rem] h-[1px] lg:w-[1px] lg:h-[4.6875rem] bg-getbold-border opacity-[.09]"></span>
 
-      <div className="flex flex-col items-center justify-center w-[13.625rem]">
+      <div className="flex flex-col items-center justify-center h-[13.625rem] lg:w-[13.625rem]">
         <div className="w-[6.25rem] h-[6.25rem] flex items-center justify-center">
           <StaticImage
             src="../../../images/offert/tiktokads.png"
