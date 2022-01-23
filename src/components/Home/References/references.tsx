@@ -3,7 +3,7 @@ import React from "react";
 
 export const ReferencesReferences = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col px-8">
       <div className="flex justify-between space-x-36 mb-16">
         <div className="relative">
           <StaticImage
@@ -11,7 +11,7 @@ export const ReferencesReferences = () => {
             alt="quote"
             className="absolute -top-32 w-auto h-auto -left-12"
           />
-          <p className="mb-16 font-medium w-[420px]">
+          <p className="mb-16 font-medium lg:w-[420px]">
             “Adrianna has very professional and commendable work attitude and I
             know that she will be a beneficial addition to any organization.”
           </p>
@@ -19,7 +19,7 @@ export const ReferencesReferences = () => {
           <p className="text-getbold-btn-pink font-semibold">Hey You! Agency</p>
         </div>
 
-        <div className="relative">
+        <div className="relative hidden lg:block">
           <StaticImage
             src="../../../images/references-quote.svg"
             alt="quote"
