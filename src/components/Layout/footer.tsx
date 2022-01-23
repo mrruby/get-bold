@@ -3,11 +3,11 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <footer className="px-[21rem] py-40 relative">
+    <footer className="2xl:px-[21rem] px-8 xl:px-[150px] py-24 lg:py-40 relative">
       <div className="absolute bottom-0 left-0 h-full w-full bg-image-home-footer -z-10"></div>
 
-      <div className="flex">
-        <div className="w-1/3">
+      <div className="flex flex-col lg:flex-row">
+        <div className="w-full lg:w-1/3 mb-20 lg:m-0">
           <StaticImage
             src="../../images/logo-footer.svg"
             alt="logo"
@@ -28,7 +28,7 @@ export const Footer = () => {
             <StaticImage src="../../images/email.svg" alt="email" />
           </div>
         </div>
-        <div className="w-2/3">
+        <div className="w-full lg:w-2/3">
           <p className="tracking-[4px] text-xl font-bebas text-getbold-pink mb-4">
             Potrzebujesz wsparcia?
           </p>
@@ -36,7 +36,7 @@ export const Footer = () => {
             Daj znać, oddzwonimy!
           </h4>
           <form>
-            <div className="flex justify-between items-center space-x-8">
+            <div className="flex flex-col sm:flex-row justify-between items-center space-y-8 sm:space-x-8 sm:space-y-0">
               <input
                 type="text"
                 placeholder="Imię i nazwisko"
@@ -60,24 +60,25 @@ export const Footer = () => {
               <textarea
                 name=""
                 id=""
+                rows={8}
                 placeholder="Twoja wiadomość"
                 className="w-full resize-none border-0 border-b-2 border-getbold-blue text-[#233176] placeholder:text-[#233176] focus:ring-0 focus:border-getbold-blue p-0 mt-[54px] text-sm bg-transparent"
               ></textarea>
             </div>
-            <div className="flex justify-between items-start mt-[38px]">
-              <div className="flex justify-between items-start space-x-4">
+            <div className="flex flex-col sm:flex-row justify-between items-start mt-[38px]">
+              <div className="flex sm:justify-between items-start space-x-4 sm:w-1/2 w-full mb-12 sm:m-0">
                 <input
                   className="mt-0.5 text-[#EF6278] bg-[#FFA3B1] w-[18px] h-[18px] outline-none border-2 border-[#EF6278] rounded-none focus:ring-0"
                   type="checkbox"
                 />
-                <p className="w-[22rem] text-xs">
+                <p className="sm:w-[22rem] w-full text-xs">
                   Facilis voluptates tempora rerum quis exercitationem omnis
                   dolorum illum culpa. Sequi error voluptatem veniam qui
                   temporibus in alias fugit. Sunt est eos eligendi et quia
                   deleniti tempora. Qui qui sed esse.
                 </p>
               </div>
-              <button className="rounded-3xl bg-getbold-blue px-24 py-3 text-white font-semibold pointer">
+              <button className="rounded-3xl bg-getbold-blue w-1/2 sm:ml-8 py-3 text-white font-semibold pointer">
                 Wyślij wiadomość!
               </button>
             </div>
@@ -85,7 +86,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="w-full h-[5.125rem] mt-[87px] bg-[#FFAAB7] absolute left-0">
-        <nav className="px-[21rem] h-full">
+        <nav className="2xl:px-[21rem] px-8 xl:px-[150px] h-full">
           <ul className="flex items-center space-x-12 text-getbold-btn-pink h-full">
             <li>Polityka Prywatności</li>
             <li>Polityka ochrony danych osobowych</li>
