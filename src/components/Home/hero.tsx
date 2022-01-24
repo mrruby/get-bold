@@ -3,7 +3,7 @@ import React from "react";
 
 export const HeroHome = () => {
   return (
-    <main className="flex flex-col lg:flex-row flex-grow lg:items-center min-h-full">
+    <main className="flex flex-col lg:flex-row flex-grow px-8 xl:px-[150px] lg:items-center min-h-full">
       <div className="w-full mb-10 lg:m-0 lg:w-2/5 relative">
         <h3 className="text-getbold-btn-pink font-bebas text-2xl mb-4 lg:mb-12">
           Getbold.Agency

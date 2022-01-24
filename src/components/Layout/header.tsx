@@ -2,7 +2,11 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React, { useState } from "react";
 
-export const Header = () => {
+interface Props {
+  isSubPage?: boolean;
+}
+
+export const Header: React.FC<Props> = ({ isSubPage }) => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState<boolean>(false);
 
   const hamburgerMenuToggle = () => {
@@ -14,7 +18,11 @@ export const Header = () => {
   };
 
   return (
-    <header className="flex items-center justify-between h-40">
+    <header
+      className={`flex items-center justify-between h-40 px-8 xl:px-[150px] ${
+        isSubPage && "bg-[#ff728723]"
+      }`}
+    >
       <div className="relative flex items-center">
         <StaticImage
           src="../../images/logo-box.svg"

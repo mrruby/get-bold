@@ -29,6 +29,12 @@
   background-position: center;
 }
 
+.bg-image-sub {
+  background-image: url("../../static/bg-subpages.svg");
+  background-size: cover;
+  background-position: center;
+}
+
 .bg-image-about-ada {
   background-image: url("../../static/about-ada-bg.svg");
   background-size: cover;
