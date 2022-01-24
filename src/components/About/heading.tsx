@@ -16,8 +16,8 @@ export const HeadingAbout = () => {
         <span className="font-bold">know-how</span>.
       </p>
 
-      <div className="lg:w-[1176px] lg:h-[372px] mt-32 bg-white pt-[64px] px-[123px] rounded-lg shadow-[0_-81px_50px_#0000000D]">
-        <p className="font-medium text-base">
+      <div className="lg:max-w-[1176px] lg:max-h-[372px] mt-32 bg-white pt-6 lg:pt-[64px] px-8 lg:px-[123px] rounded-lg shadow-[0_-81px_50px_#0000000D]">
+        <p className="font-medium lg:text-base">
           Znamy się na marketingu, w social mediach czujemy się jak ryby w
           wodzie, a aplikacje mobilne nie mają przed nami tajemnic. Jak się w
           tym odnajdujemy? To proste – sami korzystamy ze wszystkiego na co
