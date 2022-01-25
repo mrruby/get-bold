@@ -4,8 +4,8 @@ import React from "react";
 export const ReferencesReferences = () => {
   return (
     <div className="flex flex-col px-8">
-      <div className="flex justify-between space-x-36 mb-16">
-        <div className="relative">
+      <div className="flex justify-center lg:justify-between space-x-36 mb-16">
+        <div className="w-1/2 relative">
           <StaticImage
             src="../../../images/references-quote.svg"
             alt="quote"
