@@ -19,7 +19,7 @@ export const Header: React.FC<Props> = ({ isSubPage }) => {
 
   return (
     <header
-      className={`flex items-center justify-between h-40 px-8 xl:px-[150px] ${
+      className={`flex items-center justify-between w-full h-40 px-8 xl:px-[150px] ${
         isSubPage && "bg-[#ff728723]"
       }`}
     >

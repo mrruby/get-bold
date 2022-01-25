@@ -3,7 +3,7 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <footer className="2xl:px-[21rem] px-8 xl:px-[150px] py-24 lg:py-40 relative">
+    <footer className="2xl:px-[21rem] px-8 xl:px-[150px] py-24 lg:py-40 relative w-full">
       <div className="absolute bottom-0 left-0 h-full w-full bg-image-home-footer -z-10"></div>
 
       <div className="flex flex-col lg:flex-row">

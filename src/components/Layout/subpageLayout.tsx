@@ -5,7 +5,7 @@ import { Header } from "./header";
 
 export const SubpageLayout = ({ children }) => {
   return (
-    <div className="antialiased min-h-screen text-sm font-montserrat text-getbold-blue flex flex-col">
+    <div className="antialiased min-h-screen text-sm font-montserrat text-getbold-blue flex flex-col items-center">
       <Helmet>
         <html lang="pl" />
         <title>GetBold</title>
