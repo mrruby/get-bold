@@ -16,6 +16,7 @@ module.exports = {
       },
     },
     "gatsby-plugin-sharp",
+    `gatsby-transformer-remark`,
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
@@ -24,6 +25,13 @@ module.exports = {
         path: "./src/images/",
       },
       __key: "images",
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/blog`,
+        name: `blog`,
+      },
     },
     {
       resolve: `gatsby-plugin-typescript`,

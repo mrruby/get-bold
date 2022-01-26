@@ -46,3 +46,42 @@
   background-size: cover;
   background-position: center;
 }
+
+.styled-blogpost-content h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.styled-blogpost-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.styled-blogpost-content h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.styled-blogpost-content h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.styled-blogpost-content p {
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.styled-blogpost-content {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.styled-blogpost-content img {
+  margin: 4rem 0;
+}
