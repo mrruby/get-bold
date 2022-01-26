@@ -3,8 +3,8 @@ import React from "react";
 
 export const AboutPeople = () => {
   return (
-    <div className="flex flex-col lg:flex-row space-y-20 lg:space-y-0 lg:space-x-[15.875rem] items-center">
-      <div className="relative flex flex-col items-center">
+    <div className="flex flex-col lg:flex-row space-y-20 lg:space-y-0 items-center px-8 w-[1100px]">
+      <div className="relative flex flex-col items-center w-1/2">
         <div className="w-2/5 lg:w-[450px] lg:h-[450px] pt-1 pb-2 px-2 lg:p-0 bg-image-about-ada flex items-start justify-center">
           <StaticImage
             src="../../../images/about-ada.png"
@@ -23,7 +23,7 @@ export const AboutPeople = () => {
         </div>
       </div>
 
-      <div className="relative flex flex-col items-center">
+      <div className="relative flex flex-col items-center w-1/2">
         <div className="w-2/5 lg:w-[450px] lg:h-[450px] pt-1 pb-2 px-2 lg:p-0 bg-image-about-dawid flex items-start justify-center">
           <StaticImage
             src="../../../images/about-dawid.png"

@@ -24,11 +24,22 @@ export const Header: React.FC<Props> = ({ isSubPage }) => {
       }`}
     >
       <div className="relative flex items-center">
-        <StaticImage
-          src="../../images/logo-box.svg"
-          alt="Logo Box"
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="162"
+          height="27"
           className="absolute -left-9"
-        />
+          viewBox="0 0 162 27"
+        >
+          <rect
+            id="Rectangle_17"
+            data-name="Rectangle 17"
+            width="162"
+            height="27"
+            fill="#f8e7e4"
+          />
+        </svg>
+
         <StaticImage src="../../images/logo.svg" alt="Logo" />
       </div>
 

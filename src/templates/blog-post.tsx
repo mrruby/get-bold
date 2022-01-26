@@ -25,7 +25,7 @@ const BlogPost: React.FC<PageProps<GraphQLResult>> = ({ data }) => {
           authorImg={post.frontmatter.authorImg}
           date={post.frontmatter.date}
         />
-        <div className="flex flex-col md:items-start md:flex-row space-y-12 md:space-y-0 md:space-x-12 pb-24 p-8">
+        <div className="flex flex-col md:items-start md:flex-row space-y-12 md:space-y-0 md:space-x-12 pb-24 p-8 lg:max-w-[1176px]">
           <ContentBlogPost
             html={post.html}
             thumbnail={post.frontmatter.thumbnail}

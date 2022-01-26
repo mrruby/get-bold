@@ -6,11 +6,28 @@ export const ReferencesReferences = () => {
     <div className="flex flex-col px-8">
       <div className="flex justify-center lg:justify-between space-x-36 mb-16">
         <div className="w-1/2 relative">
-          <StaticImage
-            src="../../../images/references-quote.svg"
-            alt="quote"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="144"
+            height="360"
             className="absolute -top-32 w-auto h-auto -left-12"
-          />
+            viewBox="0 0 144 360"
+          >
+            <text
+              id="_"
+              data-name="“"
+              transform="translate(0 293)"
+              fill="#ffa3b1"
+              font-size="300"
+              font-family="FilsonSoftMedium, Filson Soft"
+              opacity="0.15"
+            >
+              <tspan x="0" y="0">
+                “
+              </tspan>
+            </text>
+          </svg>
+
           <p className="mb-16 font-medium lg:w-[420px]">
             “Adrianna has very professional and commendable work attitude and I
             know that she will be a beneficial addition to any organization.”
@@ -20,11 +37,27 @@ export const ReferencesReferences = () => {
         </div>
 
         <div className="relative hidden lg:block">
-          <StaticImage
-            src="../../../images/references-quote.svg"
-            alt="quote"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="144"
+            height="360"
             className="absolute -top-32 w-auto h-auto -left-12"
-          />
+            viewBox="0 0 144 360"
+          >
+            <text
+              id="_"
+              data-name="“"
+              transform="translate(0 293)"
+              fill="#ffa3b1"
+              font-size="300"
+              font-family="FilsonSoftMedium, Filson Soft"
+              opacity="0.15"
+            >
+              <tspan x="0" y="0">
+                “
+              </tspan>
+            </text>
+          </svg>
           <p className="mb-16 font-medium w-[420px]">
             “Dzięki współpracy z Get Bold, liczba klientów zainteresowanych
             usługami rośnie, a my tworzymy z nimi prawdziwą relację.
