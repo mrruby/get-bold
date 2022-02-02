@@ -6,16 +6,19 @@ import { OffertHome } from "../components/Home/offert";
 import { PortfolioHome } from "../components/Home/portfolio";
 import { ReferencesHome } from "../components/Home/references";
 import { Layout } from "../components/Layout/layout";
+import { BlogProvider } from "../context/blogContext";
 
 const IndexPage = () => {
   return (
-    <Layout screenComponent={<HeroHome />}>
-      <OffertHome />
-      <PortfolioHome />
-      <AboutHome />
-      <ReferencesHome />
-      <BlogHome />
-    </Layout>
+    <BlogProvider>
+      <Layout screenComponent={<HeroHome />}>
+        <OffertHome />
+        <PortfolioHome />
+        <AboutHome />
+        <ReferencesHome />
+        <BlogHome />
+      </Layout>
+    </BlogProvider>
   );
 };
 

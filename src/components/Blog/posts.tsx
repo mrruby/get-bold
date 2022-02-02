@@ -1,21 +1,16 @@
-import React from "react";
-import { graphql, Link, PageProps } from "gatsby";
-import { markdownRemark } from "../../types/markdown-remark";
+import React, { useContext } from "react";
+import { Link } from "gatsby";
+import { BlogContext } from "../../context/blogContext";
 
-interface Props {
-  data: any;
-}
-
-export const PostsBlog: React.FC<Props> = ({ data }) => {
-  const posts = data.allMarkdownRemark.nodes;
-  console.log(posts);
+export const PostsBlog = () => {
+  const blog = useContext(BlogContext);
 
   return (
     <div className="w-full">
       <ul className="grid grid-cols-1 xl:grid-cols-2 gap-8">
-        {posts.map((post) => {
+        {blog.map((post, index) => {
           return (
-            <li key={post.frontmatter.id}>
+            <li key={index}>
               <div className="bg-white h-[33rem] max-w-[395px] flex flex-col items-center drop-shadow-md rounded-xl">
                 <div className="h-2/5 w-full relative bg-getbold-btn-blue rounded-t-xl">
                   <img
