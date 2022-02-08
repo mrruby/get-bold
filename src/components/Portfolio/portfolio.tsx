@@ -15,51 +15,15 @@ export const PortfolioPortfolio = () => {
           Zobacz, co zrobiliśmy dla:
         </h3>
 
-        <div className="w-full mb-[125px]">
+        <div className="w-full mb-[125px] flex flex-col items-center">
           <div className="flex flex-col lg:flex-row items-end relative">
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[100px] h-[100px] rounded-full bg-white flex justify-center items-center border font-bold text-3xl">
               1
             </div>
             <div className="w-full lg:w-1/2 pb-12 lg:pb-6 pt-40 border-b lg:border-r lg:border-b-0 border-border border-opacity-[0.09] lg:pr-[115px] flex items-center justify-center">
               <StaticImage
-                src="../../images/portfolio/rckik.png"
-                alt="rckik"
-                className="w-3/5 sm:w-2/5 lg:w-full"
-              />
-            </div>
-            <div className="w-full lg:w-1/2 pb-6 pt-12 lg:pt-24 lg:pl-[115px] flex flex-col items-center lg:items-start justify-center">
-              <h3 className="font-bold text-lg mb-8">RCKiK w Katowicach</h3>
-              <div className="flex space-x-4">
-                <StaticImage
-                  src="../../images/portfolio/checkmark.svg"
-                  alt="check"
-                />
-                <p className="font-bold">Social media</p>
-              </div>
-            </div>
-          </div>
-          <p className="text-center font-medium mt-8 lg:mt-24">
-            Regionalne Centrum Krwiodawstwa i Krwiolecznictwa to organizacja,
-            która bazuje wyłącznie na dobrej woli i bezinteresowności innych
-            ludzi. W takim przypadku zadanie jest podwójnie trudne, jednak
-            podjęliśmy rękawicę. <br />
-            <br /> Poprowadziliśmy spójną komunikację z krwiodawcami oraz
-            specjalną grupę na Facebooku, która scaliła wszystkich wokół tej
-            szlachetnej idei. Opracowaliśmy również treści do mediów
-            społecznościowych, przygotowując grafikę i teksty. Wszystko po to,
-            by przypomnieć innym, że każdy może być naszym bliskim krewnym.
-          </p>
-        </div>
-
-        <div className="w-full mb-[125px]">
-          <div className="flex flex-col lg:flex-row items-end relative">
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[100px] h-[100px] rounded-full bg-white flex justify-center items-center border font-bold text-3xl">
-              2
-            </div>
-            <div className="w-full lg:w-1/2 pb-12 lg:pb-6 pt-40 border-b lg:border-r lg:border-b-0 border-border border-opacity-[0.09] lg:pr-[115px] flex items-center justify-center">
-              <StaticImage
                 src="../../images/portfolio/petsly.png"
-                alt="rckik"
+                alt="petsly"
                 className="w-3/5 sm:w-2/5 lg:w-3/5"
               />
             </div>
@@ -74,31 +38,36 @@ export const PortfolioPortfolio = () => {
               </div>
             </div>
           </div>
-          <p className="text-center font-medium mt-8 lg:mt-24">
+          <p className="text-center lg:text-lg font-medium mt-8 lg:mt-24 ">
             Aplikacja, która pomaga odnaleźć się w świecie czworonożnych
             pacjentów i przypomina najważniejsze informacje na ich temat? A może
             narzędzie, które pomaga ogarnąć księgowość zoologicznego biznesu?
             Poznajcie Petsly. <br />
             <br /> W ramach naszej współpracy stworzyliśmy lekkie, nieco
             humorystyczne treści na Instagramie i zorganizowaliśmy konkurs na
-            czterech łapach. Odzew odbiorców przekonał nas, że było warto!
+            czterech łapach. Odzew odbiorców przekonał nas, że było warto:
+            zasięgi na Facebooku (
+            <span className="font-bold text-[#178E6E]">+364%</span>) i
+            Instagramie (
+            <span className="font-bold text-[#178E6E]">+8,4 tys.%</span>)
+            poszybowały w górę!
           </p>
         </div>
 
-        <div className="w-full mb-[125px]">
+        <div className="w-full mb-[125px] flex flex-col items-center">
           <div className="flex flex-col lg:flex-row items-end relative">
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[100px] h-[100px] rounded-full bg-white flex justify-center items-center border font-bold text-3xl">
-              3
+              2
             </div>
             <div className="w-full lg:w-1/2 pb-12 lg:pb-6 pt-40 border-b lg:border-r lg:border-b-0 border-border border-opacity-[0.09] lg:pr-[115px] flex items-center justify-center">
               <StaticImage
-                src="../../images/portfolio/lozkoholicy.png"
-                alt="rckik"
-                className="w-3/5 sm:w-2/5 lg:w-4/5"
+                src="../../images/portfolio/petsly.png"
+                alt="petsly"
+                className="w-3/5 sm:w-2/5 lg:w-3/5"
               />
             </div>
             <div className="w-full lg:w-1/2 pb-6 pt-12 lg:pt-24 lg:pl-[115px] flex flex-col items-center lg:items-start justify-center">
-              <h3 className="font-bold text-lg mb-8">Łóżkoholicy</h3>
+              <h3 className="font-bold text-lg mb-8">Branża home&decor</h3>
               <div className="flex space-x-4">
                 <StaticImage
                   src="../../images/portfolio/checkmark.svg"
@@ -108,15 +77,93 @@ export const PortfolioPortfolio = () => {
               </div>
             </div>
           </div>
-          <p className="text-center font-medium mt-8 lg:mt-24">
+          <p className="text-center lg:text-lg font-medium mt-8 lg:mt-24 ">
             Kto nigdy nie został pokonany przez siłę przyciągania łóżka, niech
-            pierwszy rzuci kamieniem! Społeczność Łóżkoholików nie tylko nie
-            wstydzi się swojego umiłowania snu, ale wręcz jest z tego dumna.{" "}
-            <br />
+            pierwszy rzuci kamieniem! Są jednak wśród nas i tacy, którzy nie
+            tylko nie wstydzą się swojego umiłowania snu, ale wręcz są z tego
+            dumni. <br />
             <br /> W przypadku sklepu z artykułami wystroju wnętrz postawiliśmy
             na zaangażowanie odbiorców treściami, które oderwą ich od
-            codzienności. Łóżkoholicy, choć kochają spać, na widok naszego
-            contentu nie ziewali z nudów.
+            codzienności. I, choć zdecydowanie kochają oni spać, na widok
+            naszego contentu nie ziewali z nudów. I tak oto organiczne treści,
+            generowały wśród zainteresowanych produktami zaangażowanie na
+            poziomie kilkudziesięciu komentarzy pod każdym wpisem!
+          </p>
+        </div>
+
+        <div className="w-full mb-[125px] flex flex-col items-center">
+          <div className="flex flex-col lg:flex-row items-end relative">
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[100px] h-[100px] rounded-full bg-white flex justify-center items-center border font-bold text-3xl">
+              3
+            </div>
+            <div className="w-full lg:w-1/2 pb-12 lg:pb-6 pt-40 border-b lg:border-r lg:border-b-0 border-border border-opacity-[0.09] lg:pr-[115px] flex items-center justify-center">
+              <StaticImage
+                src="../../images/portfolio/petsly.png"
+                alt="petsly"
+                className="w-3/5 sm:w-2/5 lg:w-3/5"
+              />
+            </div>
+            <div className="w-full lg:w-1/2 pb-6 pt-12 lg:pt-24 lg:pl-[115px] flex flex-col items-center lg:items-start justify-center">
+              <h3 className="font-bold text-lg mb-8">Nicole Ciećkiewicz</h3>
+              <div className="flex space-x-4">
+                <StaticImage
+                  src="../../images/portfolio/checkmark.svg"
+                  alt="check"
+                />
+                <p className="font-bold">Facebook Ads</p>
+              </div>
+            </div>
+          </div>
+          <p className="text-center lg:text-lg font-medium mt-8 lg:mt-24 ">
+            Nicole to trenerka i uczestniczka zawodów bikini fitness. Celem
+            naszej współpracy było większe zaangażowanie jej odbiorców w mediach
+            społecznościowych oraz pozyskanie nowych podopiecznych, którzy będą
+            chętni na życiową metamorfozę. <br />
+            <br /> Wykorzystaliśmy motywujące grafiki, a także wypowiedzi
+            zadowolonych klientek, które już skorzystały z usług Nicoli. W końcu
+            nie ma nic lepszego od rekomendacji innych! Efekty? Po 2 miesiącach
+            osiągnęliśmy wzrost zasięgu strony o ponad
+            <span className="font-bold text-[#178E6E]">270%</span> na Facebooku
+            i <span className="font-bold text-[#178E6E]">1606</span> nowych
+            obserwatorów na Instagramie.
+          </p>
+        </div>
+
+        <div className="w-full mb-[125px] flex flex-col items-center">
+          <div className="flex flex-col lg:flex-row items-end relative">
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[100px] h-[100px] rounded-full bg-white flex justify-center items-center border font-bold text-3xl">
+              4
+            </div>
+            <div className="w-full lg:w-1/2 pb-12 lg:pb-6 pt-40 border-b lg:border-r lg:border-b-0 border-border border-opacity-[0.09] lg:pr-[115px] flex items-center justify-center">
+              <StaticImage
+                src="../../images/portfolio/petsly.png"
+                alt="petsly"
+                className="w-3/5 sm:w-2/5 lg:w-3/5"
+              />
+            </div>
+            <div className="w-full lg:w-1/2 pb-6 pt-12 lg:pt-24 lg:pl-[115px] flex flex-col items-center lg:items-start justify-center">
+              <h3 className="font-bold text-lg mb-8">
+                Instalacja drewnianej podłogi
+              </h3>
+              <div className="flex space-x-4">
+                <StaticImage
+                  src="../../images/portfolio/checkmark.svg"
+                  alt="check"
+                />
+                <p className="font-bold">Facebook Ads</p>
+              </div>
+            </div>
+          </div>
+          <p className="text-center lg:text-lg font-medium mt-8 lg:mt-24 ">
+            Nie czarujmy się: drewniana podłoga za kilkanaście tysięcy złotych
+            nie jest czymś, bez czego nie można się obejść. Tymczasem naszym
+            zadaniem było zwiększenie sprzedaży usługi instalacji takiej podłogi
+            – w dodatku dla firmy bez własnej www. <br />
+            <br /> Działania rozpoczęliśmy od testów różnych kreacji, dzięki
+            którym na dzień dobry obniżyliśmy koszt jednego kontaktu z 25 do 10
+            złotych. Kampanię wsparły też regularne, estetyczne publikacje na
+            Facebooku. Nie mogło być inaczej: właściciel musiał się rozejrzeć za
+            drugą ekipą pracowników.
           </p>
         </div>
       </div>

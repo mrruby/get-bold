@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "gatsby";
-import { BlogContext } from "../../context/blogContext";
+import { BlogContext } from "../../utils/context/blogContext";
 
 export const PostsBlog = () => {
   const blog = useContext(BlogContext);

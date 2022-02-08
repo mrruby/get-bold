@@ -5,11 +5,11 @@ export const OffertOffert = () => {
   return (
     <div className="flex flex-col items-center">
       <div className="p-8 -mt-40 pt-64 -z-10 flex flex-col items-center text-center mb-10">
-        <h3 className="text-3xl lg:text-5xl lg:w-[1024px] leading-snug text-[#1F2957] font-medium mb-[30px]">
+        <h3 className="text-3xl lg:text-4xl lg:w-[1024px] leading-snug text-[#1F2957] font-medium mb-[30px]">
           Zobacz, co możemy za Ciebie{" "}
           <span className="font-bold">ogarnąć:</span>
         </h3>
-        <p className="text-lg lg:text-xl text-[#1F2957] font-medium lg:w-[1024px]">
+        <p className="text-base text-[#1F2957] font-medium lg:w-[1024px]">
           Nie musisz być wszędzie: wystarczy być tam, gdzie są Twoi potencjalni
           klienci. Właśnie dlatego wszystkie działania opieramy na naszym
           doświadczeniu i konkretnych statystykach z branży.

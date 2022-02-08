@@ -1,22 +1,22 @@
 import React from "react";
-import { AboutHome } from "../components/Home/about";
-import { BlogHome } from "../components/Home/blog";
-import { HeroHome } from "../components/Home/hero";
-import { OffertHome } from "../components/Home/offert";
-import { PortfolioHome } from "../components/Home/portfolio";
-import { ReferencesHome } from "../components/Home/references";
+import { HomeAboutComponent } from "../components/Home/about";
+import { HomeBlogComponent } from "../components/Home/blog";
+import { HomeHeroComponent } from "../components/Home/Hero";
+import { HomeOffertComponent } from "../components/Home/Offert";
+import { HomePortfolioComponent } from "../components/Home/Portfolio";
+import { HomeReferencesComponent } from "../components/Home/references";
 import { Layout } from "../components/Layout/layout";
-import { BlogProvider } from "../context/blogContext";
+import { BlogProvider } from "../utils/context/blogContext";
 
 const IndexPage = () => {
   return (
     <BlogProvider>
-      <Layout screenComponent={<HeroHome />}>
-        <OffertHome />
-        <PortfolioHome />
-        <AboutHome />
-        <ReferencesHome />
-        <BlogHome />
+      <Layout screenComponent={<HomeHeroComponent />}>
+        <HomeOffertComponent />
+        <HomePortfolioComponent />
+        <HomeAboutComponent />
+        <HomeReferencesComponent />
+        <HomeBlogComponent />
       </Layout>
     </BlogProvider>
   );

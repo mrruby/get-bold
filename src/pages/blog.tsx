@@ -3,7 +3,7 @@ import { HeadingBlog } from "../components/Blog/heading";
 import { PostsBlog } from "../components/Blog/posts";
 import { SidebarBlogPost } from "../components/BlogPost/sidebar";
 import { SubpageLayout } from "../components/Layout/subpageLayout";
-import { BlogProvider } from "../context/blogContext";
+import { BlogProvider } from "../utils/context/blogContext";
 
 const BlogPage = () => {
   return (

@@ -6,10 +6,10 @@ export const HeadingAbout = () => {
       <h2 className="text-xl font-bebas text-[#EF6278] mb-[22px] lg:w-[1024px]">
         O NAS
       </h2>
-      <h3 className="text-3xl lg:text-5xl lg:w-[1024px] text-[#1F2957] font-bold mb-[30px]">
+      <h3 className="text-3xl lg:text-4xl lg:w-[1024px] text-[#1F2957] font-bold mb-[30px]">
         Poznajmy się!
       </h3>
-      <p className="text-lg lg:text-xl font-medium lg:w-[777px]">
+      <p className="text-base font-medium lg:w-[777px]">
         GetBold to ekipa osób, które po latach pracy w agencjach marketingowych
         poszły na swoje. Mieliśmy okazję zobaczyć wiele sukcesów, ale i porażek,
         i wyciągnąć z nich to, co modnie nazywa się{" "}

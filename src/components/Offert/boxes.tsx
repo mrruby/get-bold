@@ -3,14 +3,14 @@ import React from "react";
 
 export const BoxesOffert = () => {
   return (
-    <div className="flex flex-col lg:flex-row space-y-12 lg:space-y-0 lg:space-x-8 items-center py-8 mx-auto px-8">
-      <div className="bg-white shadow-md rounded-2xl p-8 md:p-12 max-w-[395px] flex flex-col items-center">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 w-full py-8 mx-auto px-8">
+      <div className="bg-white shadow-md rounded-2xl p-8 md:p-12 flex flex-col items-center w-full z-40">
         <StaticImage
           src="../../images/offert/light.png"
           alt="light"
           className="w-[57px] h-auto mb-[30px]"
         />
-        <h4 className="font-extrabold uppercase text-sm text-[#EF6278]  mb-[18px]">
+        <h4 className="font-extrabold uppercase text-sm text-[#EF6278] mb-[18px]">
           Pomysł
         </h4>
         <p className="text-sm text-[#1F2957] font-medium text-center leading-relaxed">
@@ -19,13 +19,13 @@ export const BoxesOffert = () => {
         </p>
       </div>
 
-      <div className="bg-white shadow-md rounded-2xl p-8 py-16 md:p-12 md:py-24 max-w-[395px] flex flex-col items-center">
+      <div className="bg-white shadow-md rounded-2xl p-8 py-16 md:p-12 md:py-24 flex flex-col items-center w-full">
         <StaticImage
           src="../../images/offert/sprocket.svg"
           alt="light"
           className="w-[98px] h-auto mb-[30px]"
         />
-        <h4 className="font-extrabold uppercase text-sm text-[#EF6278]  mb-[18px]">
+        <h4 className="font-extrabold uppercase text-sm text-[#EF6278] mb-[18px]">
           DZIAŁANIE
         </h4>
         <p className="text-sm text-[#1F2957] font-medium text-center leading-relaxed">
@@ -34,13 +34,13 @@ export const BoxesOffert = () => {
         </p>
       </div>
 
-      <div className="bg-white shadow-md rounded-2xl p-8 md:p-12 max-w-[395px] flex flex-col items-center">
+      <div className="bg-white shadow-md rounded-2xl p-8 md:p-12 flex flex-col items-center w-full">
         <StaticImage
           src="../../images/offert/effect.png"
           alt="light"
           className="w-[170px] h-auto mb-[30px]"
         />
-        <h4 className="font-extrabold uppercase text-sm text-[#EF6278]  mb-[18px]">
+        <h4 className="font-extrabold uppercase text-sm text-[#EF6278] mb-[18px]">
           EFEKT
         </h4>
         <p className="text-sm text-[#1F2957] font-medium text-center leading-relaxed">
