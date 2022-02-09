@@ -4,7 +4,7 @@ import { markdownRemark } from "../utils/types/markdown-remark";
 import { HeadingBlogPost } from "../components/BlogPost/heading";
 import { SidebarBlogPost } from "../components/BlogPost/sidebar";
 import { ContentBlogPost } from "../components/BlogPost/content";
-import SubpageLayout from "../components/Layout/SubpageLayout";
+import SubpageLayout from "../components/Layout/SubpageLayout/index";
 
 type GraphQLResult = {
   markdownRemark: markdownRemark;

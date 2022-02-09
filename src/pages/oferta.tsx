@@ -1,5 +1,5 @@
 import React from "react";
-import SubpageLayout from "../components/Layout/SubpageLayout";
+import SubpageLayout from "../components/Layout/SubpageLayout/index";
 import { BoxesOffert } from "../components/Offert/boxes";
 import { OffertElements } from "../components/Offert/elements";
 import { HeadingOffert } from "../components/Offert/heading";
