@@ -2,7 +2,7 @@ import React from "react";
 import { HeadingBlog } from "../components/Blog/heading";
 import { PostsBlog } from "../components/Blog/posts";
 import { SidebarBlogPost } from "../components/BlogPost/sidebar";
-import { SubpageLayout } from "../components/Layout/subpageLayout";
+import { SubpageLayout } from "../components/Layout/SubpageLayout";
 import { BlogProvider } from "../utils/context/blogContext";
 
 const BlogPage = () => {

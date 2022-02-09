@@ -1,5 +1,5 @@
 import React from "react";
-import { SubpageLayout } from "../components/Layout/subpageLayout";
+import { SubpageLayout } from "../components/Layout/SubpageLayout";
 import { PortfolioElements } from "../components/Portfolio/elements";
 import { HeadingPortfolio } from "../components/Portfolio/heading";
 import { PortfolioPortfolio } from "../components/Portfolio/portfolio";
