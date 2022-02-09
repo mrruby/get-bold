@@ -1,10 +1,11 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Footer } from "../Footer";
-import { Header } from "../Header";
+import Footer from "../Footer";
+import Header from "../Header";
+
 import { SubLayoutElements } from "./elements";
 
-export const SubpageLayout = ({ children }) => {
+const SubpageLayout = ({ children }) => {
   return (
     <div className="antialiased min-h-screen text-sm font-montserrat text-getbold-blue flex flex-col scroll-smooth">
       <Helmet>
@@ -23,3 +24,5 @@ export const SubpageLayout = ({ children }) => {
     </div>
   );
 };
+
+export default SubpageLayout;

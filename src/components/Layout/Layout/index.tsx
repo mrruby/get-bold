@@ -1,14 +1,15 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { Footer } from "../footer";
-import { Header } from "../header";
+import Footer from "../Footer";
+import Header from "../Header";
+
 import { LayoutElements } from "./elements";
 
 interface Props {
   screenComponent?: React.ReactNode;
 }
 
-export const Layout: React.FC<Props> = ({ children, screenComponent }) => {
+const Layout: React.FC<Props> = ({ children, screenComponent }) => {
   return (
     <div className="antialiased min-h-screen text-sm font-montserrat text-getbold-blue flex flex-col scroll-smooth">
       <Helmet>
@@ -24,10 +25,10 @@ export const Layout: React.FC<Props> = ({ children, screenComponent }) => {
 
         {children}
       </div>
-
       <Footer />
-
       <LayoutElements />
     </div>
   );
 };
+
+export default Layout;

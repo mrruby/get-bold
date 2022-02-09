@@ -4,7 +4,7 @@ import { HeaderLogo } from "./headerLogo";
 import { HeaderMobileNavigation } from "./headerMobileNavigation";
 import { HeaderNavigation } from "./headerNavigation";
 
-export const Header: React.FC = () => {
+const Header: React.FC = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState<boolean>(false);
 
   return (
@@ -19,3 +19,5 @@ export const Header: React.FC = () => {
     </header>
   );
 };
+
+export default Header;

@@ -1,10 +1,10 @@
 import React from "react";
 import { graphql, PageProps } from "gatsby";
-import { SubpageLayout } from "../components/Layout/SubpageLayout";
 import { markdownRemark } from "../utils/types/markdown-remark";
 import { HeadingBlogPost } from "../components/BlogPost/heading";
 import { SidebarBlogPost } from "../components/BlogPost/sidebar";
 import { ContentBlogPost } from "../components/BlogPost/content";
+import SubpageLayout from "../components/Layout/SubpageLayout";
 
 type GraphQLResult = {
   markdownRemark: markdownRemark;

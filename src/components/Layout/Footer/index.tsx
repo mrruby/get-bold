@@ -1,7 +1,7 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer className="2xl:px-[21rem] px-8 xl:px-[150px] py-24 lg:py-40 relative w-full bg-[#FFB9C4]">
       <div className="flex flex-col lg:flex-row">
@@ -125,3 +125,5 @@ export const Footer = () => {
     </footer>
   );
 };
+
+export default Footer;

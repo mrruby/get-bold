@@ -1,11 +1,12 @@
 import React from "react";
-import { HomeAboutComponent } from "../components/Home/About";
-import { HomeBlogComponent } from "../components/Home/Blog";
-import { HomeHeroComponent } from "../components/Home/Hero";
-import { HomeOffertComponent } from "../components/Home/Offert";
-import { HomePortfolioComponent } from "../components/Home/Portfolio";
-import { HomeReferencesComponent } from "../components/Home/References";
-import { Layout } from "../components/Layout/Layout";
+
+import HomeBlogComponent from "../components/Home/Blog";
+import HomeHeroComponent from "../components/Home/Hero";
+import HomeOffertComponent from "../components/Home/Offert";
+import HomePortfolioComponent from "../components/Home/Portfolio";
+import HomeAboutComponent from "../components/Home/About";
+import HomeReferencesComponent from "../components/Home/References";
+import Layout from "../components/Layout/Layout";
 import { BlogProvider } from "../utils/context/blogContext";
 
 const IndexPage = () => {
