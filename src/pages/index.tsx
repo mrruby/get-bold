@@ -1,6 +1,6 @@
 import React from "react";
-import { HomeAboutComponent } from "../components/Home/about";
-import { HomeBlogComponent } from "../components/Home/blog";
+import { HomeAboutComponent } from "../components/Home/About";
+import { HomeBlogComponent } from "../components/Home/Blog";
 import { HomeHeroComponent } from "../components/Home/Hero";
 import { HomeOffertComponent } from "../components/Home/Offert";
 import { HomePortfolioComponent } from "../components/Home/Portfolio";

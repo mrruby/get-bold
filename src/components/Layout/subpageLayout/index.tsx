@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Footer } from "../footer";
-import { Header } from "../header";
+import { Footer } from "../Footer";
+import { Header } from "../Header";
 import { SubLayoutElements } from "./elements";
 
 export const SubpageLayout = ({ children }) => {
