@@ -12,9 +12,13 @@ import { ParallaxProvider } from "react-scroll-parallax";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-AOS.init();
+import { useEffect } from "react";
 
 const IndexPage = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <ParallaxProvider>
       <BlogProvider>
