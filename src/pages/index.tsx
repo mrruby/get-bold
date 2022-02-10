@@ -19,6 +19,7 @@ const IndexPage = () => {
     AOS.init();
     AOS.refresh();
   }, []);
+
   return (
     <ParallaxProvider>
       <BlogProvider>

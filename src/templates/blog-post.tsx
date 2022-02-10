@@ -4,7 +4,8 @@ import { markdownRemark } from "../utils/types/markdown-remark";
 import { HeadingBlogPost } from "../components/BlogPost/heading";
 import { SidebarBlogPost } from "../components/BlogPost/sidebar";
 import { ContentBlogPost } from "../components/BlogPost/content";
-import SubpageLayout from "../components/Layout/SubpageLayout/index";
+import { ParallaxProvider } from "react-scroll-parallax";
+import BlogPostLayout from "../components/Layout/BlogPostLayout";
 
 type GraphQLResult = {
   markdownRemark: markdownRemark;
@@ -14,25 +15,27 @@ const BlogPost: React.FC<PageProps<GraphQLResult>> = ({ data }) => {
   const post = data.markdownRemark;
 
   return (
-    <SubpageLayout>
-      <div className="flex flex-col">
-        <HeadingBlogPost
-          category={post.frontmatter.category}
-          title={post.frontmatter.title}
-          author={post.frontmatter.author}
-          authorImg={post.frontmatter.authorImg}
-          date={post.frontmatter.date}
-        />
-        <div className="flex flex-col md:items-start md:flex-row space-y-12 md:space-y-0 md:space-x-12 pb-24 p-8 lg:max-w-[1176px]">
-          <ContentBlogPost
-            html={post.html}
-            thumbnail={post.frontmatter.thumbnail}
-            tags={post.frontmatter.tags}
+    <ParallaxProvider>
+      <BlogPostLayout>
+        <div className="flex flex-col">
+          <HeadingBlogPost
+            category={post.frontmatter.category}
+            title={post.frontmatter.title}
+            author={post.frontmatter.author}
+            authorImg={post.frontmatter.authorImg}
+            date={post.frontmatter.date}
           />
-          <SidebarBlogPost />
+          <div className="flex flex-col md:items-start md:flex-row space-y-12 md:space-y-0 md:space-x-12 pb-24 p-8 lg:max-w-[1176px]">
+            <ContentBlogPost
+              html={post.html}
+              thumbnail={post.frontmatter.thumbnail}
+              tags={post.frontmatter.tags}
+            />
+            <SidebarBlogPost />
+          </div>
         </div>
-      </div>
-    </SubpageLayout>
+      </BlogPostLayout>
+    </ParallaxProvider>
   );
 };
 

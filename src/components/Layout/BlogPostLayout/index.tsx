@@ -2,10 +2,9 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import Footer from "../Footer";
 import Header from "../Header";
+import { BlogPostLayoutElements } from "./elements";
 
-import { SubLayoutElements } from "./elements";
-
-const SubpageLayout = ({ children }) => {
+const BlogPostLayout = ({ children }) => {
   return (
     <div className="antialiased min-h-screen text-sm font-montserrat text-getbold-blue flex flex-col scroll-smooth">
       <Helmet>
@@ -19,10 +18,10 @@ const SubpageLayout = ({ children }) => {
         <Header />
         {children}
       </div>
-      <SubLayoutElements />
+      <BlogPostLayoutElements />
       <Footer isWhiteBg={true} />
     </div>
   );
 };
 
-export default SubpageLayout;
+export default BlogPostLayout;

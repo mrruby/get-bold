@@ -1,8 +1,21 @@
-import React from "react";
+import { graphql, Link, useStaticQuery } from "gatsby";
+import React, { useContext } from "react";
+import { TagsContext, TagsProvider } from "../../utils/context/tagsContext";
 
 export const SidebarBlogPost = () => {
+  const tags = useStaticQuery(graphql`
+    query tagsQuery {
+      allMarkdownRemark(limit: 2000) {
+        group(field: frontmatter___tags) {
+          fieldValue
+          totalCount
+        }
+      }
+    }
+  `);
+
   return (
-    <div className="max-w-[395px]">
+    <div className="max-w-[395px] w-full">
       <div className="py-[34px] px-[38px] mb-[50px] bg-white rounded-xl shadow-md border border-[#F8E7E4]">
         <h3 className="text-lg font-extrabold mb-[14px]">Wyszukiwarka</h3>
         <div className="max-w-full relative">
@@ -49,24 +62,18 @@ export const SidebarBlogPost = () => {
       <div className="py-[34px] px-[38px] mb-[50px] bg-white rounded-xl shadow-md border border-[#F8E7E4]">
         <h3 className="text-lg font-extrabold mb-[14px]">Tagi</h3>
         <ul className="flex flex-wrap">
-          <li className="py-1 px-3 mb-4 mr-4 border border-[#FFA3B1] rounded-lg">
-            seo
-          </li>
-          <li className="py-1 px-3 mb-4 mr-4 border border-[#FFA3B1] rounded-lg">
-            develop
-          </li>
-          <li className="py-1 px-3 mb-4 mr-4 border border-[#FFA3B1] rounded-lg">
-            marketing
-          </li>
-          <li className="py-1 px-3 mb-4 mr-4 border border-[#FFA3B1] rounded-lg">
-            nowosci
-          </li>
-          <li className="py-1 px-3 mb-4 mr-4 border border-[#FFA3B1] rounded-lg">
-            social media
-          </li>
-          <li className="py-1 px-3 mb-4 mr-4 border border-[#FFA3B1] rounded-lg">
-            face3book
-          </li>
+          {tags.allMarkdownRemark.group.map((tag, index) => {
+            return (
+              <Link to={`/tagi/${tag.fieldValue}`}>
+                <li
+                  key={index}
+                  className="py-1 px-3 mb-4 m-2 border border-[#FFA3B1] rounded-lg"
+                >
+                  {tag.fieldValue}
+                </li>
+              </Link>
+            );
+          })}
         </ul>
       </div>
     </div>

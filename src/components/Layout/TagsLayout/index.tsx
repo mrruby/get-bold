@@ -3,9 +3,7 @@ import { Helmet } from "react-helmet";
 import Footer from "../Footer";
 import Header from "../Header";
 
-import { SubLayoutElements } from "./elements";
-
-const SubpageLayout = ({ children }) => {
+const TagsLayout = ({ children }) => {
   return (
     <div className="antialiased min-h-screen text-sm font-montserrat text-getbold-blue flex flex-col scroll-smooth">
       <Helmet>
@@ -19,10 +17,10 @@ const SubpageLayout = ({ children }) => {
         <Header />
         {children}
       </div>
-      <SubLayoutElements />
-      <Footer isWhiteBg={true} />
+
+      <Footer isWhiteBg={false} />
     </div>
   );
 };
 
-export default SubpageLayout;
+export default TagsLayout;

@@ -33,6 +33,7 @@ export const BlogProvider = ({ children }) => {
       }
     }
   `);
+
   return (
     <BlogContext.Provider value={blogData.allMarkdownRemark.nodes}>
       {children}

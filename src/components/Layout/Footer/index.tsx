@@ -2,7 +2,11 @@ import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { Parallax } from "react-scroll-parallax";
 
-const Footer = () => {
+interface Props {
+  isWhiteBg: boolean;
+}
+
+const Footer: React.FC<Props> = ({ isWhiteBg }) => {
   return (
     <footer className="2xl:px-[21rem] px-8 xl:px-[150px] py-24 lg:py-40 relative w-full bg-[#FFB9C4]">
       <div className="flex flex-col lg:flex-row">
@@ -94,21 +98,23 @@ const Footer = () => {
       </div>
 
       {/* white bg */}
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="2814.801"
-        height="895.874"
-        className="absolute -top-[800px] lg:-top-[770px] -left-[450px] z-10"
-        viewBox="0 0 2814.801 895.874"
-      >
-        <path
-          id="Path_4472"
-          data-name="Path 4472"
-          d="M388.7,158.531,2233.4,34l547.685,102.629L2814.8,656.623,2616.09,683.547l-152.7,162.182-1080.17,34.926L619.231,929.873,438.964,880.655,0,739.529Z"
-          transform="translate(0 -34)"
-          fill="#fff"
-        />
-      </svg>
+      {isWhiteBg && (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="2814.801"
+          height="895.874"
+          className="absolute -top-[800px] lg:-top-[770px] -left-[450px] z-10"
+          viewBox="0 0 2814.801 895.874"
+        >
+          <path
+            id="Path_4472"
+            data-name="Path 4472"
+            d="M388.7,158.531,2233.4,34l547.685,102.629L2814.8,656.623,2616.09,683.547l-152.7,162.182-1080.17,34.926L619.231,929.873,438.964,880.655,0,739.529Z"
+            transform="translate(0 -34)"
+            fill="#fff"
+          />
+        </svg>
+      )}
 
       {/* right cloud */}
       <Parallax

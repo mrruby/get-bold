@@ -20,7 +20,7 @@ const SubpageLayout = ({ children }) => {
         {children}
       </div>
       <SubLayoutElements />
-      <Footer />
+      <Footer isWhiteBg={true} />
     </div>
   );
 };
