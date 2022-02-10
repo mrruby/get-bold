@@ -8,18 +8,25 @@ import HomeAboutComponent from "../components/Home/About/index";
 import HomeReferencesComponent from "../components/Home/References/index";
 import Layout from "../components/Layout/Layout/index";
 import { BlogProvider } from "../utils/context/blogContext";
+import { ParallaxProvider } from "react-scroll-parallax";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const IndexPage = () => {
   return (
-    <BlogProvider>
-      <Layout screenComponent={<HomeHeroComponent />}>
-        <HomeOffertComponent />
-        <HomePortfolioComponent />
-        <HomeAboutComponent />
-        <HomeReferencesComponent />
-        <HomeBlogComponent />
-      </Layout>
-    </BlogProvider>
+    <ParallaxProvider>
+      <BlogProvider>
+        <Layout screenComponent={<HomeHeroComponent />}>
+          <HomeOffertComponent />
+          <HomePortfolioComponent />
+          <HomeAboutComponent />
+          <HomeReferencesComponent />
+          <HomeBlogComponent />
+        </Layout>
+      </BlogProvider>
+    </ParallaxProvider>
   );
 };
 

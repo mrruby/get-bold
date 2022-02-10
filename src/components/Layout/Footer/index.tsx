@@ -1,5 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import { Parallax } from "react-scroll-parallax";
 
 const Footer = () => {
   return (
@@ -110,18 +111,20 @@ const Footer = () => {
       </svg>
 
       {/* right cloud */}
-      <img
-        src="../../../../footer-cloud-right.svg"
-        alt="cloud"
+      <Parallax
+        speed={10}
         className="absolute top-8 md:top-0 -right-24 md:-right-40 z-10 w-[250px] md:w-[400px] h-auto"
-      />
+      >
+        <img src="../../../../footer-cloud-right.svg" alt="cloud" />
+      </Parallax>
 
       {/* left cloud */}
-      <img
-        src="../../../../footer-cloud-left.svg"
-        alt="cloud2"
+      <Parallax
+        speed={-20}
         className="absolute top-[500px] -left-24 md:-left-40 z-10 w-[250px] md:w-[400px] h-auto"
-      />
+      >
+        <img src="../../../../footer-cloud-left.svg" alt="cloud2" />
+      </Parallax>
     </footer>
   );
 };

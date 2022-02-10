@@ -1,9 +1,13 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import { Parallax } from "react-scroll-parallax";
 
 export const HomePortfolioHeading = () => {
   return (
-    <div className="flex flex-col items-center lg:w-[71rem] px-8 mb-14">
+    <Parallax
+      speed={10}
+      className="flex flex-col items-center lg:w-[71rem] px-8 mb-14"
+    >
       <h2 className="tracking-[4px] text-xl font-bebas text-getbold-pink mb-6">
         Portfolio
       </h2>
@@ -26,6 +30,6 @@ export const HomePortfolioHeading = () => {
           </svg>
         </span>
       </h3>
-    </div>
+    </Parallax>
   );
 };

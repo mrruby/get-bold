@@ -5,7 +5,12 @@ import { HomeReferencesItems } from "./referencesItems";
 
 const HomeReferencesComponent = () => {
   return (
-    <main className="relative py-24 lg:py-40 px-8 w-full flex flex-col items-center">
+    <main
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-out"
+      data-aos-delay="600"
+      className="relative py-24 lg:py-40 px-8 w-full flex flex-col items-center"
+    >
       <HomeReferencesHeading />
       <HomeReferencesItems />
     </main>

@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Parallax } from "react-scroll-parallax";
 export const LayoutElements = () => {
   return (
     <>
@@ -128,6 +128,7 @@ export const LayoutElements = () => {
       </svg>
 
       {/* blue square */}
+
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="absolute top-[4430px] right-8 md:right-4 w-[6rem] md:w-[10rem] -z-30"
@@ -146,6 +147,7 @@ export const LayoutElements = () => {
       </svg>
 
       {/* yellow circle */}
+
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 196.422 196.422"
@@ -165,9 +167,18 @@ export const LayoutElements = () => {
       </svg>
 
       {/* backgrounds */}
-      <div className="absolute top-0 left-0 min-h-full w-full bg-image-home -z-20"></div>
-      <div className="absolute top-[1933px] left-0 h-[1800px] w-full bg-image-home-portfolio -z-20"></div>
-      <div className="absolute top-[4481px] left-0 h-[1000px] w-full bg-image-home-references -z-20"></div>
+      <Parallax
+        speed={20}
+        className="absolute top-0 left-0 min-h-full w-full bg-image-home -z-20"
+      ></Parallax>
+      <Parallax
+        speed={20}
+        className="absolute top-[1933px] left-0 h-[1800px] w-full bg-image-home-portfolio -z-20"
+      ></Parallax>
+      <Parallax
+        speed={20}
+        className="absolute top-[4481px] left-0 h-[1000px] w-full bg-image-home-references -z-20"
+      ></Parallax>
     </>
   );
 };

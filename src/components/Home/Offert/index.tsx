@@ -5,7 +5,12 @@ import { HomeOffertHeading } from "./offertHeading";
 
 const HomeOffertComponent = () => {
   return (
-    <main className="relative px-8 py-40 w-full flex flex-col items-center">
+    <main
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-out"
+      data-aos-delay="600"
+      className="relative px-8 py-40 w-full flex flex-col items-center"
+    >
       <HomeOffertHeading />
       <HomeOffertBoxes />
       <HomeOffertContact />

@@ -1,9 +1,13 @@
 import React from "react";
+import { Parallax } from "react-scroll-parallax";
 import { PortfolioItems } from "../../../utils/pageContent/portfolioItems";
 
 export const HomePortfolioItems = () => {
   return (
-    <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 px-8">
+    <Parallax
+      speed={0}
+      className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 px-8"
+    >
       {PortfolioItems.map((item) => {
         return (
           <div className=" bg-white h-[24rem] max-w-[20rem] flex flex-col items-center drop-shadow-md rounded-2xl">
@@ -22,6 +26,6 @@ export const HomePortfolioItems = () => {
           </div>
         );
       })}
-    </div>
+    </Parallax>
   );
 };

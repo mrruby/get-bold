@@ -1,8 +1,12 @@
 import React from "react";
+import { Parallax } from "react-scroll-parallax";
 
 export const HomeOffertHeading = () => {
   return (
-    <div className="flex flex-col items-center lg:max-w-[71rem] px-8 mb-14">
+    <Parallax
+      speed={10}
+      className="flex flex-col items-center lg:max-w-[71rem] px-8 mb-14"
+    >
       <h2 className="tracking-[4px] text-xl font-bebas text-getbold-pink mb-6">
         Oferta
       </h2>
@@ -15,6 +19,6 @@ export const HomeOffertHeading = () => {
         klienci. Właśnie dlatego wszystkie działania opieramy na naszym
         doświadczeniu i konkretnych statystykach z branży.
       </p>
-    </div>
+    </Parallax>
   );
 };

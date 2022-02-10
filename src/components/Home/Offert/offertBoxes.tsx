@@ -1,9 +1,13 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import { Parallax } from "react-scroll-parallax";
 
 export const HomeOffertBoxes = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 gap-y-24 lg:grid-cols-5 py-10 w-full border-y border-black border-opacity-[.05]">
+    <Parallax
+      speed={20}
+      className="grid grid-cols-1 sm:grid-cols-3 gap-4 gap-y-24 lg:grid-cols-5 py-10 w-full border-y border-black border-opacity-[.05]"
+    >
       <div className="flex flex-col items-center justify-center">
         <div className="w-full h-full flex items-center justify-center">
           <StaticImage
@@ -68,6 +72,6 @@ export const HomeOffertBoxes = () => {
           TikTok <br /> Ads
         </p>
       </div>
-    </div>
+    </Parallax>
   );
 };

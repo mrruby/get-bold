@@ -1,5 +1,5 @@
-import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+
 import { HomeHeroHeading } from "./heroHeading";
 import { HomeHeroImage } from "./heroImage";
 

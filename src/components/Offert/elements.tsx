@@ -1,13 +1,19 @@
 import React from "react";
+import { useParallax } from "react-scroll-parallax";
 
 export const OffertElements = () => {
+  const CoinElementParallax = useParallax<HTMLImageElement>({
+    translateX: ["0px", "200px"],
+  });
+
   return (
     <>
       {/* coin img */}
       <img
         src="../../../../coin.png"
         alt=""
-        className="absolute top-[372px] right-2 md:right-[300px] -z-10 h-auto"
+        className="absolute top-[372px] right-2 md:right-[400px] -z-10 h-auto"
+        ref={CoinElementParallax.ref}
       />
 
       {/* red circle */}

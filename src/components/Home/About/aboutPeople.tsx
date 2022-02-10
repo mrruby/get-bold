@@ -1,9 +1,13 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import { Parallax } from "react-scroll-parallax";
 
 export const HomeAboutPeople = () => {
   return (
-    <div className="flex flex-col lg:flex-row space-y-20 lg:space-y-0 items-center max-w-[1100px]">
+    <Parallax
+      speed={-10}
+      className="flex flex-col lg:flex-row space-y-20 lg:space-y-0 items-center max-w-[1100px]"
+    >
       <div className="relative flex flex-col items-center w-full">
         <div className="w-4/5 md:w-[24rem] lg:h-[24rem] pt-1 pb-2 px-2 lg:p-0 bg-image-about-ada flex items-start justify-center">
           <StaticImage
@@ -22,6 +26,6 @@ export const HomeAboutPeople = () => {
           </button>
         </div>
       </div>
-    </div>
+    </Parallax>
   );
 };

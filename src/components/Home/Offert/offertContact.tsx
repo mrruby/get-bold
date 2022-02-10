@@ -1,10 +1,10 @@
 import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import { Parallax } from "react-scroll-parallax";
 
 export const HomeOffertContact = () => {
   return (
-    <div className="flex flex-col items-center mt-14 px-8">
+    <Parallax speed={10} className="flex flex-col items-center mt-14 px-8">
       <h4 className="text-lg lg:text-xl text-center font-bold mb-[2.25rem]">
         Chcesz otrzymać niezobowiązującą{" "}
         <span className="font-black relative">
@@ -75,6 +75,6 @@ export const HomeOffertContact = () => {
           Skontaktuj się!
         </button>
       </Link>
-    </div>
+    </Parallax>
   );
 };

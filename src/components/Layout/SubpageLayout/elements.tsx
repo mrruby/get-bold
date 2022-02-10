@@ -1,43 +1,47 @@
 import React from "react";
+import { useParallax } from "react-scroll-parallax";
 
 export const SubLayoutElements = () => {
+  const GraphElementParallax = useParallax<HTMLImageElement>({
+    translateX: ["200px", "0px"],
+  });
+
+  const CardElementParallax = useParallax<HTMLImageElement>({
+    translateX: ["200px", "0px"],
+  });
+
+  const CubeElementParallax = useParallax<HTMLImageElement>({
+    translateX: ["200px", "0px"],
+  });
+
+  const LeftCloudElementParallax = useParallax<HTMLImageElement>({
+    translateX: ["200px", "0px"],
+  });
+
+  const RightCloudElementParallax = useParallax<HTMLImageElement>({
+    translateX: ["0px", "200px"],
+  });
+
+  const FlowerElementParallax = useParallax<HTMLImageElement>({
+    translateX: ["0px", "200px"],
+  });
+
   return (
     <>
-      {/* yellow circle */}
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="66.715"
-        height="59.049"
+      {/* cube img */}
+      <img
+        src="../../../../cube.svg"
+        alt=""
         className="absolute top-[237px] left-[200px] md:left-[265px] -z-10 h-auto"
-        viewBox="0 0 66.715 59.049"
-      >
-        <g id="Group_1816" data-name="Group 1816" transform="translate(0 0)">
-          <path
-            id="Path_4697"
-            data-name="Path 4697"
-            d="M17.781,0,0,28.252,15.576,57.776,33.357,29.524Z"
-            fill="#c0f6cc"
-          />
-          <path
-            id="Path_4698"
-            data-name="Path 4698"
-            d="M15.576,57.777,48.934,59.05,66.715,30.8,33.357,29.525Z"
-            fill="#a6f3b8"
-          />
-          <path
-            id="Path_4699"
-            data-name="Path 4699"
-            d="M17.781,0,33.357,29.524,66.715,30.8,51.139,1.273Z"
-            fill="#d9fae0"
-          />
-        </g>
-      </svg>
+        ref={CubeElementParallax.ref}
+      />
 
       {/* graph img */}
       <img
         src="../../../../graph.png"
         alt=""
         className="absolute top-[345px] left-[200px] md:left-[307px] -z-10 h-auto"
+        ref={GraphElementParallax.ref}
       />
 
       {/* card img */}
@@ -45,32 +49,7 @@ export const SubLayoutElements = () => {
         src="../../../../card.png"
         alt=""
         className="absolute top-[300px] left-2 md:4 -z-10 h-auto"
-      />
-
-      {/* yellow circle */}
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 196.422 196.422"
-        className="absolute top-[300px] -left-8 md:-left-16 -z-20 w-[6rem] md:w-[10rem] h-auto"
-      >
-        <circle
-          id="Ellipse_9"
-          data-name="Ellipse 9"
-          cx="80.711"
-          cy="80.711"
-          r="80.711"
-          transform="translate(17.5 17.5)"
-          fill="none"
-          stroke="#FFD350"
-          stroke-width="35"
-        />
-      </svg>
-
-      {/* right cloud */}
-      <img
-        src="../../../../footer-cloud-right.svg"
-        alt="cloud"
-        className="absolute top-[250px] -right-8 md:-right-40 z-10 w-[250px] md:w-[400px] h-auto"
+        ref={CardElementParallax.ref}
       />
 
       {/* left cloud */}
@@ -78,13 +57,23 @@ export const SubLayoutElements = () => {
         src="../../../../footer-cloud-left.svg"
         alt="cloud2"
         className="absolute top-[550px] -left-8 md:-left-40 z-10 w-[250px] md:w-[400px] h-auto"
+        ref={LeftCloudElementParallax.ref}
+      />
+
+      {/* right cloud */}
+      <img
+        src="../../../../footer-cloud-right.svg"
+        alt="cloud"
+        className="absolute top-[250px] -right-8 md:-right-30 z-10 w-[250px] md:w-[400px] h-auto"
+        ref={RightCloudElementParallax.ref}
       />
 
       {/* flower */}
       <img
         src="../../../../flower.svg"
         alt="flower"
-        className="absolute top-[400px] -right-36 md:-right-48 z-10"
+        className="absolute top-[400px] -right-6 md:-right-10 z-10"
+        ref={FlowerElementParallax.ref}
       />
 
       {/* orange hex */}
