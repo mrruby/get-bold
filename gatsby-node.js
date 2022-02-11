@@ -7,6 +7,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Define a template for blog post
   const blogPost = path.resolve(`./src/templates/blog-post.tsx`);
   const tagTemplate = path.resolve("src/templates/tags.tsx");
+  const catTemplate = path.resolve("src/templates/categories.tsx");
 
   // Get all markdown blog posts sorted by date
   const result = await graphql(
@@ -25,6 +26,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         }
         tagsGroup: allMarkdownRemark(limit: 2000) {
           group(field: frontmatter___tags) {
+            fieldValue
+          }
+        }
+        categories: allMarkdownRemark(limit: 2000) {
+          group(field: frontmatter___category) {
             fieldValue
           }
         }
@@ -67,6 +73,18 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       component: tagTemplate,
       context: {
         tag: tag.fieldValue,
+      },
+    });
+  });
+
+  const categories = result.data.categories.group;
+
+  categories.forEach((cat) => {
+    createPage({
+      path: `/kategorie/${cat.fieldValue}/`,
+      component: catTemplate,
+      context: {
+        cat: cat.fieldValue,
       },
     });
   });

@@ -1,19 +1,19 @@
 import React from "react";
 import { ParallaxProvider } from "react-scroll-parallax";
+import { CatsList } from "../components/Categories/catsList";
+import { HeadingCats } from "../components/Categories/heading";
 import TagsLayout from "../components/Layout/TagsLayout";
-import { HeadingTags } from "../components/Tags/heading";
-import { TagsList } from "../components/Tags/tagsList";
-import { TagsProvider } from "../utils/context/tagsContext";
+import { CatsProvider } from "../utils/context/catsContext";
 
 const TagsPage = () => {
   return (
     <ParallaxProvider>
-      <TagsProvider>
+      <CatsProvider>
         <TagsLayout>
-          <HeadingTags />
-          <TagsList />
+          <HeadingCats />
+          <CatsList />
         </TagsLayout>
-      </TagsProvider>
+      </CatsProvider>
     </ParallaxProvider>
   );
 };

@@ -13,18 +13,18 @@ import { TagsPosts } from "../components/TagAndCatTemplate/tagsPosts";
 interface Props {
   data: any;
   pageContext: {
-    tag: string;
+    cat: string;
   };
 }
 
-const TagPage: React.FC<Props> = ({ data, pageContext }) => {
-  const { tag } = pageContext;
+const CatPage: React.FC<Props> = ({ data, pageContext }) => {
+  const { cat } = pageContext;
   const posts = data.allMarkdownRemark.nodes;
 
   return (
     <ParallaxProvider>
       <TagsLayout>
-        <HeadingTagTemplate head={tag} tag={true} />
+        <HeadingTagTemplate head={cat} cat={true} />
         <div className="flex flex-col md:items-start md:flex-row space-y-12 md:space-y-0 md:space-x-12 pb-24 p-8 lg:max-w-[1176px]">
           <TagsPosts posts={posts} />
           <SidebarBlogPost />
@@ -34,10 +34,10 @@ const TagPage: React.FC<Props> = ({ data, pageContext }) => {
   );
 };
 
-export default TagPage;
+export default CatPage;
 
 export const pageQuery = graphql`
-  query Tag($tag: String) {
+  query Cat($cat: String) {
     site {
       siteMetadata {
         title
@@ -45,7 +45,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+      filter: { frontmatter: { category: { in: [$cat] } } }
     ) {
       nodes {
         excerpt

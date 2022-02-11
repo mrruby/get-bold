@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 
 interface Props {
@@ -25,12 +26,11 @@ export const ContentBlogPost: React.FC<Props> = ({ html, thumbnail, tags }) => {
         <ul className="max-w-3/5 flex flex-wrap">
           {tags.map((tag, index) => {
             return (
-              <li
-                className="py-1 px-3 mr-4 mb-4 border border-[#FFA3B1] rounded-lg"
-                key={index}
-              >
-                {tag}
-              </li>
+              <Link to={`/tagi/${tag}`} key={index}>
+                <li className="py-1 px-3 mr-4 mb-4 border border-[#FFA3B1] rounded-lg">
+                  {tag}
+                </li>
+              </Link>
             );
           })}
         </ul>

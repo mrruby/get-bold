@@ -1,14 +1,18 @@
 import { graphql, Link, useStaticQuery } from "gatsby";
-import React, { useContext } from "react";
-import { TagsContext, TagsProvider } from "../../utils/context/tagsContext";
+import React from "react";
 
 export const SidebarBlogPost = () => {
-  const tags = useStaticQuery(graphql`
-    query tagsQuery {
-      allMarkdownRemark(limit: 2000) {
+  const tagsAndCats = useStaticQuery(graphql`
+    query tagsAndCatsQuery {
+      tags: allMarkdownRemark(limit: 2000) {
         group(field: frontmatter___tags) {
           fieldValue
           totalCount
+        }
+      }
+      cats: allMarkdownRemark(limit: 2000) {
+        group(field: frontmatter___category) {
+          fieldValue
         }
       }
     }
@@ -47,28 +51,25 @@ export const SidebarBlogPost = () => {
       <div className="py-[34px] px-[38px] mb-[50px] bg-white rounded-xl shadow-md border border-[#F8E7E4]">
         <h3 className="text-lg font-extrabold mb-[14px]">Kategorie</h3>
         <ul className="space-y-2 list-disc text-getbold-pink">
-          <li>
-            <span className="text-getbold-blue">Development</span>
-          </li>
-          <li>
-            <span className="text-getbold-blue">Marketing</span>
-          </li>
-          <li>
-            <span className="text-getbold-blue">Social Media</span>
-          </li>
+          {tagsAndCats.cats.group.map((cat, index) => {
+            return (
+              <Link to={`/kategorie/${cat.fieldValue}`} key={index}>
+                <li>
+                  <span className="text-getbold-blue">{cat.fieldValue}</span>
+                </li>
+              </Link>
+            );
+          })}
         </ul>
       </div>
 
       <div className="py-[34px] px-[38px] mb-[50px] bg-white rounded-xl shadow-md border border-[#F8E7E4]">
         <h3 className="text-lg font-extrabold mb-[14px]">Tagi</h3>
         <ul className="flex flex-wrap">
-          {tags.allMarkdownRemark.group.map((tag, index) => {
+          {tagsAndCats.tags.group.map((tag, index) => {
             return (
-              <Link to={`/tagi/${tag.fieldValue}`}>
-                <li
-                  key={index}
-                  className="py-1 px-3 mb-4 m-2 border border-[#FFA3B1] rounded-lg"
-                >
+              <Link key={index} to={`/tagi/${tag.fieldValue}`}>
+                <li className="py-1 px-3 mb-4 m-2 border border-[#FFA3B1] rounded-lg">
                   {tag.fieldValue}
                 </li>
               </Link>

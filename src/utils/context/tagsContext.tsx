@@ -2,7 +2,11 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import { createContext } from "react";
 
-export const TagsContext = createContext<any>([]);
+interface ITagsContext {
+  fieldValue: string;
+}
+
+export const TagsContext = createContext<ITagsContext[]>([]);
 
 export const TagsProvider = ({ children }) => {
   const tagsData = useStaticQuery(graphql`

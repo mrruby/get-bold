@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 
 interface Props {
@@ -16,8 +17,11 @@ export const HeadingBlogPost: React.FC<Props> = ({
   date,
 }) => {
   return (
-    <main className="p-8 -mt-40 pt-64 -z-10 flex flex-col">
-      <p className="text-[#EF6278] mb-12">Home / Kategorie / {category}</p>
+    <main className="p-8 -mt-40 pt-64 z-10 flex flex-col ">
+      <p className="text-[#EF6278] mb-12">
+        <Link to="/">Home</Link> / <Link to="/kategorie">Kategorie</Link> /{" "}
+        <Link to={`/kategorie/${category}`}>{category}</Link>
+      </p>
       <h1 className="text-3xl lg:text-5xl lg:max-w-[1024px] text-[#1F2957] font-bold mb-[40px]">
         {title}
       </h1>

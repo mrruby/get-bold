@@ -1,6 +1,5 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Link } from "gatsby";
-import { BlogContext } from "../../utils/context/blogContext";
 import { markdownRemark } from "../../utils/types/markdown-remark";
 
 interface Props {
