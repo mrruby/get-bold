@@ -10,7 +10,7 @@ const BlogPage = () => {
   return (
     <ParallaxProvider>
       <BlogProvider>
-        <SubpageLayout>
+        <SubpageLayout title={"Blog - GetBold"}>
           <HeadingBlog />
           <div className="flex flex-col md:items-start md:flex-row space-y-12 md:space-y-0 md:space-x-12 pb-24 p-8 lg:max-w-[1176px]">
             <PostsBlog />

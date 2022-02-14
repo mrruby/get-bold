@@ -9,7 +9,7 @@ const TagsPage = () => {
   return (
     <ParallaxProvider>
       <TagsProvider>
-        <TagsLayout>
+        <TagsLayout title={"Tagi - GetBold"}>
           <HeadingTags />
           <TagsList />
         </TagsLayout>

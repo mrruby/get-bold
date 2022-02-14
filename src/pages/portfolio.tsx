@@ -9,7 +9,7 @@ import { QuotesPortfolio } from "../components/Portfolio/quotes";
 const PortfolioPage = () => {
   return (
     <ParallaxProvider>
-      <SubpageLayout>
+      <SubpageLayout title={"Portfolio - GetBold"}>
         <HeadingPortfolio />
         <PortfolioPortfolio />
         <QuotesPortfolio />

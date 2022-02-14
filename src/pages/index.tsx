@@ -23,7 +23,10 @@ const IndexPage = () => {
   return (
     <ParallaxProvider>
       <BlogProvider>
-        <Layout screenComponent={<HomeHeroComponent />}>
+        <Layout
+          title={"Strona Główna - GetBold"}
+          screenComponent={<HomeHeroComponent />}
+        >
           <HomeOffertComponent />
           <HomePortfolioComponent />
           <HomeAboutComponent />

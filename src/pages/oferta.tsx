@@ -9,7 +9,7 @@ import { OffertOffert } from "../components/Offert/offert";
 const OffertPage = () => {
   return (
     <ParallaxProvider>
-      <SubpageLayout>
+      <SubpageLayout title={"Oferta - GetBold"}>
         <HeadingOffert />
         <BoxesOffert />
         <OffertOffert />

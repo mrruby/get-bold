@@ -16,7 +16,7 @@ const BlogPost: React.FC<PageProps<GraphQLResult>> = ({ data }) => {
 
   return (
     <ParallaxProvider>
-      <BlogPostLayout>
+      <BlogPostLayout title={`${post.frontmatter.title} - GetBold`}>
         <div className="flex flex-col">
           <HeadingBlogPost
             category={post.frontmatter.category}

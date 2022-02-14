@@ -7,14 +7,15 @@ import { LayoutElements } from "./elements";
 
 interface Props {
   screenComponent?: React.ReactNode;
+  title: string;
 }
 
-const Layout: React.FC<Props> = ({ children, screenComponent }) => {
+const Layout: React.FC<Props> = ({ children, screenComponent, title }) => {
   return (
     <div className="antialiased min-h-screen text-sm font-montserrat text-getbold-blue flex flex-col scroll-smooth">
       <Helmet>
         <html lang="pl" />
-        <title>GetBold</title>
+        <title>{title}</title>
       </Helmet>
 
       <div className="container mx-auto max-w-7xl z-20">

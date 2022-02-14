@@ -5,12 +5,16 @@ import Header from "../Header";
 
 import { SubLayoutElements } from "./elements";
 
-const SubpageLayout = ({ children }) => {
+interface Props {
+  title: string;
+}
+
+const SubpageLayout: React.FC<Props> = ({ children, title }) => {
   return (
     <div className="antialiased min-h-screen text-sm font-montserrat text-getbold-blue flex flex-col scroll-smooth">
       <Helmet>
         <html lang="pl" />
-        <title>GetBold</title>
+        <title>{title}</title>
       </Helmet>
 
       <div className="absolute top-0 left-0 min-h-screen w-full bg-image-sub -z-10"></div>

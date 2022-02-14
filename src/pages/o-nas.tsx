@@ -8,7 +8,7 @@ import SubpageLayout from "../components/Layout/SubpageLayout/index";
 const AboutPage = () => {
   return (
     <ParallaxProvider>
-      <SubpageLayout>
+      <SubpageLayout title={"O nas - GetBold"}>
         <HeadingAbout />
         <TeamAbout />
         <AboutElements />

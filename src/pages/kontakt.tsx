@@ -7,7 +7,7 @@ import ContactLayout from "../components/Layout/ContactLayout";
 const ContactPage = () => {
   return (
     <ParallaxProvider>
-      <ContactLayout>
+      <ContactLayout title={"Kontakt - GetBold"}>
         <HeadingContact />
         <ContactForm />
       </ContactLayout>
