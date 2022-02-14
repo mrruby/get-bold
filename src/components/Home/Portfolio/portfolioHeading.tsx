@@ -12,9 +12,9 @@ export const HomePortfolioHeading = () => {
         Portfolio
       </h2>
       <h3 className="text-3xl lg:text-4xl lg:leading-normal font-medium mb-8 text-center">
-        Po długim czasie pracy w agencjach <br /> mam tyle i tyle{" "}
+        Sprawdź, jakie{" "}
         <span className="font-bold text-getbold-pink relative">
-          projektów!{" "}
+          projekty{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="absolute -z-10 -bottom-2 left-0"
@@ -28,7 +28,8 @@ export const HomePortfolioHeading = () => {
               fill="#f8e7e4"
             />
           </svg>
-        </span>
+        </span>{" "}
+        mamy <br /> już na swoim koncie!
       </h3>
     </Parallax>
   );

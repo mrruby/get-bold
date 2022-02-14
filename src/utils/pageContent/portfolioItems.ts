@@ -17,22 +17,4 @@ export const PortfolioItems = [
     tags: "Marketing, Sales, SEO",
     img: "../../portfolio/portfolio3.jpg",
   },
-  {
-    id: 3,
-    title: "Marketing dla Klienta Jeden!",
-    tags: "Marketing, Sales, SEO",
-    img: "../../portfolio/portfolio4.jpg",
-  },
-  {
-    id: 4,
-    title: "Marketing dla Klienta Jeden!",
-    tags: "Marketing, Sales, SEO",
-    img: "../../portfolio/portfolio5.jpg",
-  },
-  {
-    id: 5,
-    title: "Marketing dla Klienta Jeden!",
-    tags: "Marketing, Sales, SEO",
-    img: "../../portfolio/portfolio6.jpg",
-  },
 ];

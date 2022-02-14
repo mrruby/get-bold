@@ -25,7 +25,7 @@ const Layout: React.FC<Props> = ({ children, screenComponent }) => {
 
         {children}
       </div>
-      <Footer />
+      <Footer isWhiteBg={true} />
       <LayoutElements />
     </div>
   );

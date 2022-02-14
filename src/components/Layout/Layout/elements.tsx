@@ -173,7 +173,7 @@ export const LayoutElements = () => {
       ></Parallax>
       <Parallax
         speed={20}
-        className="absolute top-[1933px] left-0 h-[1800px] w-full bg-image-home-portfolio -z-20"
+        className="absolute top-[1600px] left-0 h-[1800px] w-full bg-image-home-portfolio -z-20"
       ></Parallax>
       <Parallax
         speed={20}
