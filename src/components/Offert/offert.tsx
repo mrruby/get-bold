@@ -26,7 +26,7 @@ export const OffertOffert = () => {
             />
           </div>
           <h3 className="text-2xl font-bold mb-[40px]">Influencer marketing</h3>
-          <p className="font-medium text-base leading-loose mb-[35px]">
+          <p className="font-medium text-sm leading-loose mb-[35px]">
             Tam, gdzie konsumenci są znudzeni reklamami i wyskakującymi
             banerami... wkraczamy my! Znajdziemy dla Twojej marki osobę, która
             wzmocni jej wizerunek w sieci i sprawi, że pokocha ją nowe grono
@@ -39,7 +39,7 @@ export const OffertOffert = () => {
           <h4 className="text-lg font-bold mb-[20px]">
             Co dla Ciebie zrobimy?
           </h4>
-          <ul className="text-base space-y-2 mb-[40px] list-disc text-getbold-pink">
+          <ul className="text-sm space-y-2 mb-[40px] list-disc text-getbold-pink">
             <li>
               <span className="text-getbold-blue">
                 ustalimy cel, do którego będziemy zmierzać,
@@ -95,7 +95,7 @@ export const OffertOffert = () => {
             />
           </div>
           <h3 className="text-2xl font-bold mb-[40px]">Social media</h3>
-          <p className="font-medium text-base leading-loose mb-[35px]">
+          <p className="font-medium text-sm leading-loose mb-[35px]">
             Kojarzysz takie fanpejdże, które aż chce się czytać, nawet gdy nie
             znasz jeszcze samego produktu? My je tworzymy! Także od podstaw.{" "}
             <br />
@@ -107,7 +107,7 @@ export const OffertOffert = () => {
           <h4 className="text-lg font-bold mb-[20px]">
             Co dla Ciebie zrobimy?
           </h4>
-          <ul className="text-base space-y-2 mb-[40px] list-disc text-getbold-pink">
+          <ul className="text-sm space-y-2 mb-[40px] list-disc text-getbold-pink">
             <li>
               <span className="text-getbold-blue">
                 wybierzemy najlepsze social media dla Twojego produktu,
@@ -163,7 +163,7 @@ export const OffertOffert = () => {
           <h3 className="text-2xl font-bold mb-[40px]">
             Konsultacje kreatywne
           </h3>
-          <p className="font-medium text-base leading-loose mb-[35px]">
+          <p className="font-medium text-sm leading-loose mb-[35px]">
             Marketingowa burza mózgów to nasza specjalność. Jeśli czujesz, że od
             niektórych tematów puchnie Ci głowa – skonsultuj się z nami i
             odzyskaj świeże spojrzenie na swój biznes. <br />
@@ -175,7 +175,7 @@ export const OffertOffert = () => {
           <h4 className="text-lg font-bold mb-[20px]">
             Co dla Ciebie zrobimy?
           </h4>
-          <ul className="text-base space-y-2 mb-[40px] list-disc text-getbold-pink">
+          <ul className="text-sm space-y-2 mb-[40px] list-disc text-getbold-pink">
             <li>
               <span className="text-getbold-blue">
                 określimy najważniejsze cele Twojej marki,
@@ -226,7 +226,7 @@ export const OffertOffert = () => {
             />
           </div>
           <h3 className="text-2xl font-bold mb-[40px]">Facebook Ads</h3>
-          <p className="font-medium text-base leading-loose mb-[35px]">
+          <p className="font-medium text-sm leading-loose mb-[35px]">
             Każdego dnia mnóstwo ludzi siedzi na Messengerze i scrolluje Fejsa.
             My sprawimy, że przy ekranie zadrży im palec, gdy zobaczą właśnie
             Twoją reklamę. <br />
@@ -238,7 +238,7 @@ export const OffertOffert = () => {
           <h4 className="text-lg font-bold mb-[20px]">
             Co dla Ciebie zrobimy?
           </h4>
-          <ul className="text-base space-y-2 mb-[40px] list-disc text-getbold-pink">
+          <ul className="text-sm space-y-2 mb-[40px] list-disc text-getbold-pink">
             <li>
               <span className="text-getbold-blue">
                 opracujemy kreatywny koncept i strategię reklamową,
@@ -285,7 +285,7 @@ export const OffertOffert = () => {
             />
           </div>
           <h3 className="text-2xl font-bold mb-[40px]">TikTok Ads</h3>
-          <p className="font-medium text-base leading-loose mb-[35px]">
+          <p className="font-medium text-sm leading-loose mb-[35px]">
             TikTok został pobrany już 2 miliardy razy. Postaw na nowoczesną
             reklamę i patrz, jak dziwią się Ci, którzy mówili, że to tylko
             zabawa dla nastolatków. <br />
@@ -297,7 +297,7 @@ export const OffertOffert = () => {
           <h4 className="text-lg font-bold mb-[20px]">
             Co dla Ciebie zrobimy?
           </h4>
-          <ul className="text-base space-y-2 mb-[40px] list-disc text-getbold-pink">
+          <ul className="text-sm space-y-2 mb-[40px] list-disc text-getbold-pink">
             <li>
               <span className="text-getbold-blue">
                 rozwiejemy wątpliwości, czy to na pewno platforma dla Twojej

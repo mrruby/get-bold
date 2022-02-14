@@ -1,6 +1,7 @@
 import { Link } from "gatsby";
 import React, { useContext } from "react";
 import { BlogContext } from "../../../utils/context/blogContext";
+import { AiFillClockCircle } from "react-icons/ai";
 
 export const HomeBlogPosts = () => {
   const blog = useContext(BlogContext);
@@ -8,7 +9,7 @@ export const HomeBlogPosts = () => {
   return (
     <div className="flex flex-col">
       <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
-        {blog.map((post, index) => {
+        {blog.slice(0, 3).map((post, index) => {
           return (
             <div
               key={index}
@@ -29,7 +30,10 @@ export const HomeBlogPosts = () => {
 
               <div className="absolute bottom-0 flex flex-col justify-between w-full h-3/5 p-8 bg-white rounded-b-2xl">
                 <div className="h-2/3">
-                  <p className="mb-4 font-thin opacity-70">23rd April 2020</p>
+                  <p className="mb-4 font-thin flex items-center">
+                    <AiFillClockCircle className="mr-2 text-getbold-btn-pink" />
+                    {post.frontmatter.date}
+                  </p>
                   <p className="font-extrabold mb-4">
                     {post.frontmatter.title}
                   </p>
