@@ -35,37 +35,51 @@ export const ContactForm: React.FC = () => {
         </div>
         <div className="w-full md:w-1/2 lg:pt-[82px]">
           <h3 className="font-bold text-3xl mb-8">Formularz Kontaktowy</h3>
-          <form>
+          <form
+            method="post"
+            netlify-honeypot="bot-field"
+            data-netlify="true"
+            name="contact"
+          >
             <div className="flex flex-col items-center space-y-8">
+              <input type="hidden" name="bot-field" />
+              <input type="hidden" name="form-name" value="contact" />
               <input
+                required
                 type="text"
+                name="name"
                 placeholder="Imię i nazwisko"
                 className="border-0 border-b-2 border-getbold-blue text-[#233176] placeholder:text-[#233176] focus:ring-0 focus:border-getbold-blue p-0 py-4 w-full text-sm bg-transparent"
               />
               <input
+                required
                 type="text"
+                name="e-mail"
                 placeholder="Adres E-mail"
                 className="border-0 border-b-2 border-getbold-blue text-[#233176] placeholder:text-[#233176] focus:ring-0 focus:border-getbold-blue p-0 py-4 w-full text-sm bg-transparent"
               />
               <input
                 type="text"
+                name="www"
                 placeholder="Strona www firmy (opcjonalnie)"
                 className="border-0 border-b-2 border-getbold-blue text-[#233176] placeholder:text-[#233176] focus:ring-0 focus:border-getbold-blue p-0 py-4 w-full text-sm bg-transparent"
               />
               <input
                 type="text"
+                name="project"
                 placeholder="Kilka słów o projekcie (opcjonalnie)"
                 className="border-0 border-b-2 border-getbold-blue text-[#233176] placeholder:text-[#233176] focus:ring-0 focus:border-getbold-blue p-0 py-4 w-full text-sm bg-transparent"
               />
               <textarea
-                name=""
-                id=""
+                required
+                name="message"
                 rows={8}
                 placeholder="Twoja wiadomość"
                 className="w-full resize-none border-0 border-b-2 border-getbold-blue text-[#233176] placeholder:text-[#233176] focus:ring-0 focus:border-getbold-blue p-0 mt-[54px] text-sm bg-transparent"
               ></textarea>
               <div className="flex items-start space-x-8 w-full mb-12">
                 <input
+                  required
                   className="mt-0.5 text-[#EF6278] bg-[#FFA3B1] w-[18px] h-[18px] outline-none border-2 border-[#EF6278] rounded-none focus:ring-0"
                   type="checkbox"
                 />
@@ -76,7 +90,10 @@ export const ContactForm: React.FC = () => {
                   deleniti tempora. Qui qui sed esse.
                 </p>
               </div>
-              <button className="rounded-3xl bg-getbold-blue w-full py-3 text-white font-semibold pointer">
+              <button
+                type="submit"
+                className="rounded-3xl bg-getbold-blue w-full py-3 text-white font-semibold pointer"
+              >
                 Wyślij wiadomość!
               </button>
             </div>
