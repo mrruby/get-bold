@@ -19,7 +19,7 @@ export const HomeAboutPeople = () => {
           </h4>
           <p className="text-base text-center">Strategiczny marketing</p>
           <Link to="o-nas">
-            <button className="rounded-3xl bg-getbold-btn-pink px-8 py-3 text-white font-semibold pointer mt-[2rem]">
+            <button className="rounded-3xl bg-getbold-btn-pink px-8 py-3 text-white font-semibold pointer mt-[2rem] hover:shadow-lg hover:bg-getbold-pink transition-all">
               Dowiedz się więcej!
             </button>
           </Link>
