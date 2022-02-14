@@ -1,6 +1,7 @@
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import { AboutAda } from "../Home/About/modules/ada";
 
 export const TeamAbout = () => {
   return (
@@ -10,25 +11,8 @@ export const TeamAbout = () => {
       </h3>
 
       <div className="flex flex-col lg:flex-row max-w-[1500px] mb-16 lg:mb-[168px] px-8 relative">
-        <img
-          src="../../../../about-light.png"
-          alt=""
-          className="absolute -top-10 left-16 z-30 w-[100px] h-auto"
-        />
-        <img
-          src="../../../../about-note.svg"
-          alt=""
-          className="absolute top-36 -left-12 z-30 w-[200px] h-auto"
-        />
-
-        <div className="w-full lg:w-1/2 flex lg:justify-center mb-12 lg:mb-0">
-          <div className="w-2/5 lg:w-[450px] lg:h-[450px] pt-1 pb-2 px-2 lg:p-0 bg-image-about-ada flex items-start justify-center">
-            <StaticImage
-              src="../../images/about-ada.png"
-              alt="ada"
-              className="lg:w-[427px] h-auto lg:mt-1"
-            />
-          </div>
+        <div className="w-full lg:w-1/2 flex items-center justify-center">
+          <AboutAda />
         </div>
         <div className="w-full lg:w-1/2">
           <h4 className="text-xl lg:text-2xl font-bold mb-[30px]">
