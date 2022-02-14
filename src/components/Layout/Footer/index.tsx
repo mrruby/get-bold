@@ -1,5 +1,8 @@
+import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
 import { Parallax } from "react-scroll-parallax";
 
 interface Props {
@@ -18,18 +21,43 @@ const Footer: React.FC<Props> = ({ isWhiteBg }) => {
           />
           <nav>
             <ul className="space-y-4 text-getbold-btn-pink font-bold mb-[3.5rem]">
-              <li>Home</li>
-              <li>Marketing</li>
-              <li>O Nas</li>
-              <li>Proces</li>
-              <li>Opinie</li>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/oferta">Oferta</Link>
+              </li>
+              <li>
+                <Link to="/o-nas">O Nas</Link>
+              </li>
+              <li>
+                <Link to="/portfolio">Portfolio</Link>
+              </li>
+              <li>
+                <Link to="/blog">Blog</Link>
+              </li>
+              <li>
+                <Link to="/kontakt">Kontakt</Link>
+              </li>
             </ul>
           </nav>
-          <div className="flex space-x-8 items-center">
-            <StaticImage src="../../../images/facebook.svg" alt="facebook" />
-            <StaticImage src="../../../images/linkedin.svg" alt="linkedin" />
-            <StaticImage src="../../../images/email.svg" alt="email" />
-          </div>
+          <ul className="flex text-2xl items-center space-x-8 mt-10">
+            <a href="https://facebook.com/">
+              <li>
+                <FaFacebookF />
+              </li>
+            </a>
+            <a href="https://linkedin.com/">
+              <li>
+                <FaLinkedinIn />
+              </li>
+            </a>
+            <a href="mailto:kontakt@getbold.agency/">
+              <li>
+                <IoMdMail />
+              </li>
+            </a>
+          </ul>
         </div>
         <div className="w-full lg:w-2/3 z-30">
           <p className="tracking-[4px] text-xl font-bebas text-getbold-pink mb-4">
@@ -81,7 +109,7 @@ const Footer: React.FC<Props> = ({ isWhiteBg }) => {
                   deleniti tempora. Qui qui sed esse.
                 </p>
               </div>
-              <button className="rounded-3xl bg-getbold-blue w-full md:w-1/2 sm:ml-8 py-3 text-white font-semibold pointer">
+              <button className="rounded-3xl bg-getbold-blue w-full md:w-1/2 sm:ml-8 py-3 text-white font-semibold pointer hover:shadow-lg hover:bg-[#2d3786] transition-all">
                 Wyślij wiadomość!
               </button>
             </div>
