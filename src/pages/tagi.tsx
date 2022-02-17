@@ -1,6 +1,6 @@
 import React from "react";
 import { ParallaxProvider } from "react-scroll-parallax";
-import TagsLayout from "../components/Layout/TagsLayout";
+import Layout from "../components/Layout/Layout";
 import { HeadingTags } from "../components/Tags/heading";
 import { TagsList } from "../components/Tags/tagsList";
 import { TagsProvider } from "../utils/context/tagsContext";
@@ -9,10 +9,38 @@ const TagsPage = () => {
   return (
     <ParallaxProvider>
       <TagsProvider>
-        <TagsLayout title={"Tagi - GetBold"}>
+        <Layout
+          title={"Tagi - GetBold"}
+          yellowCircle={false}
+          yellowCircle2={false}
+          orangeHex={false}
+          grayTriangle={false}
+          pinkTriangle={false}
+          blueHex={false}
+          redCircle={false}
+          yellowSquare={false}
+          blueSquare={false}
+          heroBG={true}
+          firstMidBG={false}
+          secMidBG={false}
+          isSubPage={true}
+          cube={false}
+          graph={false}
+          card={false}
+          leftCloud={false}
+          rightCloud={false}
+          flower={false}
+          coin={false}
+          chat={false}
+          ball={false}
+          pinkChart={false}
+          blueCube={false}
+          isContactPage={false}
+          footerWhiteBg={false}
+        >
           <HeadingTags />
           <TagsList />
-        </TagsLayout>
+        </Layout>
       </TagsProvider>
     </ParallaxProvider>
   );

@@ -5,7 +5,7 @@ import { Parallax } from "react-scroll-parallax";
 export const HomeHeroImage = () => {
   return (
     <Parallax
-      speed={40}
+      speed={10}
       className="w-full lg:w-3/5 flex items-center justify-center"
     >
       <StaticImage

@@ -6,7 +6,7 @@ export const HomePortfolioHeading = () => {
   return (
     <Parallax
       speed={10}
-      className="flex flex-col items-center lg:w-[71rem] px-8 mb-14"
+      className="flex flex-col items-center lg:w-[71rem] mb-14"
     >
       <h2 className="tracking-[4px] text-xl font-bebas text-getbold-pink mb-6">
         Portfolio

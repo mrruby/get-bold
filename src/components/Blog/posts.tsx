@@ -8,7 +8,7 @@ export const PostsBlog = () => {
   return (
     <div className="w-full">
       <ul className="grid grid-cols-1 xl:grid-cols-2 gap-8">
-        {blog.map((post, index) => {
+        {blog.slice(0, 6).map((post, index) => {
           return (
             <li key={index}>
               <div className="bg-white h-[33rem] max-w-[395px] flex flex-col items-center drop-shadow-md rounded-xl">

@@ -1,6 +1,7 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { Parallax } from "react-scroll-parallax";
+import { HomeOffertBox } from "../../../helpers/HomeOffertBox";
 
 export const HomeOffertBoxes = () => {
   return (
@@ -8,70 +9,55 @@ export const HomeOffertBoxes = () => {
       speed={20}
       className="grid grid-cols-1 sm:grid-cols-3 gap-4 gap-y-24 lg:grid-cols-5 py-10 w-full border-y border-black border-opacity-[.05]"
     >
-      <div className="flex flex-col items-center justify-center">
-        <div className="w-full h-full flex items-center justify-center">
-          <StaticImage
-            src="../../../images/offert/influencer.svg"
-            alt="Influencer marketing"
-            className="w-[4.4375rem] h-auto"
-          />
-        </div>
-        <p className="font-bold mt-7 text-center">
-          Influencer <br /> marketing
-        </p>
-      </div>
+      <HomeOffertBox
+        img="../../../assets/offert/influencer.svg"
+        imgAlt="Influencer marketing - GetBold Agency"
+        title={
+          <>
+            Influencer <br /> marketing
+          </>
+        }
+      />
 
-      <div className="flex flex-col items-center justify-center">
-        <div className="w-full h-full flex items-center justify-center">
-          <StaticImage
-            src="../../../images/offert/socialmedia.svg"
-            alt="Social media"
-            className="w-[4.5625rem] h-auto"
-          />
-        </div>
-        <p className="font-bold mt-7 text-center">
-          Social <br /> media
-        </p>
-      </div>
+      <HomeOffertBox
+        img="../../../assets/offert/socialmedia.svg"
+        imgAlt="Social media - GetBold Agency"
+        title={
+          <>
+            Social <br /> media
+          </>
+        }
+      />
 
-      <div className="flex flex-col items-center justify-center">
-        <div className="w-full h-full flex items-center justify-center">
-          <StaticImage
-            src="../../../images/offert/consultation.svg"
-            alt="Konsultacje kreatywne"
-            className="w-[5.6875rem] h-auto"
-          />
-        </div>
-        <p className="font-bold mt-7 text-center">
-          Konsultacje <br /> kreatywne
-        </p>
-      </div>
+      <HomeOffertBox
+        img="../../../assets/offert/consultation.svg"
+        imgAlt="Konsultacje kreatywne - GetBold Agency"
+        title={
+          <>
+            Konsultacje <br /> kreatywne
+          </>
+        }
+      />
 
-      <div className="flex flex-col items-center justify-center">
-        <div className="w-full h-full flex items-center justify-center">
-          <StaticImage
-            src="../../../images/offert/fbads.png"
-            alt="Facebook Ads"
-            className="w-[5.1875rem] h-auto"
-          />
-        </div>
-        <p className="font-bold mt-7 text-center">
-          Facebook <br /> Ads
-        </p>
-      </div>
+      <HomeOffertBox
+        img="../../../assets/offert/fbads.png"
+        imgAlt="Facebook Ads - GetBold Agency"
+        title={
+          <>
+            Facebook <br /> Ads
+          </>
+        }
+      />
 
-      <div className="flex flex-col items-center justify-center">
-        <div className="w-full h-full flex items-center justify-center">
-          <StaticImage
-            src="../../../images/offert/tiktokads.png"
-            alt="TikTok Ads"
-            className="w-[4.875rem] h-auto"
-          />
-        </div>
-        <p className="font-bold mt-7 text-center">
-          TikTok <br /> Ads
-        </p>
-      </div>
+      <HomeOffertBox
+        img="../../../assets/offert/tiktokads.png"
+        imgAlt="TikTok Ads - GetBold Agency"
+        title={
+          <>
+            TikTok <br /> Ads
+          </>
+        }
+      />
     </Parallax>
   );
 };

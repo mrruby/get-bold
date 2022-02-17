@@ -2,6 +2,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
+import { Button } from "../../helpers/Button";
 
 export const ContactForm: React.FC = () => {
   return (
@@ -90,12 +91,12 @@ export const ContactForm: React.FC = () => {
                   deleniti tempora. Qui qui sed esse.
                 </p>
               </div>
-              <button
-                type="submit"
-                className="rounded-3xl bg-getbold-blue w-full py-3 text-white font-semibold pointer"
-              >
-                Wyślij wiadomość!
-              </button>
+              <Button
+                type={"submit"}
+                color={"blue"}
+                text={"Wyślij wiadomość!"}
+                isWFull={true}
+              />
             </div>
           </form>
         </div>

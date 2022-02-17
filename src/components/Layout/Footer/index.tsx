@@ -4,15 +4,35 @@ import React from "react";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { Parallax } from "react-scroll-parallax";
+import { LeftCloud, RightCloud } from "../../../helpers/LayoutElements";
 
 interface Props {
   isWhiteBg: boolean;
+  isContactPage: boolean;
 }
 
-const Footer: React.FC<Props> = ({ isWhiteBg }) => {
+const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
+  if (isContactPage)
+    return (
+      <div className="w-full h-[5.125rem] mt-[87px] bg-[#FFAAB7]">
+        <nav className="2xl:px-[21rem] px-8 xl:px-[150px] h-full">
+          <ul className="flex flex-col md:flex-row justify-center md:justify-start items-start md:items-center space-y-2 md:space-y-0 md:space-x-12 text-getbold-btn-pink text-xs h-full">
+            <li>
+              <Link to="/polityka-prywatnosci">Polityka Prywatności</Link>
+            </li>
+            <li>
+              <Link to="/polityka-ochrony-danych-osobowych">
+                Polityka ochrony danych osobowych
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    );
+
   return (
     <footer className="2xl:px-[21rem] px-8 xl:px-[150px] py-24 lg:py-40 relative w-full bg-[#FFB9C4]">
-      <div className="flex flex-col lg:flex-row">
+      <div className="flex flex-col lg:flex-row mb-8">
         <div className="w-full lg:w-1/3 mb-20 lg:m-0 z-30">
           <StaticImage
             src="../../../images/logo-footer.svg"
@@ -63,7 +83,7 @@ const Footer: React.FC<Props> = ({ isWhiteBg }) => {
           <p className="tracking-[4px] text-xl font-bebas text-getbold-pink mb-4">
             Potrzebujesz wsparcia?
           </p>
-          <h4 className="font-bold text-5xl mb-[54px] ">
+          <h4 className="font-bold text-4xl mb-[54px] ">
             Daj znać, oddzwonimy!
           </h4>
           <form>
@@ -116,9 +136,10 @@ const Footer: React.FC<Props> = ({ isWhiteBg }) => {
           </form>
         </div>
       </div>
-      <div className="w-full h-[5.125rem] mt-[87px] bg-[#FFAAB7] absolute left-0">
+
+      <div className="w-full h-[5.125rem] mt-[87px] bg-[#FFAAB7] absolute left-0 bottom-0">
         <nav className="2xl:px-[21rem] px-8 xl:px-[150px] h-full">
-          <ul className="flex items-center space-x-12 text-getbold-btn-pink h-full">
+          <ul className="flex flex-col md:flex-row justify-center md:justify-start items-start md:items-center space-y-2 md:space-y-0 md:space-x-12 text-getbold-btn-pink text-xs h-full">
             <li>
               <Link to="/polityka-prywatnosci">Polityka Prywatności</Link>
             </li>
@@ -150,21 +171,18 @@ const Footer: React.FC<Props> = ({ isWhiteBg }) => {
         </svg>
       )}
 
-      {/* right cloud */}
-      <Parallax
-        speed={10}
-        className="absolute top-8 md:top-0 -right-24 md:-right-40 z-10 w-[250px] md:w-[400px] h-auto"
-      >
-        <img src="../../../../footer-cloud-right.svg" alt="cloud" />
-      </Parallax>
+      <RightCloud
+        mobileTop="top-8"
+        top="md:top-0"
+        mobileRight="-right-24"
+        right="md:-right-0"
+      />
 
-      {/* left cloud */}
-      <Parallax
-        speed={-20}
-        className="absolute top-[500px] -left-24 md:-left-40 z-10 w-[250px] md:w-[400px] h-auto"
-      >
-        <img src="../../../../footer-cloud-left.svg" alt="cloud2" />
-      </Parallax>
+      <LeftCloud
+        mobileTop="top-[500px]"
+        mobileLeft="-left-24"
+        left="md:-left-40"
+      />
     </footer>
   );
 };

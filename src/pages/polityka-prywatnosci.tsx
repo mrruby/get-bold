@@ -1,11 +1,39 @@
 import React from "react";
 import { ParallaxProvider } from "react-scroll-parallax";
-import SubpageLayout from "../components/Layout/SubpageLayout";
+import Layout from "../components/Layout/Layout";
 
 export const PrivacyPolicyPage = () => {
   return (
     <ParallaxProvider>
-      <SubpageLayout title={"Polityka Prywatności - GetBold"}>
+      <Layout
+        title={"Polityka Prywatności - GetBold"}
+        yellowCircle={false}
+        yellowCircle2={false}
+        orangeHex={false}
+        grayTriangle={false}
+        pinkTriangle={false}
+        blueHex={false}
+        redCircle={false}
+        yellowSquare={false}
+        blueSquare={false}
+        heroBG={true}
+        firstMidBG={false}
+        secMidBG={false}
+        isSubPage={true}
+        cube={false}
+        graph={false}
+        card={false}
+        leftCloud={false}
+        rightCloud={false}
+        flower={false}
+        coin={false}
+        chat={false}
+        ball={false}
+        pinkChart={false}
+        blueCube={false}
+        isContactPage={false}
+        footerWhiteBg={false}
+      >
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel
           eros a libero porttitor suscipit a a metus. Aenean facilisis eu turpis
@@ -174,7 +202,7 @@ export const PrivacyPolicyPage = () => {
           Pellentesque sit amet rutrum dui, nec sollicitudin augue. Praesent
           convallis maximus urna, ut semper erat maximus in.
         </p>
-      </SubpageLayout>
+      </Layout>
     </ParallaxProvider>
   );
 };

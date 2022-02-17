@@ -7,7 +7,12 @@ interface Props {
   logo: string;
 }
 
-export const PortfolioItem: React.FC<Props> = ({ img, title, tag, logo }) => {
+export const HomePortfolioItem: React.FC<Props> = ({
+  img,
+  title,
+  tag,
+  logo,
+}) => {
   return (
     <div className=" bg-white h-[24rem] max-w-[20rem] flex flex-col items-center drop-shadow-md rounded-2xl">
       <div className="h-4/5 w-full relative bg-white rounded-t-2xl">

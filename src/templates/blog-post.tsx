@@ -5,7 +5,7 @@ import { HeadingBlogPost } from "../components/BlogPost/heading";
 import { SidebarBlogPost } from "../components/BlogPost/sidebar";
 import { ContentBlogPost } from "../components/BlogPost/content";
 import { ParallaxProvider } from "react-scroll-parallax";
-import BlogPostLayout from "../components/Layout/BlogPostLayout";
+import Layout from "../components/Layout/Layout";
 
 type GraphQLResult = {
   markdownRemark: markdownRemark;
@@ -16,7 +16,35 @@ const BlogPost: React.FC<PageProps<GraphQLResult>> = ({ data }) => {
 
   return (
     <ParallaxProvider>
-      <BlogPostLayout title={`${post.frontmatter.title} - GetBold`}>
+      <Layout
+        title={`${post.frontmatter.title} - GetBold`}
+        yellowCircle={true}
+        yellowCircle2={false}
+        orangeHex={false}
+        grayTriangle={false}
+        pinkTriangle={false}
+        blueHex={false}
+        redCircle={false}
+        yellowSquare={false}
+        blueSquare={false}
+        heroBG={true}
+        firstMidBG={false}
+        secMidBG={false}
+        isSubPage={true}
+        cube={false}
+        graph={false}
+        card={false}
+        leftCloud={true}
+        rightCloud={true}
+        flower={false}
+        coin={false}
+        chat={false}
+        ball={false}
+        pinkChart={false}
+        blueCube={false}
+        isContactPage={false}
+        footerWhiteBg={true}
+      >
         <div className="flex flex-col">
           <HeadingBlogPost
             category={post.frontmatter.category}
@@ -34,7 +62,7 @@ const BlogPost: React.FC<PageProps<GraphQLResult>> = ({ data }) => {
             <SidebarBlogPost />
           </div>
         </div>
-      </BlogPostLayout>
+      </Layout>
     </ParallaxProvider>
   );
 };

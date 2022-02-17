@@ -1,18 +1,44 @@
 import React from "react";
 import { ParallaxProvider } from "react-scroll-parallax";
-import { AboutElements } from "../components/About/elements";
 import { HeadingAbout } from "../components/About/heading";
 import { TeamAbout } from "../components/About/team";
-import SubpageLayout from "../components/Layout/SubpageLayout/index";
+import Layout from "../components/Layout/Layout";
 
 const AboutPage = () => {
   return (
     <ParallaxProvider>
-      <SubpageLayout title={"O nas - GetBold"}>
+      <Layout
+        title={"O nas - GetBold"}
+        yellowCircle={true}
+        yellowCircle2={false}
+        orangeHex={true}
+        grayTriangle={false}
+        pinkTriangle={false}
+        blueHex={false}
+        redCircle={false}
+        yellowSquare={false}
+        blueSquare={false}
+        heroBG={true}
+        firstMidBG={false}
+        secMidBG={false}
+        isSubPage={true}
+        cube={true}
+        graph={true}
+        card={true}
+        leftCloud={true}
+        rightCloud={true}
+        flower={true}
+        coin={false}
+        chat={true}
+        ball={false}
+        pinkChart={false}
+        blueCube={false}
+        isContactPage={false}
+        footerWhiteBg={true}
+      >
         <HeadingAbout />
         <TeamAbout />
-        <AboutElements />
-      </SubpageLayout>
+      </Layout>
     </ParallaxProvider>
   );
 };

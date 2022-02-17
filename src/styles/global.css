@@ -9,12 +9,6 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
-
-body {
-  position: relative;
-  overflow-y: hidden;
-}
-
 .bg-image-home {
   background-image: url("../../static/bg.svg");
   background-size: cover;

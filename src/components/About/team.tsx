@@ -1,17 +1,16 @@
-import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
-import { AboutAda } from "../Home/About/modules/ada";
+import { AboutAda } from "../../helpers/AboutAda";
 
 export const TeamAbout = () => {
   return (
     <div className="py-24 lg:py-[158px] lg:max-w-[1176px] flex flex-col items-center">
-      <h3 className="text-3xl lg:text-5xl font-medium mb-12 lg:mb-[100px] px-8">
+      <h3 className="text-2xl lg:text-5xl font-medium mb-16 lg:mb-[100px] px-8">
         Sprawdź <span className="font-bold">nasz zespół:</span>
       </h3>
 
       <div className="flex flex-col lg:flex-row max-w-[1500px] mb-16 lg:mb-[168px] px-8 relative">
-        <div className="w-full lg:w-1/2 flex items-center justify-center">
+        <div className="w-full lg:w-1/2 flex items-center justify-center mb-16 lg:mb-0">
           <AboutAda />
         </div>
         <div className="w-full lg:w-1/2">

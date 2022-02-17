@@ -9,7 +9,7 @@ const HomeOffertComponent = () => {
       data-aos="fade-zoom-in"
       data-aos-easing="ease-in-out"
       data-aos-delay="600"
-      className="relative px-8 py-40 w-full flex flex-col items-center"
+      className="relative px-8 py-8 md:py-40 w-full flex flex-col items-center"
     >
       <HomeOffertHeading />
       <HomeOffertBoxes />

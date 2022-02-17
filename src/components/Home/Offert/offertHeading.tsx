@@ -5,7 +5,7 @@ export const HomeOffertHeading = () => {
   return (
     <Parallax
       speed={10}
-      className="flex flex-col items-center lg:max-w-[71rem] px-8 mb-14"
+      className="flex flex-col items-center lg:max-w-[71rem] lg:mb-14"
     >
       <h2 className="tracking-[4px] text-xl font-bebas text-getbold-pink mb-6">
         Oferta

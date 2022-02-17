@@ -1,6 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 import { Parallax } from "react-scroll-parallax";
+import { Button } from "../../../helpers/Button";
 
 export const HomeHeroHeading = () => {
   return (
@@ -34,10 +35,13 @@ export const HomeHeroHeading = () => {
           Po prostu.
         </span>
       </h2>
-      <Link to="">
-        <button className="rounded-3xl bg-getbold-btn-pink px-8 py-3 text-white font-semibold hover:shadow-lg hover:bg-getbold-pink transition-all">
-          Sprawdź, co potrafimy!
-        </button>
+      <Link to="/portfolio">
+        <Button
+          type="button"
+          text="Sprawdź, co potrafimy!"
+          isWFull={false}
+          color="pink"
+        />
       </Link>
     </Parallax>
   );

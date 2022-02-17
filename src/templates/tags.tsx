@@ -1,14 +1,10 @@
 import React from "react";
-import { graphql, PageProps } from "gatsby";
-import { markdownRemark } from "../utils/types/markdown-remark";
-import { HeadingBlogPost } from "../components/BlogPost/heading";
+import { graphql } from "gatsby";
 import { SidebarBlogPost } from "../components/BlogPost/sidebar";
-import { ContentBlogPost } from "../components/BlogPost/content";
 import { ParallaxProvider } from "react-scroll-parallax";
-import BlogPostLayout from "../components/Layout/BlogPostLayout";
-import TagsLayout from "../components/Layout/TagsLayout";
 import { HeadingTagTemplate } from "../components/TagAndCatTemplate/heading";
 import { TagsPosts } from "../components/TagAndCatTemplate/tagsPosts";
+import Layout from "../components/Layout/Layout";
 
 interface Props {
   data: any;
@@ -23,13 +19,41 @@ const TagPage: React.FC<Props> = ({ data, pageContext }) => {
 
   return (
     <ParallaxProvider>
-      <TagsLayout title={`${tag} - GetBold`}>
+      <Layout
+        title={`${tag} - GetBold`}
+        yellowCircle={true}
+        yellowCircle2={false}
+        orangeHex={false}
+        grayTriangle={false}
+        pinkTriangle={false}
+        blueHex={false}
+        redCircle={false}
+        yellowSquare={false}
+        blueSquare={false}
+        heroBG={true}
+        firstMidBG={false}
+        secMidBG={false}
+        isSubPage={true}
+        cube={false}
+        graph={false}
+        card={false}
+        leftCloud={true}
+        rightCloud={true}
+        flower={false}
+        coin={false}
+        chat={false}
+        ball={false}
+        pinkChart={false}
+        blueCube={false}
+        isContactPage={false}
+        footerWhiteBg={true}
+      >
         <HeadingTagTemplate head={tag} tag={true} />
         <div className="flex flex-col md:items-start md:flex-row space-y-12 md:space-y-0 md:space-x-12 pb-24 p-8 lg:max-w-[1176px]">
           <TagsPosts posts={posts} />
           <SidebarBlogPost />
         </div>
-      </TagsLayout>
+      </Layout>
     </ParallaxProvider>
   );
 };

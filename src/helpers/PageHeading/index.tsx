@@ -1,16 +1,30 @@
-import React from "react";
+import React, { ReactElement } from "react";
 
-export const HeadingOffert = () => {
+interface Props {
+  firstPartTitle?: string | ReactElement;
+  circledText?: string;
+  secPartTitle?: string | ReactElement;
+  paragraph?: string;
+  pageName?: string;
+}
+
+export const PageHeading: React.FC<Props> = ({
+  firstPartTitle,
+  circledText,
+  secPartTitle,
+  paragraph,
+  pageName,
+}) => {
   return (
     <main className="p-8 -mt-40 pt-64 -z-10 flex flex-col items-center text-center">
       <h2 className="text-xl font-bebas text-[#EF6278] mb-[22px] lg:w-[1024px]">
-        OFERTA
+        {pageName}
       </h2>
       <h3 className="text-3xl lg:text-4xl lg:w-[1024px] leading-snug text-[#1F2957] font-medium mb-[30px]">
-        Docieramy do Twoich klientów <br />{" "}
+        {firstPartTitle}
         <span className="font-bold">
           <span className="relative whitespace-pre">
-            najlepszą
+            {circledText}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="absolute -top-2 -left-2 -z-10"
@@ -28,14 +42,11 @@ export const HeadingOffert = () => {
                 stroke-width="4"
               />
             </svg>
-          </span>{" "}
-          możliwą drogą.
+          </span>
+          {secPartTitle}
         </span>
       </h3>
-      <p className="text-base font-medium">
-        A Ty zawsze wiesz, jak nam idzie. Jak dokładnie wygląda współpraca z
-        nami?
-      </p>
+      <p className="text-base font-medium">{paragraph}</p>
     </main>
   );
 };
