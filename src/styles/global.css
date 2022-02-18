@@ -9,6 +9,7 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+
 .bg-image-home {
   background-image: url("../../static/bg.svg");
   background-size: cover;

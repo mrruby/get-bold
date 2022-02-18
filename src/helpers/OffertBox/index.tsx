@@ -2,7 +2,7 @@ import React from "react";
 
 interface Props {
   img: string;
-  imgWidth: string;
+  styling: string;
   title: string;
   text: string;
   isBigger: boolean;
@@ -10,7 +10,7 @@ interface Props {
 
 export const OffertBox: React.FC<Props> = ({
   img,
-  imgWidth,
+  styling,
   title,
   text,
   isBigger,
@@ -21,11 +21,7 @@ export const OffertBox: React.FC<Props> = ({
         !isBigger && "my-10"
       }`}
     >
-      <img
-        src={img}
-        alt={`${title} - GetBold Agency`}
-        className={`w-[${imgWidth}] h-auto mb-[30px]`}
-      />
+      <img src={img} alt={`${title} - GetBold Agency`} className={styling} />
       <div className="w-full flex flex-col items-center">
         <h4 className="font-extrabold uppercase text-sm text-[#EF6278] mb-[18px]">
           {title}

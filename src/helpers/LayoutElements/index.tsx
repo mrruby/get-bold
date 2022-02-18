@@ -27,7 +27,7 @@ export const Coin: React.FC<Props> = ({
   mobileBottom,
 }) => {
   const Parallax = useParallax<HTMLImageElement>({
-    translateX: [startScroll, endScroll],
+    translateX: ["0px", "200px"],
   });
 
   return (

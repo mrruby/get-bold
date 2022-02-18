@@ -8,7 +8,7 @@ export const BoxesOffert = () => {
       <OffertBox
         img="../../../assets/offert/light.png"
         title="Pomysł"
-        imgWidth="57px"
+        styling="w-[57px] h-auto mb-[30px]"
         text="Omawiamy Twoją sytuację, cele i plan działania. Musimy wiedzieć, że
           gramy do jednej bramki!"
         isBigger={false}
@@ -17,7 +17,7 @@ export const BoxesOffert = () => {
       <OffertBox
         img="../../../assets/offert/sprocket.svg"
         title="Działanie"
-        imgWidth="98px"
+        styling="w-[98px] h-auto mb-[30px]"
         text="Otrzymujesz od nas harmonogram działań i odpowiedź na każde nurtujące
         Cię pytanie. Pewność to podstawa!"
         isBigger={true}
@@ -26,7 +26,7 @@ export const BoxesOffert = () => {
       <OffertBox
         img="../../../assets/offert/effect.png"
         title="Efekt"
-        imgWidth="170px"
+        styling="w-[170px] h-auto mb-[30px]"
         text="Na bieżąco przedstawiamy Ci raporty, z konkretnymi liczbami, bez
         skomplikowanych marketingowych zwrotów."
         isBigger={false}
