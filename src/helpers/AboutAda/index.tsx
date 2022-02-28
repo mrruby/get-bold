@@ -16,10 +16,10 @@ export const AboutAda = () => {
       />
 
       <div className="md:w-[24rem] lg:h-[24rem] pt-1 pb-2 px-2 lg:p-0 bg-image-about-ada flex items-start justify-center">
-        <StaticImage
-          src="../../images/about-ada.png"
+        <img
+          src="../../ada.jpg"
           alt="ada"
-          className="md:w-[23rem] h-auto lg:mt-1"
+          className="h-[95%] w-[95%] mt-1 rounded-[143px] object-cover"
         />
       </div>
     </div>

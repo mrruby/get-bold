@@ -1,6 +1,7 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { AboutAda } from "../../helpers/AboutAda";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 export const TeamAbout = () => {
   return (
@@ -45,12 +46,12 @@ export const TeamAbout = () => {
             Bezcenny!
           </p>
 
-          <div className="flex space-x-4 mt-[20px]">
-            <a href="https://facebook.com">
-              <StaticImage src="../../images/offert/fb.svg" alt="fb" />
+          <div className="flex text-2xl items-center space-x-8 mt-[20px]">
+            <a href="https://facebook.com/">
+              <FaFacebookF />
             </a>
-            <a href="https://facebook.com">
-              <StaticImage src="../../images/offert/linkedin.svg" alt="fb" />
+            <a href="https://linkedin.com/">
+              <FaLinkedinIn />
             </a>
           </div>
         </div>
