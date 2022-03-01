@@ -51,7 +51,7 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
   blueCube,
 }) => {
   return (
-    <>
+    <div className="max-w-screen overflow-x-hidden">
       {yellowCircle && (
         <YellowCircle
           mobileTop="top-[48rem]"
@@ -215,6 +215,6 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
           right="md:right-[400px]"
         />
       )}
-    </>
+    </div>
   );
 };

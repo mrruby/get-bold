@@ -69,7 +69,7 @@ const Layout: React.FC<Props> = ({
         {children}
       </div>
       <Footer isContactPage={isContactPage} isWhiteBg={footerWhiteBg} />
-      {/*<LayoutElements
+      <LayoutElements
         yellowCircle={yellowCircle}
         yellowCircle2={yellowCircle2}
         orangeHex={orangeHex}
@@ -92,8 +92,8 @@ const Layout: React.FC<Props> = ({
         chat={chat}
         ball={ball}
         pinkChart={pinkChart}
-      blueCube={blueCube}
-      />*/}
+        blueCube={blueCube}
+      />
     </div>
   );
 };
