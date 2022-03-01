@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "gatsby";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 interface Props {
   img: string;
@@ -17,7 +17,11 @@ export const HomePortfolioItem: React.FC<Props> = ({
 }) => {
   return (
     <Link to="/portfolio">
-      <div className=" bg-white h-[24rem] max-w-[20rem] flex flex-col items-center drop-shadow-md rounded-2xl">
+      <motion.div
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        className=" bg-white h-[24rem] max-w-[20rem] flex flex-col items-center drop-shadow-md rounded-2xl relative"
+      >
         <div className="h-4/5 w-full relative bg-white rounded-t-2xl">
           <img
             src={logo}
@@ -35,7 +39,7 @@ export const HomePortfolioItem: React.FC<Props> = ({
           <p className="font-extrabold mb-2">{title}</p>
           <p className="text-getbold-pink font-medium">{tag}</p>
         </div>
-      </div>
+      </motion.div>
     </Link>
   );
 };
