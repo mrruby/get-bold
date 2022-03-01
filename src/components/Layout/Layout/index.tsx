@@ -46,7 +46,7 @@ const Layout: React.FC<Props> = ({
   footerWhiteBg,
 }) => {
   return (
-    <div className="antialiased min-h-screen max-w-full overflow-hidden text-sm font-montserrat text-getbold-blue flex flex-col scroll-smooth">
+    <div className="antialiased min-h-screen max-w-full overflow-hidden text-sm font-montserrat text-getbold-blue flex flex-col scroll-smooth relative">
       <Helmet>
         <html lang="pl" />
         <title>{title}</title>
@@ -69,6 +69,7 @@ const Layout: React.FC<Props> = ({
         {children}
       </div>
       <Footer isContactPage={isContactPage} isWhiteBg={footerWhiteBg} />
+
       <LayoutElements
         yellowCircle={yellowCircle}
         yellowCircle2={yellowCircle2}

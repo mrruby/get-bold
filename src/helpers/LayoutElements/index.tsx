@@ -329,7 +329,7 @@ export const HeroBackground: React.FC<Props> = ({
         bottom && bottom
       } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
         mobileLeft && mobileLeft
-      } ${mobileBottom && mobileBottom} min-h-full w-full bg-image-home -z-20`}
+      } ${mobileBottom && mobileBottom} h-screen w-full bg-image-home -z-20`}
     ></div>
   );
 };
