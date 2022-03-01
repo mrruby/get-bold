@@ -15,11 +15,12 @@ export const HomePortfolioItem: React.FC<Props> = ({
   tag,
   logo,
 }) => {
+  const isMobile = window.innerWidth < 768;
   return (
     <Link to="/portfolio">
       <motion.div
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
+        whileHover={{ scale: isMobile ? 0 : 1.1 }}
+        whileTap={{ scale: isMobile ? 0 : 0.9 }}
         className=" bg-white h-[24rem] max-w-[20rem] flex flex-col items-center drop-shadow-md rounded-2xl"
       >
         <div className="h-4/5 w-full relative bg-white rounded-t-2xl">
