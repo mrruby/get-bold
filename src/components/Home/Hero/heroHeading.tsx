@@ -1,11 +1,10 @@
 import { Link } from "gatsby";
 import React from "react";
-import { Parallax } from "react-scroll-parallax";
 import { Button } from "../../../helpers/Button";
 
 export const HomeHeroHeading = () => {
   return (
-    <Parallax speed={10} className="w-full mb-10 lg:m-0 lg:w-2/5 relative">
+    <div className="w-full mb-10 lg:m-0 lg:w-2/5 relative">
       <h3 className="text-getbold-btn-pink font-bebas text-2xl mb-4 lg:mb-8">
         Getbold.Agency
       </h3>
@@ -43,6 +42,6 @@ export const HomeHeroHeading = () => {
           color="pink"
         />
       </Link>
-    </Parallax>
+    </div>
   );
 };

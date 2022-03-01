@@ -56,7 +56,7 @@ const Layout: React.FC<Props> = ({
         ></meta>
       </Helmet>
 
-      <div className="container mx-auto max-w-7xl z-20">
+      <div className="container mx-auto max-w-7xl z-20 overflow-x-hidden">
         {screenComponent ? (
           <div className="min-h-screen flex flex-col">
             <Header />

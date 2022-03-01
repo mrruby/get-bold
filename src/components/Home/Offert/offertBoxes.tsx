@@ -1,14 +1,9 @@
-import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
-import { Parallax } from "react-scroll-parallax";
 import { HomeOffertBox } from "../../../helpers/HomeOffertBox";
 
 export const HomeOffertBoxes = () => {
   return (
-    <Parallax
-      speed={20}
-      className="grid grid-cols-1 sm:grid-cols-3 gap-4 gap-y-24 lg:grid-cols-5 py-10 w-full border-y border-black border-opacity-[.05]"
-    >
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 gap-y-24 lg:grid-cols-5 py-10 w-full border-y border-black border-opacity-[.05]">
       <HomeOffertBox
         img="../../../assets/offert/influencer.svg"
         imgAlt="Influencer marketing - GetBold Agency"
@@ -58,6 +53,6 @@ export const HomeOffertBoxes = () => {
           </>
         }
       />
-    </Parallax>
+    </div>
   );
 };

@@ -1,11 +1,10 @@
 import { Link } from "gatsby";
 import React from "react";
-import { Parallax } from "react-scroll-parallax";
 import { Button } from "../../../helpers/Button";
 
 export const HomeOffertContact = () => {
   return (
-    <Parallax speed={10} className="flex flex-col items-center lg:mt-14">
+    <div className="flex flex-col items-center lg:mt-14">
       <h4 className="text-lg lg:text-xl text-center font-bold mb-[2.25rem]">
         Chcesz otrzymać niezobowiązującą{" "}
         <span className="font-black relative">
@@ -79,6 +78,6 @@ export const HomeOffertContact = () => {
           text="Skontaktuj się!"
         />
       </Link>
-    </Parallax>
+    </div>
   );
 };

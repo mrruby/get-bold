@@ -1,13 +1,8 @@
-import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
-import { Parallax } from "react-scroll-parallax";
 
 export const HomeAboutHeading = () => {
   return (
-    <Parallax
-      speed={10}
-      className="flex flex-col items-center lg:w-[71rem] px-8 mb-14"
-    >
+    <div className="flex flex-col items-center lg:w-[71rem] px-8 mb-14">
       <h2 className="tracking-[4px] text-xl font-bebas text-getbold-pink mb-6">
         O nas
       </h2>
@@ -31,6 +26,6 @@ export const HomeAboutHeading = () => {
         </span>
       </h3>
       <p className="text-base text-center">Chcesz poznać mnie lepiej?</p>
-    </Parallax>
+    </div>
   );
 };

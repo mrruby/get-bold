@@ -1,5 +1,4 @@
 import React from "react";
-import { Parallax, useParallax } from "react-scroll-parallax";
 
 interface Props {
   startScroll?: string;
@@ -26,10 +25,6 @@ export const Coin: React.FC<Props> = ({
   mobileLeft,
   mobileBottom,
 }) => {
-  const Parallax = useParallax<HTMLImageElement>({
-    translateX: ["0px", "200px"],
-  });
-
   return (
     <img
       src="../../../../assets/layout-elements/coin.png"
@@ -39,7 +34,6 @@ export const Coin: React.FC<Props> = ({
       } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
         mobileLeft && mobileLeft
       } ${mobileBottom && mobileBottom} -z-10 h-auto}`}
-      ref={Parallax.ref}
     />
   );
 };
@@ -330,14 +324,13 @@ export const HeroBackground: React.FC<Props> = ({
   mobileBottom,
 }) => {
   return (
-    <Parallax
-      speed={20}
+    <div
       className={`absolute ${top && top} ${right && right} ${left && left} ${
         bottom && bottom
       } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
         mobileLeft && mobileLeft
       } ${mobileBottom && mobileBottom} min-h-full w-full bg-image-home -z-20`}
-    ></Parallax>
+    ></div>
   );
 };
 
@@ -352,8 +345,7 @@ export const FirstMidBackground: React.FC<Props> = ({
   mobileBottom,
 }) => {
   return (
-    <Parallax
-      speed={20}
+    <div
       className={`absolute ${top && top} ${right && right} ${left && left} ${
         bottom && bottom
       } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
@@ -361,7 +353,7 @@ export const FirstMidBackground: React.FC<Props> = ({
       } ${
         mobileBottom && mobileBottom
       } h-[1800px] w-full bg-image-home-portfolio -z-20`}
-    ></Parallax>
+    ></div>
   );
 };
 
@@ -376,8 +368,7 @@ export const SecMidBackground: React.FC<Props> = ({
   mobileBottom,
 }) => {
   return (
-    <Parallax
-      speed={20}
+    <div
       className={`absolute ${top && top} ${right && right} ${left && left} ${
         bottom && bottom
       } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
@@ -385,7 +376,7 @@ export const SecMidBackground: React.FC<Props> = ({
       } ${
         mobileBottom && mobileBottom
       } h-[1000px] w-full bg-image-home-references -z-20`}
-    ></Parallax>
+    ></div>
   );
 };
 
@@ -403,10 +394,6 @@ export const Cube: React.FC<Props> = ({
   mobileLeft,
   mobileBottom,
 }) => {
-  const Parallax = useParallax<HTMLImageElement>({
-    translateX: ["200px", "0px"],
-  });
-
   return (
     <img
       src="../../../../assets/layout-elements/cube.svg"
@@ -416,7 +403,6 @@ export const Cube: React.FC<Props> = ({
       } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
         mobileLeft && mobileLeft
       } ${mobileBottom && mobileBottom} -z-10 h-auto`}
-      ref={Parallax.ref}
     />
   );
 };
@@ -431,10 +417,6 @@ export const Graph: React.FC<Props> = ({
   mobileLeft,
   mobileBottom,
 }) => {
-  const Parallax = useParallax<HTMLImageElement>({
-    translateX: ["200px", "0px"],
-  });
-
   return (
     <img
       src="../../../../assets/layout-elements/graph.png"
@@ -444,7 +426,6 @@ export const Graph: React.FC<Props> = ({
       } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
         mobileLeft && mobileLeft
       } ${mobileBottom && mobileBottom} -z-10 h-auto`}
-      ref={Parallax.ref}
     />
   );
 };
@@ -459,10 +440,6 @@ export const Card: React.FC<Props> = ({
   mobileLeft,
   mobileBottom,
 }) => {
-  const Parallax = useParallax<HTMLImageElement>({
-    translateX: ["200px", "0px"],
-  });
-
   return (
     <img
       src="../../../../assets/layout-elements/card.png"
@@ -472,7 +449,6 @@ export const Card: React.FC<Props> = ({
       } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
         mobileLeft && mobileLeft
       } ${mobileBottom && mobileBottom} -z-10 h-auto`}
-      ref={Parallax.ref}
     />
   );
 };
@@ -487,10 +463,6 @@ export const LeftCloud: React.FC<Props> = ({
   mobileLeft,
   mobileBottom,
 }) => {
-  const Parallax = useParallax<HTMLImageElement>({
-    translateX: ["200px", "0px"],
-  });
-
   return (
     <img
       src="../../../../assets/layout-elements/footer-cloud-left.svg"
@@ -500,7 +472,6 @@ export const LeftCloud: React.FC<Props> = ({
       } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
         mobileLeft && mobileLeft
       } ${mobileBottom && mobileBottom} z-10 w-[250px] md:w-[400px] h-auto`}
-      ref={Parallax.ref}
     />
   );
 };
@@ -515,10 +486,6 @@ export const RightCloud: React.FC<Props> = ({
   mobileLeft,
   mobileBottom,
 }) => {
-  const Parallax = useParallax<HTMLImageElement>({
-    translateX: ["0px", "200px"],
-  });
-
   return (
     <img
       src="../../../../assets/layout-elements/footer-cloud-right.svg"
@@ -528,7 +495,6 @@ export const RightCloud: React.FC<Props> = ({
       } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
         mobileLeft && mobileLeft
       } ${mobileBottom && mobileBottom} z-10 w-[250px] md:w-[400px] h-auto`}
-      ref={Parallax.ref}
     />
   );
 };
@@ -543,10 +509,6 @@ export const Flower: React.FC<Props> = ({
   mobileLeft,
   mobileBottom,
 }) => {
-  const Parallax = useParallax<HTMLImageElement>({
-    translateX: ["0px", "200px"],
-  });
-
   return (
     <img
       src="../../../../assets/layout-elements/flower.svg"
@@ -556,7 +518,6 @@ export const Flower: React.FC<Props> = ({
       } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
         mobileLeft && mobileLeft
       } ${mobileBottom && mobileBottom} z-10`}
-      ref={Parallax.ref}
     />
   );
 };
@@ -571,10 +532,6 @@ export const Chat: React.FC<Props> = ({
   mobileLeft,
   mobileBottom,
 }) => {
-  const Parallax = useParallax<HTMLImageElement>({
-    translateX: ["0px", "200px"],
-  });
-
   return (
     <img
       src="../../../../assets/layout-elements/chat.png"
@@ -584,7 +541,6 @@ export const Chat: React.FC<Props> = ({
       } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
         mobileLeft && mobileLeft
       } ${mobileBottom && mobileBottom} -z-10 h-auto`}
-      ref={Parallax.ref}
     />
   );
 };
@@ -599,10 +555,6 @@ export const Ball: React.FC<Props> = ({
   mobileLeft,
   mobileBottom,
 }) => {
-  const Parallax = useParallax<HTMLImageElement>({
-    translateX: ["0px", "200px"],
-  });
-
   return (
     <img
       src="../../../../assets/layout-elements/pinkball.png"
@@ -612,7 +564,6 @@ export const Ball: React.FC<Props> = ({
       } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
         mobileLeft && mobileLeft
       } ${mobileBottom && mobileBottom} -z-10 h-auto`}
-      ref={Parallax.ref}
     />
   );
 };
@@ -627,10 +578,6 @@ export const PinkChart: React.FC<Props> = ({
   mobileLeft,
   mobileBottom,
 }) => {
-  const Parallax = useParallax<HTMLImageElement>({
-    translateX: ["0px", "200px"],
-  });
-
   return (
     <img
       src="../../../../assets/layout-elements/pinkchart.png"
@@ -640,7 +587,6 @@ export const PinkChart: React.FC<Props> = ({
       } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
         mobileLeft && mobileLeft
       } ${mobileBottom && mobileBottom} -z-10 h-auto`}
-      ref={Parallax.ref}
     />
   );
 };
@@ -655,10 +601,6 @@ export const BlueCube: React.FC<Props> = ({
   mobileLeft,
   mobileBottom,
 }) => {
-  const Parallax = useParallax<HTMLImageElement>({
-    translateX: ["0px", "200px"],
-  });
-
   return (
     <img
       src="../../../../assets/layout-elements/bluecube.png"
@@ -668,7 +610,6 @@ export const BlueCube: React.FC<Props> = ({
       } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
         mobileLeft && mobileLeft
       } ${mobileBottom && mobileBottom} -z-10 h-auto`}
-      ref={Parallax.ref}
     />
   );
 };

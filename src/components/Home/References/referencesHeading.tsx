@@ -1,12 +1,8 @@
 import React from "react";
-import { Parallax } from "react-scroll-parallax";
 
 export const HomeReferencesHeading = () => {
   return (
-    <Parallax
-      speed={10}
-      className="flex flex-col items-center lg:w-[71rem] lg:mb-14"
-    >
+    <div className="flex flex-col items-center lg:w-[71rem] lg:mb-14">
       <h2 className="tracking-[4px] text-xl font-bebas text-getbold-pink mb-6">
         Referencje
       </h2>
@@ -29,6 +25,6 @@ export const HomeReferencesHeading = () => {
           klienci?
         </span>
       </h3>
-    </Parallax>
+    </div>
   );
 };

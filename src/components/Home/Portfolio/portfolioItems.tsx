@@ -1,13 +1,9 @@
 import React from "react";
-import { Parallax } from "react-scroll-parallax";
 import { HomePortfolioItem } from "../../../helpers/HomePortfolioItem";
 
 export const HomePortfolioItems = () => {
   return (
-    <Parallax
-      speed={0}
-      className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3"
-    >
+    <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
       <HomePortfolioItem
         img="https://images.pexels.com/photos/850602/pexels-photo-850602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
         title="Aplikacja Petsly"
@@ -26,6 +22,6 @@ export const HomePortfolioItems = () => {
         tag="Facebook Ads"
         logo="../../portfolio/petsly.png"
       />
-    </Parallax>
+    </div>
   );
 };
