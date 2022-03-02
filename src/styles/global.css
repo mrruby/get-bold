@@ -50,12 +50,6 @@ body {
   background-position: center;
 }
 
-.bg-image-about-dawid {
-  background-image: url("../../static/about-dawid-bg.svg");
-  background-size: cover;
-  background-position: center;
-}
-
 .styled-blogpost-content h1 {
   font-size: 2.5rem;
   font-weight: 800;
