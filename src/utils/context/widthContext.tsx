@@ -5,7 +5,9 @@ import { createContext } from "react";
 export const WidthContext = createContext<number>(0);
 
 export const WidthProvider = ({ children }) => {
-  const [width, setWidth] = useState<number>(window.innerWidth);
+  const isBrowser = typeof window !== "undefined";
+
+  const [width, setWidth] = useState<number>(isBrowser && window.innerWidth);
 
   useEffect(() => {
     function handleResize() {
