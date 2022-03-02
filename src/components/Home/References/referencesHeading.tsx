@@ -10,8 +10,10 @@ export const HomeReferencesHeading = () => {
         Co mówią o nas{" "}
         <span className="font-bold relative">
           <svg
+            className="absolute -z-10 bottom-0 left-0 w-full"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute -z-10 bottom-0 left-0"
+            width="185.328"
+            height="5.75"
             viewBox="0 0 185.328 5.75"
           >
             <path

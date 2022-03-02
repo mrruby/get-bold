@@ -10,8 +10,10 @@ export const HomeAboutHeading = () => {
         Po długim czasie pracy w agencjach <br /> marketingowych,{" "}
         <span className="font-bold text-getbold-pink relative whitespace-pre">
           <svg
+            className="absolute -bottom-2 left-4 w-full"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute -bottom-2 left-4"
+            width="455.934"
+            height="5.749"
             viewBox="0 0 455.934 5.749"
           >
             <path
