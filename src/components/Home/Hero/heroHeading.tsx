@@ -1,11 +1,19 @@
 import { Link } from "gatsby";
-import React from "react";
+import React, { useContext } from "react";
 import { Parallax } from "react-scroll-parallax";
 import { Button } from "../../../helpers/Button";
+import { WidthContext } from "../../../utils/context/widthContext";
 
 export const HomeHeroHeading = () => {
+  const width = useContext(WidthContext);
+  const disableParallax: boolean = width <= 768;
+
   return (
-    <Parallax speed={-20} className="w-full mb-10 lg:m-0 lg:w-2/5 relative">
+    <Parallax
+      speed={-20}
+      disabled={disableParallax}
+      className="w-full mb-10 lg:m-0 lg:w-2/5 relative"
+    >
       <h3 className="text-getbold-btn-pink font-bebas text-2xl mb-4 lg:mb-8">
         Getbold.Agency
       </h3>

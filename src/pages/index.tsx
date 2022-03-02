@@ -13,6 +13,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { ParallaxProvider } from "react-scroll-parallax";
+import { WidthProvider } from "../utils/context/widthContext";
 
 const IndexPage = () => {
   useEffect(() => {
@@ -22,44 +23,46 @@ const IndexPage = () => {
 
   return (
     <ParallaxProvider>
-      <BlogProvider>
-        <Layout
-          title={"Strona Główna - GetBold"}
-          screenComponent={<HomeHeroComponent />}
-          yellowCircle={true}
-          yellowCircle2={false}
-          orangeHex={true}
-          grayTriangle={true}
-          pinkTriangle={true}
-          blueHex={true}
-          redCircle={true}
-          yellowSquare={true}
-          blueSquare={true}
-          heroBG={true}
-          firstMidBG={true}
-          secMidBG={true}
-          isSubPage={false}
-          cube={false}
-          graph={false}
-          card={false}
-          leftCloud={false}
-          rightCloud={false}
-          flower={false}
-          coin={false}
-          chat={false}
-          ball={false}
-          pinkChart={false}
-          blueCube={false}
-          isContactPage={false}
-          footerWhiteBg={true}
-        >
-          <HomeOffertComponent />
-          <HomePortfolioComponent />
-          <HomeAboutComponent />
-          <HomeReferencesComponent />
-          <HomeBlogComponent />
-        </Layout>
-      </BlogProvider>
+      <WidthProvider>
+        <BlogProvider>
+          <Layout
+            title={"Strona Główna - GetBold"}
+            screenComponent={<HomeHeroComponent />}
+            yellowCircle={true}
+            yellowCircle2={false}
+            orangeHex={true}
+            grayTriangle={true}
+            pinkTriangle={true}
+            blueHex={true}
+            redCircle={true}
+            yellowSquare={true}
+            blueSquare={true}
+            heroBG={true}
+            firstMidBG={true}
+            secMidBG={true}
+            isSubPage={false}
+            cube={false}
+            graph={false}
+            card={false}
+            leftCloud={false}
+            rightCloud={false}
+            flower={false}
+            coin={false}
+            chat={false}
+            ball={false}
+            pinkChart={false}
+            blueCube={false}
+            isContactPage={false}
+            footerWhiteBg={true}
+          >
+            <HomeOffertComponent />
+            <HomePortfolioComponent />
+            <HomeAboutComponent />
+            <HomeReferencesComponent />
+            <HomeBlogComponent />
+          </Layout>
+        </BlogProvider>
+      </WidthProvider>
     </ParallaxProvider>
   );
 };
