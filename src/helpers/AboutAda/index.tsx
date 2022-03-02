@@ -3,7 +3,7 @@ import React from "react";
 
 export const AboutAda = () => {
   return (
-    <div className="relative w-full h-[312px] md:h-full">
+    <div className="relative max-w-full h-[312px] md:h-full">
       <img
         src="../../../../about-light.png"
         alt=""
@@ -15,7 +15,7 @@ export const AboutAda = () => {
         className="absolute top-20 lg:top-36 -left-8 lg:-left-32 z-30 w-[128px] lg:w-[200px] h-auto"
       />
 
-      <div className="w-full h-full md:w-[24rem] lg:h-[24rem] pt-1 pb-2 px-2 lg:p-0 bg-image-about-ada bg-cover flex items-start justify-center object-contain">
+      <div className="w-[18rem] h-[18rem] md:w-[24rem] md:h-[24rem] pt-1 pb-2 px-2 lg:p-0 bg-image-about-ada bg-cover flex items-start justify-center object-contain">
         <img
           src="../../ada.jpg"
           alt="ada"

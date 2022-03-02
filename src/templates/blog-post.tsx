@@ -6,6 +6,7 @@ import { SidebarBlogPost } from "../components/BlogPost/sidebar";
 import { ContentBlogPost } from "../components/BlogPost/content";
 
 import Layout from "../components/Layout/Layout";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 type GraphQLResult = {
   markdownRemark: markdownRemark;
@@ -15,53 +16,55 @@ const BlogPost: React.FC<PageProps<GraphQLResult>> = ({ data }) => {
   const post = data.markdownRemark;
 
   return (
-    <Layout
-      title={`${post.frontmatter.title} - GetBold`}
-      yellowCircle={true}
-      yellowCircle2={false}
-      orangeHex={false}
-      grayTriangle={false}
-      pinkTriangle={false}
-      blueHex={false}
-      redCircle={false}
-      yellowSquare={false}
-      blueSquare={false}
-      heroBG={true}
-      firstMidBG={false}
-      secMidBG={false}
-      isSubPage={true}
-      cube={false}
-      graph={false}
-      card={false}
-      leftCloud={true}
-      rightCloud={true}
-      flower={false}
-      coin={false}
-      chat={false}
-      ball={false}
-      pinkChart={false}
-      blueCube={false}
-      isContactPage={false}
-      footerWhiteBg={true}
-    >
-      <div className="flex flex-col">
-        <HeadingBlogPost
-          category={post.frontmatter.category}
-          title={post.frontmatter.title}
-          author={post.frontmatter.author}
-          authorImg={post.frontmatter.authorImg}
-          date={post.frontmatter.date}
-        />
-        <div className="flex flex-col md:items-start md:flex-row space-y-12 md:space-y-0 md:space-x-12 pb-24 p-8 lg:max-w-[1176px]">
-          <ContentBlogPost
-            html={post.html}
-            thumbnail={post.frontmatter.thumbnail}
-            tags={post.frontmatter.tags}
+    <ParallaxProvider>
+      <Layout
+        title={`${post.frontmatter.title} - GetBold`}
+        yellowCircle={true}
+        yellowCircle2={false}
+        orangeHex={false}
+        grayTriangle={false}
+        pinkTriangle={false}
+        blueHex={false}
+        redCircle={false}
+        yellowSquare={false}
+        blueSquare={false}
+        heroBG={true}
+        firstMidBG={false}
+        secMidBG={false}
+        isSubPage={true}
+        cube={false}
+        graph={false}
+        card={false}
+        leftCloud={true}
+        rightCloud={true}
+        flower={false}
+        coin={false}
+        chat={false}
+        ball={false}
+        pinkChart={false}
+        blueCube={false}
+        isContactPage={false}
+        footerWhiteBg={true}
+      >
+        <div className="flex flex-col">
+          <HeadingBlogPost
+            category={post.frontmatter.category}
+            title={post.frontmatter.title}
+            author={post.frontmatter.author}
+            authorImg={post.frontmatter.authorImg}
+            date={post.frontmatter.date}
           />
-          <SidebarBlogPost />
+          <div className="flex flex-col md:items-start md:flex-row space-y-12 md:space-y-0 md:space-x-12 pb-24 p-8 lg:max-w-[1176px]">
+            <ContentBlogPost
+              html={post.html}
+              thumbnail={post.frontmatter.thumbnail}
+              tags={post.frontmatter.tags}
+            />
+            <SidebarBlogPost />
+          </div>
         </div>
-      </div>
-    </Layout>
+      </Layout>
+    </ParallaxProvider>
   );
 };
 

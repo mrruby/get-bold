@@ -18,20 +18,8 @@ const referencesList: IReferencesList[] = [
   {
     reference:
       "Ada wspierała moje działania w ramach kampanii reklamowych na Facebooku. To moje początki i Ada jest właściwą osobą na właściwym miejscu. Podchodzi do sprawy kompleksowo, ma wachlarz umiejętności, które pozwalają jej działać na wielu płaszczyznach. Współpraca przebiega w jasny, zrozumiały dla laika sposób. Komunikuje się niezwykle otwarcie, merytorycznie ale na luzie. Podsumowania, które przesyła po zakończonej kampanii są świetne! Można przeanalizować wyniki i wyciągnąć wnioski. Dzięki Adzie bardzo dużo się nauczyłam i z pewnością zgłoszę się ponownie.",
-    name: "Katarzyna Skórska",
-    company: "Dietetyk kliniczny",
-  },
-  {
-    reference:
-      "trzecie opiniatrzecie opiniatrzecie opiniatrzecie opiniatrzecie opiniatrzecie opiniatrzecie opiniatrzecie opiniatrzecie opiniatrzecie opiniatrzecie opiniatrzecie opiniatrzecie opiniatrzecie opiniatrzecie opiniatrzecie opiniatrzecie opiniatrzecie opiniatrzecie opiniatrzecie opiniatrzecie opiniatrzecie opiniatrzecie opiniatrzecie opiniatrzecie opiniatrzecie opinia",
-    name: "333Martyna Wagner",
-    company: "333martynawagner.pl",
-  },
-  {
-    reference:
-      "czwarta opinia czwarta opinia czwarta opinia czwarta opinia czwarta opinia czwarta opinia czwarta opinia czwarta opinia czwarta opinia czwarta opinia czwarta opinia czwarta opinia czwarta opinia czwarta opinia czwarta opinia czwarta opinia czwarta opinia czwarta opinia czwarta opinia czwarta opinia czwarta opinia czwarta opinia ",
-    name: "444Martyna Wagner",
-    company: "3444martynawagner.pl",
+    name: "Martyna Wagner",
+    company: "martynawagner.pl",
   },
 ];
 

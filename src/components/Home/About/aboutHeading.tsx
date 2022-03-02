@@ -2,7 +2,7 @@ import React from "react";
 
 export const HomeAboutHeading = () => {
   return (
-    <div className="flex flex-col items-center lg:w-[71rem] px-8 mb-14">
+    <div className="flex flex-col items-center lg:w-[71rem] px-8 mb-32">
       <h2 className="tracking-[4px] text-xl font-bebas text-getbold-pink mb-6">
         O nas
       </h2>
