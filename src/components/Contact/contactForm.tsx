@@ -40,10 +40,10 @@ export const ContactForm: React.FC = () => {
             method="POST"
             netlify-honeypot="bot-field"
             data-netlify="true"
-            name="contact-main"
+            name="contact-page"
           >
             <input type="hidden" name="bot-field" />
-            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="form-name" value="contact-page" />
             <div className="flex flex-col items-center space-y-8">
               <input
                 required

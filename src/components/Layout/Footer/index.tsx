@@ -83,14 +83,14 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
             Daj znać, oddzwonimy!
           </h4>
           <form
-            method="post"
+            method="POST"
             netlify-honeypot="bot-field"
             data-netlify="true"
-            name="contact"
+            name="contact-main"
           >
             <div className="flex flex-col sm:flex-row justify-between items-center space-y-8 sm:space-x-8 sm:space-y-0">
               <input type="hidden" name="bot-field" />
-              <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="form-name" value="contact-main" />
               <input
                 type="text"
                 name="name"
