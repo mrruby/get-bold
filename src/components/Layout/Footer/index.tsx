@@ -89,8 +89,6 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
             name="contact-main"
           >
             <div className="flex flex-col sm:flex-row justify-between items-center space-y-8 sm:space-x-8 sm:space-y-0">
-              <input type="hidden" name="bot-field" />
-              <input type="hidden" name="form-name" value="contact-main" />
               <input
                 type="text"
                 name="name"
@@ -144,6 +142,8 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
                   Września 79/6.
                 </p>
               </div>
+              <input type="hidden" name="bot-field" />
+              <input type="hidden" name="form-name" value="contact-main" />
               <button className="rounded-3xl bg-getbold-blue w-full md:w-1/2 sm:ml-8 py-3 text-white font-semibold pointer hover:shadow-lg hover:bg-[#2d3786] transition-all">
                 Wyślij wiadomość!
               </button>
