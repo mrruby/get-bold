@@ -1,5 +1,6 @@
-import { StaticImage } from "gatsby-plugin-image";
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 import { Reference } from "../../../helpers/Reference";
 
 interface IReferencesList {
@@ -21,74 +22,35 @@ const referencesList: IReferencesList[] = [
     name: "Martyna Wagner",
     company: "martynawagner.pl",
   },
+  {
+    reference:
+      "Polecamy współpracę z Adrianną. Jesteśmy zadowoleni z efektów przeprowadzonych kampanii oraz liczby pozyskanych adresów mailowych.",
+    name: "Crystal Academy",
+    company: "",
+  },
+  {
+    reference:
+      "Nasza współpraca z Get Bold przebiegła super. Polecam, jako właściciel sklepu internetowego 🙂",
+    name: "Ewa Bartkowiak",
+    company: "Lavelio",
+  },
+  {
+    reference:
+      "Dziewczyny stworzyły dla mnie kampanię promującą moje świąteczne rękodzieło i warsztaty kaligraficzne. Udało się spełnić zarówno moje założone cele, jak i budżet, jaki planowałam wydać na kampanię. Były niezwykle pomocne w każdej najmniejszej rzeczy. Wspomogły mnie w założeniu konta reklamowego, jak i w dobraniu grafik. Miejsca na warsztaty się rozeszły super szybko, a na moim koncie wzrosły zasięgi, ruch i sprzedaż. Miło było się czuć tak zaopiekowaną.",
+    name: "Sylwia Dziadek",
+    company: "Sylwia ma plan",
+  },
 ];
 
-export const HomeReferencesItems = () => {
-  const [slide, setSlide] = useState<number[]>([0, 2]);
-  const [mobileSlide, setMobileSlide] = useState<number[]>([0, 1]);
-  return (
-    <div className="flex flex-col">
-      <div className="hidden md:grid md:grid-cols-2 gap-24 mb-16">
-        {referencesList.slice(slide[0], slide[1]).map((reference, index) => {
-          return (
-            <Reference
-              key={index}
-              reference={reference.reference}
-              name={reference.name}
-              company={reference.company}
-            />
-          );
-        })}
-      </div>
-
-      <div className="md:hidden grid grid-cols-1 gap-24 mb-16">
-        {referencesList
-          .slice(mobileSlide[0], mobileSlide[1])
-          .map((reference, index) => {
-            return (
-              <Reference
-                key={index}
-                reference={reference.reference}
-                name={reference.name}
-                company={reference.company}
-              />
-            );
-          })}
-      </div>
-
-      {referencesList.length > 2 && (
-        <div className="hidden md:flex items-center justify-center space-x-4">
-          {referencesList
-            .slice(0, referencesList.length - 1)
-            .map((reference, index) => {
-              return (
-                <button
-                  onClick={() => setSlide([index, index + 2])}
-                  className={`w-4 h-4 rounded-full bg-getbold-btn-pink pointer ${
-                    index !== slide[0] && "opacity-20"
-                  }`}
-                ></button>
-              );
-            })}
-        </div>
-      )}
-
-      {referencesList.length > 2 && (
-        <div className="flex md:hidden items-center justify-center space-x-4">
-          {referencesList
-            .slice(0, referencesList.length)
-            .map((reference, index) => {
-              return (
-                <button
-                  onClick={() => setMobileSlide([index, index + 1])}
-                  className={`w-4 h-4 rounded-full bg-getbold-btn-pink pointer ${
-                    index !== mobileSlide[0] && "opacity-20"
-                  }`}
-                ></button>
-              );
-            })}
-        </div>
-      )}
-    </div>
-  );
-};
+export const HomeReferencesItems = () => (
+  <Carousel autoPlay infiniteLoop showIndicators={false} showStatus={false}>
+    {referencesList.map((reference, index) => (
+      <Reference
+        key={index}
+        reference={reference.reference}
+        name={reference.name}
+        company={reference.company}
+      />
+    ))}
+  </Carousel>
+);

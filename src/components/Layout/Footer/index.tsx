@@ -18,11 +18,8 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
         <nav className="2xl:px-[21rem] px-8 xl:px-[150px] h-full">
           <ul className="flex flex-col md:flex-row justify-center md:justify-start items-start md:items-center space-y-2 md:space-y-0 md:space-x-12 text-getbold-btn-pink text-xs h-full">
             <li>
-              <Link to="/polityka-prywatnosci">Polityka Prywatności</Link>
-            </li>
-            <li>
-              <Link to="/polityka-ochrony-danych-osobowych">
-                Polityka ochrony danych osobowych
+              <Link to="/polityka-prywatnosci">
+                Polityka prywatności & plików cookie
               </Link>
             </li>
           </ul>
@@ -123,10 +120,14 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
                   type="checkbox"
                 />
                 <p className="sm:w-[22rem] w-full text-xs">
-                  Facilis voluptates tempora rerum quis exercitationem omnis
-                  dolorum illum culpa. Sequi error voluptatem veniam qui
-                  temporibus in alias fugit. Sunt est eos eligendi et quia
-                  deleniti tempora. Qui qui sed esse.
+                  Wyrazam zgode na przetwarzanie moich danych osobowych zgodnie
+                  z ustawą o ochronie danych osobowych w celu (np wysyłania
+                  informacji handlowei). Podanie danych osobowych jest
+                  dobrowolne. Zostałem poinformowany, ze przysługuje mi prawo
+                  dostepu do swoich danych, mozliwosci ich poprawiania, zadania
+                  zaprzestania ich przetwarzania. Administratorem danych jest
+                  GetBold Agency z siedzibą w 41-500 Chorzów ul. Żołnierzy
+                  Września 79/6.
                 </p>
               </div>
               <button className="rounded-3xl bg-getbold-blue w-full md:w-1/2 sm:ml-8 py-3 text-white font-semibold pointer hover:shadow-lg hover:bg-[#2d3786] transition-all">
@@ -141,11 +142,8 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
         <nav className="2xl:px-[21rem] px-8 xl:px-[150px] h-full">
           <ul className="flex flex-col md:flex-row justify-center md:justify-start items-start md:items-center space-y-2 md:space-y-0 md:space-x-12 text-getbold-btn-pink text-xs h-full">
             <li>
-              <Link to="/polityka-prywatnosci">Polityka Prywatności</Link>
-            </li>
-            <li>
-              <Link to="/polityka-ochrony-danych-osobowych">
-                Polityka ochrony danych osobowych
+              <Link to="/polityka-prywatnosci">
+                Polityka prywatności & plików cookie
               </Link>
             </li>
           </ul>

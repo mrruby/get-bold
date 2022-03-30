@@ -14,13 +14,13 @@ export const HomePortfolioItems = () => {
         img="https://images.pexels.com/photos/2079246/pexels-photo-2079246.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
         title="Branża Home&Decor"
         tag="Social Media"
-        logo="../../portfolio/petsly.png"
+        logo="../../portfolio/home.svg"
       />
       <HomePortfolioItem
         img="https://images.pexels.com/photos/7156128/pexels-photo-7156128.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
         title="Kurs dla nauczycieli"
         tag="Facebook Ads"
-        logo="../../portfolio/petsly.png"
+        logo="../../portfolio/kurs.svg"
       />
     </div>
   );

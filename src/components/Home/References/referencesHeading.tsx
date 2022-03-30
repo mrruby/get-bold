@@ -2,7 +2,7 @@ import React from "react";
 
 export const HomeReferencesHeading = () => {
   return (
-    <div className="flex flex-col items-center lg:w-[71rem] lg:mb-14">
+    <div className="flex flex-col items-center ">
       <h2 className="tracking-[4px] text-xl font-bebas text-getbold-pink mb-6">
         Referencje
       </h2>

@@ -7,7 +7,7 @@ export const PrivacyPolicyPage = () => {
   return (
     <ParallaxProvider>
       <Layout
-        title={"Polityka Prywatności - GetBold"}
+        title={"Polityka prywatności & plików cookies - GetBold"}
         yellowCircle={false}
         yellowCircle2={false}
         orangeHex={false}
@@ -36,9 +36,11 @@ export const PrivacyPolicyPage = () => {
         footerWhiteBg={true}
       >
         <div className="flex flex-col items-center w-full">
-          <PageHeading pageName="Polityka Prywatności" />
+          <PageHeading pageName="Polityka prywatności & plików cookies" />
           <div className="lg:max-w-[1176px] bg-white py-6 lg:py-[64px] px-8 lg:px-[123px] rounded-lg shadow-[0_-81px_50px_#0000000D]">
-            <h2 className="text-3xl font-bold mb-8">Polityka prywatności </h2>
+            <h2 className="text-3xl font-bold mb-8">
+              Polityka prywatności & plików cookies
+            </h2>
             <h3 className="text-lg font-bold mb-2">1. Informacje ogólne</h3>
             <p className="mb-8">
               Niniejsza polityka dotyczy Serwisu www, funkcjonującego pod
@@ -81,7 +83,7 @@ export const PrivacyPolicyPage = () => {
             <h3 className="text-lg font-bold mb-2">3. Hosting</h3>
             <p className="mb-8">
               Serwis jest hostowany (technicznie utrzymywany) na serwerach
-              operatora: OVH
+              operatora: Netlify
             </p>
 
             <h3 className="text-lg font-bold mb-2">

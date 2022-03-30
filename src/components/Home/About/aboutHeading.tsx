@@ -27,7 +27,6 @@ export const HomeAboutHeading = () => {
           stawiamy na siebie.
         </span>
       </h3>
-      <p className="text-base text-center">Chcesz poznać mnie lepiej?</p>
     </div>
   );
 };

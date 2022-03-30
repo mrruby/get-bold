@@ -7,6 +7,7 @@ interface Props {
   title: string;
   tag: string;
   logo: string;
+  // isPng?: boolean;
 }
 
 export const HomePortfolioItem: React.FC<Props> = ({
@@ -14,6 +15,7 @@ export const HomePortfolioItem: React.FC<Props> = ({
   title,
   tag,
   logo,
+  // isPng
 }) => {
   return (
     <Link to="/portfolio">
