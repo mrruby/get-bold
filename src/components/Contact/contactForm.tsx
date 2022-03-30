@@ -85,10 +85,14 @@ export const ContactForm: React.FC = () => {
                   type="checkbox"
                 />
                 <p className="sm:w-[22rem] w-full text-xs font-medium">
-                  Facilis voluptates tempora rerum quis exercitationem omnis
-                  dolorum illum culpa. Sequi error voluptatem veniam qui
-                  temporibus in alias fugit. Sunt est eos eligendi et quia
-                  deleniti tempora. Qui qui sed esse.
+                  Wyrazam zgode na przetwarzanie moich danych osobowych zgodnie
+                  z ustawą o ochronie danych osobowych w celu (np wysyłania
+                  informacji handlowei). Podanie danych osobowych jest
+                  dobrowolne. Zostałem poinformowany, ze przysługuje mi prawo
+                  dostepu do swoich danych, mozliwosci ich poprawiania, zadania
+                  zaprzestania ich przetwarzania. Administratorem danych jest
+                  GetBold Agency z siedzibą w 41-500 Chorzów ul. Żołnierzy
+                  Września 79/6.
                 </p>
               </div>
               <Button

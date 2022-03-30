@@ -3,7 +3,6 @@ import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
-import { Parallax } from "react-scroll-parallax";
 import { LeftCloud, RightCloud } from "../../../helpers/LayoutElements";
 
 interface Props {
@@ -83,15 +82,22 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
           <h4 className="font-bold text-4xl mb-[54px] ">
             Daj znać, oddzwonimy!
           </h4>
-          <form>
+          <form
+            method="post"
+            netlify-honeypot="bot-field"
+            data-netlify="true"
+            name="contact"
+          >
             <div className="flex flex-col sm:flex-row justify-between items-center space-y-8 sm:space-x-8 sm:space-y-0">
               <input
                 type="text"
+                required
                 placeholder="Imię i nazwisko"
                 className="border-0 border-b-2 border-getbold-blue text-[#233176] placeholder:text-[#233176] focus:ring-0 focus:border-getbold-blue p-0 py-4 w-full text-sm bg-transparent"
               />
               <input
                 type="text"
+                required
                 placeholder="Nazwa firmy"
                 className="border-0 border-b-2 border-getbold-blue text-[#233176] placeholder:text-[#233176] focus:ring-0 focus:border-getbold-blue p-0 py-4 w-full text-sm bg-transparent"
               />
@@ -99,13 +105,17 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
                 <option value="" selected disabled hidden>
                   Co Cię interesuje?
                 </option>
-                <option value={1}>1</option>
-                <option value={2}>2</option>
-                <option value={3}>3</option>
+                <option value={'Influencer marketing'}>Influencer marketing</option>
+                <option value={'Social media'}>Social media</option>
+                <option value={'Konsultacje kreatywne'}>Konsultacje kreatywne</option>
+                <option value={'Facebook Ads'}>Facebook Ads</option>
+                <option value={'TikTok Ads'}>TikTok Ads</option>
+                <option value={'Inne'}>Inne</option>
               </select>
             </div>
             <div>
               <textarea
+                required
                 name=""
                 id=""
                 rows={8}
@@ -117,6 +127,7 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
               <div className="flex sm:justify-between items-start space-x-4 sm:w-1/2 w-full mb-12 sm:m-0">
                 <input
                   className="mt-0.5 text-[#EF6278] bg-[#FFA3B1] w-[18px] h-[18px] outline-none border-2 border-[#EF6278] rounded-none focus:ring-0"
+                  required
                   type="checkbox"
                 />
                 <p className="sm:w-[22rem] w-full text-xs">
