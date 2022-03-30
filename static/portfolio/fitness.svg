@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="109.774" height="109.774" viewBox="0 0 109.774 109.774">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ef6278"/>
+      <stop offset="1" stop-color="#009f9a"/>
+    </linearGradient>
+  </defs>
+  <path id="md-fitness" d="M105.313,73.965l7.836-7.836-7.836-7.862L85.708,77.871,38.657,30.82,58.262,11.211,50.426,3.375,42.59,11.211,34.724,3.375,22.981,15.118,15.118,7.282,7.282,15.118l7.836,7.836L3.375,34.724l7.836,7.836L3.375,50.426l7.836,7.836L30.817,38.657,77.868,85.708,58.262,105.313l7.836,7.836,7.836-7.836,7.836,7.836,11.743-11.743,7.836,7.836,7.836-7.836L101.35,93.57l11.743-11.743-7.784-7.862Z" transform="translate(-3.375 -3.375)" fill="url(#linear-gradient)"/>
+</svg>

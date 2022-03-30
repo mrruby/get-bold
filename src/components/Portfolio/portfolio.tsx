@@ -41,7 +41,7 @@ export const PortfolioPortfolio = () => {
 
         <PortfolioProject
           index={2}
-          imgSrc="../../portfolio/petsly.png"
+          imgSrc="../../portfolio/home.svg"
           title="Branża home&decor"
           tasks={["Social media"]}
           text={
@@ -62,7 +62,7 @@ export const PortfolioPortfolio = () => {
 
         <PortfolioProject
           index={3}
-          imgSrc="../../portfolio/petsly.png"
+          imgSrc="../../portfolio/fitness.svg"
           title="Nicole Ciećkiewicz"
           tasks={["Facebook Ads"]}
           text={
@@ -84,7 +84,7 @@ export const PortfolioPortfolio = () => {
 
         <PortfolioProject
           index={4}
-          imgSrc="../../portfolio/petsly.png"
+          imgSrc="../../portfolio/kurs.svg"
           title="Kurs dla nauczycieli"
           tasks={["Facebook Ads"]}
           text={
@@ -105,7 +105,7 @@ export const PortfolioPortfolio = () => {
 
         <PortfolioProject
           index={5}
-          imgSrc="../../portfolio/petsly.png"
+          imgSrc="../../portfolio/home.svg"
           title="Instalacja drewnianej podłogi"
           tasks={["Facebook Ads"]}
           text={
