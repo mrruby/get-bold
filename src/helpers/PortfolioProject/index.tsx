@@ -22,7 +22,7 @@ export const PortfolioProject: React.FC<Props> = ({
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[100px] h-[100px] rounded-full bg-white flex justify-center items-center border font-bold text-3xl">
           {index}
         </div>
-        <div className="w-full lg:w-1/2 pb-12 lg:pb-6 pt-40 border-b lg:border-r lg:border-b-0 border-border border-opacity-[0.09] lg:pr-[115px] flex items-center justify-end">
+        <div className="w-full lg:w-1/2 pb-12 lg:pb-6 pt-40 border-b lg:border-r lg:border-b-0 border-border border-opacity-[0.09] lg:pr-[115px] flex items-center justify-center">
           <motion.img
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
