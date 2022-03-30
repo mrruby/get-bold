@@ -89,19 +89,23 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
             name="contact"
           >
             <div className="flex flex-col sm:flex-row justify-between items-center space-y-8 sm:space-x-8 sm:space-y-0">
+              <input type="hidden" name="bot-field" />
+              <input type="hidden" name="form-name" value="contact" />
               <input
                 type="text"
+                name="name"
                 required
                 placeholder="Imię i nazwisko"
                 className="border-0 border-b-2 border-getbold-blue text-[#233176] placeholder:text-[#233176] focus:ring-0 focus:border-getbold-blue p-0 py-4 w-full text-sm bg-transparent"
               />
               <input
                 type="text"
+                name="company"
                 required
                 placeholder="Nazwa firmy"
                 className="border-0 border-b-2 border-getbold-blue text-[#233176] placeholder:text-[#233176] focus:ring-0 focus:border-getbold-blue p-0 py-4 w-full text-sm bg-transparent"
               />
-              <select className="text-sm border-0 border-b-2 border-getbold-blue text-[#233176] placeholder:text-[#233176] focus:ring-0 focus:border-getbold-blue p-0 py-4 w-full bg-transparent">
+              <select name="service" className="text-sm border-0 border-b-2 border-getbold-blue text-[#233176] placeholder:text-[#233176] focus:ring-0 focus:border-getbold-blue p-0 py-4 w-full bg-transparent">
                 <option value="" selected disabled hidden>
                   Co Cię interesuje?
                 </option>
@@ -116,8 +120,7 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
             <div>
               <textarea
                 required
-                name=""
-                id=""
+                name="text"
                 rows={8}
                 placeholder="Twoja wiadomość"
                 className="w-full resize-none border-0 border-b-2 border-getbold-blue text-[#233176] placeholder:text-[#233176] focus:ring-0 focus:border-getbold-blue p-0 mt-[54px] text-sm bg-transparent"
