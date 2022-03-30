@@ -37,14 +37,14 @@ export const ContactForm: React.FC = () => {
         <div className="w-full md:w-1/2 lg:pt-[82px]">
           <h3 className="font-bold text-3xl mb-8">Formularz Kontaktowy</h3>
           <form
-            method="post"
+            method="POST"
             netlify-honeypot="bot-field"
             data-netlify="true"
-            name="contact"
+            name="contact-main"
           >
+            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
             <div className="flex flex-col items-center space-y-8">
-              <input type="hidden" name="bot-field" />
-              <input type="hidden" name="form-name" value="contact" />
               <input
                 required
                 type="text"
