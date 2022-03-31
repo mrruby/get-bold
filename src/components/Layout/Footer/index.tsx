@@ -31,6 +31,7 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
       <div className="flex flex-col lg:flex-row mb-8">
         <div className="w-full lg:w-1/3 mb-20 lg:m-0 z-30">
           <StaticImage
+            placeholder="none" 
             src="../../../images/logo-footer.svg"
             alt="logo"
             className="mb-[3.5rem]"

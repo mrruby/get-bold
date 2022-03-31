@@ -22,8 +22,8 @@ export const HeaderLogo = () => {
       </svg>
 
       <Link to="/">
-        <StaticImage src="../../../images/logo.svg" alt="Logo" />
-      </Link>
+        <StaticImage placeholder="none" src="../../../images/logo.svg" alt="Logo" />
+      </Link> 
     </div>
   );
 };
