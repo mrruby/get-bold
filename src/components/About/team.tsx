@@ -16,7 +16,7 @@ export const TeamAbout = () => {
         </div>
         <div className="w-full lg:w-1/2">
           <h4 className="text-xl lg:text-2xl font-bold mb-[30px]">
-            Adriann Promis
+            Adrianna Promis
           </h4>
 
           <p className="lg:text-lg font-bold mb-8">
@@ -47,10 +47,7 @@ export const TeamAbout = () => {
           </p>
 
           <div className="flex text-2xl items-center space-x-8 mt-[20px]">
-            <a href="https://facebook.com/">
-              <FaFacebookF />
-            </a>
-            <a href="https://linkedin.com/">
+            <a href="https://www.linkedin.com/in/adriannapromis/">
               <FaLinkedinIn />
             </a>
           </div>

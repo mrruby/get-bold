@@ -20,7 +20,7 @@ export const SidebarBlogPost = () => {
 
   return (
     <div className="max-w-[395px] w-full">
-      <div className="py-[34px] px-[38px] mb-[50px] bg-white rounded-xl shadow-md border border-[#F8E7E4]">
+      {/* <div className="py-[34px] px-[38px] mb-[50px] bg-white rounded-xl shadow-md border border-[#F8E7E4]">
         <h3 className="text-lg font-extrabold mb-[14px]">Wyszukiwarka</h3>
         <div className="max-w-full relative">
           <button className="bg-[#233176] w-[65px] h-full absolute right-0 rounded-r-xl flex items-center justify-center">
@@ -46,7 +46,7 @@ export const SidebarBlogPost = () => {
             type="text"
           />
         </div>
-      </div>
+      </div> */}
 
       <div className="py-[34px] px-[38px] mb-[50px] bg-white rounded-xl shadow-md border border-[#F8E7E4]">
         <h3 className="text-lg font-extrabold mb-[14px]">Kategorie</h3>

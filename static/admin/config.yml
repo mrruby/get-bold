@@ -27,7 +27,7 @@ collections:
           date_format: "DD.MM.YYYY",
           time_format: "HH:mm",
         }
-        {label: "Category", name: "category", widget: 'string'}
-        {label: "Author", name: "author", widget: 'string'}
-        {label: "AuthorImg", name: "authorImg", widget: 'string'}
+      - { label: "Category", name: "category", widget: 'string'}
+      - { label: "Author", name: "author", widget: 'string'}
+      - { label: "AuthorImg", name: "authorImg", widget: 'string'}
       - { label: "Blog post content", name: "body", widget: "markdown" }
