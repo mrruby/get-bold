@@ -1,16 +1,16 @@
 ---
-title: "Czy ten blog działa?"
+title: Czy ten blog działa?
 description: Sprawdzimy czy ten blog działa poprawnie
-thumbnail: ../../img/czy-ten-blog-dziala.jpg
+thumbnail: /img/czy-ten-blog-dziala.jpg
 tags:
   - socialmedia
   - marketing
   - facebook ads
   - code
 date: 2022-01-25T16:08:04.973Z
-category: "Develop"
+category: Develop
 author: Adi
-authorImg: ../../img/ada.png
+authorImg: /img/ada.png
 ---
 
 # To jest h1 ale h1 juz jest tytul wiec lepiej uzywac h2

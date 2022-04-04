@@ -1,7 +1,7 @@
 ---
 title: "Duplikat sprawdzający"
 description: Our creators love hearing from you and seeing how you’ve used their photos. Show your appreciation by donating, tweeting, and following!
-thumbnail: ../../img/duplikat-sprawdzajacy.jpg
+thumbnail: /img/duplikat-sprawdzajacy.jpg
 tags:
   - seo
   - gatsby
@@ -10,7 +10,7 @@ tags:
 date: 2022-01-26T16:08:04.973Z
 category: "Code"
 author: AdiFrac
-authorImg: ../../img/ada.png
+authorImg: /img/ada.png
 ---
 
 ## Zobaczmy czy działa...

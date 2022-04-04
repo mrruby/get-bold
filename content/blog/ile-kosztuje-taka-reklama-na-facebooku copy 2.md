@@ -10,7 +10,7 @@ tags:
 date: 2021-06-10T09:46:04.973Z
 category: "Marketing"
 author: Adrianna
-authorImg: ../../img/ada.png
+authorImg: /img/ada.png
 ---
 
 # **Cześć!**
