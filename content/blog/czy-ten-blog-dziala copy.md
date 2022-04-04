@@ -1,7 +1,7 @@
 ---
-title: Czy ten blog działa?
+title: Czy ten blog działa? Teraz?
 description: Sprawdzimy czy ten blog działa poprawnie
-thumbnail: /img/czy-ten-blog-dziala.jpg
+thumbnail: /img/profile_2.png
 tags:
   - socialmedia
   - marketing
