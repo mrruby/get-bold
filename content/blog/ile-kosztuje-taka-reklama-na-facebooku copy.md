@@ -1,5 +1,5 @@
 ---
-title: "Ile kosztuje taka reklama na Facebooku?"
+title: Ile kosztuje taka reklama na Facebooku?
 description: 5 czynników, które koniecznie musisz przeanalizować przed
   rozpoczęciem kampanii Facebook Ads!
 thumbnail: https://podcastada.s3.eu-central-1.amazonaws.com/pic.png
@@ -8,9 +8,9 @@ tags:
   - marketing
   - facebook ads
 date: 2021-06-10T09:46:04.973Z
-category: "Marketing"
+category: Marketing
 author: Adrianna
-authorImg: /img/ada.png
+authorImg: /img/czy-ten-blog-dziala.jpg
 ---
 
 # **Cześć!**
