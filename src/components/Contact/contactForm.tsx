@@ -38,11 +38,10 @@ export const ContactForm: React.FC = () => {
           <h3 className="font-bold text-3xl mb-8">Formularz Kontaktowy</h3>
           <form
             method="POST"
-            netlify-honeypot="bot-field"
             data-netlify="true"
             name="contact-page"
+            data-netlify-recaptcha="true"
           >
-            <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="contact-page" />
             <div className="flex flex-col items-center space-y-8">
               <input
@@ -101,6 +100,7 @@ export const ContactForm: React.FC = () => {
                 text={"Wyślij wiadomość!"}
                 isWFull={true}
               />
+              <div data-netlify-recaptcha="true"></div>
             </div>
           </form>
         </div>

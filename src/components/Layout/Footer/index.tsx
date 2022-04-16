@@ -85,7 +85,7 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
           </h4>
           <form
             method="POST"
-            netlify-honeypot="bot-field"
+            data-netlify-recaptcha="true"
             data-netlify="true"
             name="contact-main"
           >
@@ -143,11 +143,11 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
                   Września 79/6.
                 </p>
               </div>
-              <input type="hidden" name="bot-field" />
               <input type="hidden" name="form-name" value="contact-main" />
               <button className="rounded-3xl bg-getbold-blue w-full md:w-1/2 sm:ml-8 py-3 text-white font-semibold pointer hover:shadow-lg hover:bg-[#2d3786] transition-all">
                 Wyślij wiadomość!
               </button>
+              <div data-netlify-recaptcha="true"></div>
             </div>
           </form>
         </div>
