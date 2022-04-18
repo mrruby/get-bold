@@ -1,4 +1,5 @@
 import { StaticImage } from "gatsby-plugin-image";
+import ReCAPTCHA from "react-google-recaptcha";
 import React from "react";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
@@ -96,7 +97,7 @@ export const ContactForm: React.FC = () => {
                   Września 79/6.
                 </p>
               </div>
-              <div data-netlify-recaptcha="true"></div>
+              <ReCAPTCHA sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY} />
               <Button
                 type={"submit"}
                 color={"blue"}
