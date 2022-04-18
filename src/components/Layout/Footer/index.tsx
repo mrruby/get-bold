@@ -1,5 +1,6 @@
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
+import ReCAPTCHA from "react-google-recaptcha";
 import React from "react";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
@@ -146,8 +147,9 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
               </div>
               <input type="hidden" name="bot-field" />
               <input type="hidden" name="form-name" value="contact-main" />
-              <div data-netlify-recaptcha="true"></div>
-              <button className="rounded-3xl bg-getbold-blue w-full md:w-1/2 sm:ml-8 py-3 text-white font-semibold pointer hover:shadow-lg hover:bg-[#2d3786] transition-all">
+              <ReCAPTCHA sitekey={process.env.SITE_RECAPTCHA_KEY} />
+              <button
+                className="rounded-3xl bg-getbold-blue w-full md:w-1/2 sm:ml-8 py-3 text-white font-semibold pointer hover:shadow-lg hover:bg-[#2d3786] transition-all">
                 Wyślij wiadomość!
               </button>
             </div>
