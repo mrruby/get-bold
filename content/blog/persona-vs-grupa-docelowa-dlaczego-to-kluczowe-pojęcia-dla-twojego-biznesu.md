@@ -3,7 +3,7 @@ title: Persona vs grupa docelowa - dlaczego to kluczowe pojęcia dla Twojego biz
 description: Co powinieneś zrobić, aby bez wysiłku określić grupę docelową oraz persony
 thumbnail: /img/avel-chuklanov-dumfltmeabq-unsplash.jpg
 tags:
-  - marketing
+  - persona
 date: 2022-04-22T08:08:56.047Z
 category: Marketing
 author: Wiktoria
