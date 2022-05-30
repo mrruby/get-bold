@@ -28,7 +28,7 @@ export const ContactForm: React.FC = () => {
                 <FaLinkedinIn />
               </li>
             </a>
-            <a href="mailto:kontakt@getbold.agency/">
+            <a href="mailto:adrianna@getbold.agency">
               <li>
                 <IoMdMail />
               </li>

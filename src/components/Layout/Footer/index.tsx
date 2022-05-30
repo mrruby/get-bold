@@ -70,7 +70,7 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
                 <FaLinkedinIn />
               </li>
             </a>
-            <a href="mailto:kontakt@getbold.agency/">
+            <a href="mailto:adrianna@getbold.agency">
               <li>
                 <IoMdMail />
               </li>
