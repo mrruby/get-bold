@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React, { ReactElement } from "react";
 import { Button } from "../Button";
 
@@ -45,7 +46,9 @@ export const OffertContent: React.FC<Props> = ({
           );
         })}
       </ul>
-      <Button type="button" color="pink" isWFull={false} text={buttonText} />
+      <Link to="/kontakt">
+        <Button type="button" color="pink" isWFull={false} text={buttonText} />
+      </Link>
     </div>
   );
 };
