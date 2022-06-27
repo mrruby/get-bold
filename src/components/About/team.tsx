@@ -1,7 +1,6 @@
-import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { AboutAda } from "../../helpers/AboutAda";
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 
 export const TeamAbout = () => {
   return (

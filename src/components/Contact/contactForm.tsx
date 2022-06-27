@@ -18,12 +18,12 @@ export const ContactForm: React.FC = () => {
             dżunglę.
           </p>
           <ul className="flex text-2xl items-center justify-center space-x-8 mt-10">
-            <a href="https://facebook.com/">
+            <a href="https://www.facebook.com/GetBoldAgency">
               <li>
                 <FaFacebookF />
               </li>
             </a>
-            <a href="https://linkedin.com/">
+            <a href="https://www.linkedin.com/company/get-bold/">
               <li>
                 <FaLinkedinIn />
               </li>

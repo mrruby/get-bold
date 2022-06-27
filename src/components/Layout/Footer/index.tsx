@@ -60,12 +60,12 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
             </ul>
           </nav>
           <ul className="flex text-2xl items-center space-x-8 mt-10">
-            <a href="https://facebook.com/">
+            <a href="https://www.facebook.com/GetBoldAgency">
               <li>
                 <FaFacebookF />
               </li>
             </a>
-            <a href="https://linkedin.com/">
+            <a href="https://www.linkedin.com/company/get-bold/">
               <li>
                 <FaLinkedinIn />
               </li>
