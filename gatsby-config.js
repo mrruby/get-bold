@@ -10,6 +10,18 @@ module.exports = {
     "gatsby-plugin-postcss",
     "gatsby-plugin-sitemap",
     {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ["G-P7YBDTBLVB"],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: "440323970954032",
+      },
+    },
+    {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/icon.svg",
