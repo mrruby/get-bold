@@ -13,7 +13,8 @@ authorImg: /img/8.jpg
 Byłoby świetnie, gdyby platformy społecznościowe same podpowiadały nam jakie rozmiary grafik są dla nich odpowiednie, ale niestety życie nie jest aż takie piękne. \
 Zatem wpisujesz w wyszukiwarkę po raz 10: „rozmiar cover photo Facebook”, „rozmiar grafik na LinkedIna” i nadal nie do końca wiesz, czy to, co czytasz, jest właściwe. 
 
-**FACEBOOK**\
+**FACEBOOK**
+
 W zależności od tego, na jakiej przestrzeni chcesz ustawić zdjęcie w tle, będzie miało one różne rozmiary. Odpowiednio będą to rozmiary: 
 
 * 1640 x 856 px dla Cover Photo grupy 
