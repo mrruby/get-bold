@@ -2,7 +2,7 @@
 title: "Skąd mam wiedzieć czego chce moja grupa docelowa? "
 description: "Zastanawiasz się co może interesować Twoją grupę docelową? Nie
   wiesz jaki content dla nich przygotować? Podpowiemy! "
-thumbnail: /img/4.png
+thumbnail: /img/avel-chuklanov-dumfltmeabq-unsplash.jpg
 tags:
   - grupadocelowa
   - persona
@@ -22,8 +22,7 @@ Jednym z nich jest strona **[Answer the public](https://answerthepublic.com/)**,
 
 Gdzie jeszcze szukać inspiracji? Pamiętacie może fora dyskusyjne? One mogą być źródłem wielu ciekawych insightów. Jeżeli działacie w branży beauty możecie szukać pytań na Wizaz, ale jeśli Wasza branża jest trochę bardziej nietypowa lub nie przychodzi Wam na myśl żadne popularne forum, to zajrzyjcie na Quorę. 
 
-**\
-[Quora](https://pl.quora.com/)** pozwala Wam na zaobserwowanie tematów, które szczególnie Was interesują, a następnie śledzenie newsów, które się tam pojawiają. Mogą się tam rozwinąć naprawdę ciekawe dyskusje, a wypowiadają się tam nawet osoby znane w świecie marketingu. 
+**[Quora](https://pl.quora.com/)** pozwala Wam na zaobserwowanie tematów, które szczególnie Was interesują, a następnie śledzenie newsów, które się tam pojawiają. Mogą się tam rozwinąć naprawdę ciekawe dyskusje, a wypowiadają się tam nawet osoby znane w świecie marketingu. 
 
 I na koniec — Pinterest Predicts. Platforma co roku wypuszcza swoje przewidywane kierunki, w których pójdzie design. Rzekomo nawet 80% predykcji się zgadza. 
 
