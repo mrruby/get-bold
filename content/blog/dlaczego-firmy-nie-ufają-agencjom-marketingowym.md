@@ -1,9 +1,8 @@
 ---
 title: Dlaczego firmy nie ufają agencjom marketingowym?
-description: Ostatnim razem podczas spotkania zespołowego miałyśmy burzę mózgów
+description: "Ostatnim razem podczas spotkania zespołowego miałyśmy burzę mózgów
   na temat współpracy z agencją marketingową i tego jak to może wyglądać ze
-  strony klienta. Dzięki tej dyskusji rozpoczęłyśmy wewnętrzne badanie przyczyn,
-  przez które firmy mogą mieć obawy związane ze współpracą z agencjami.
+  strony klienta. "
 thumbnail: /img/8.png
 tags:
   - marketing
