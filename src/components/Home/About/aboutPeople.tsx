@@ -1,13 +1,13 @@
 import { Link } from "gatsby";
 import React from "react";
-import { AboutAda } from "../../../helpers/AboutAda";
+import { AboutPhoto } from "../../../helpers/AboutPhoto";
 import { Button } from "../../../helpers/Button";
 
 export const HomeAboutPeople = () => {
   return (
     <div className="flex flex-col lg:flex-row space-y-20 lg:space-y-0 items-center justify-center max-w-[1100px]">
       <div className="relative flex flex-col items-center w-full h-full">
-        <AboutAda />
+        <AboutPhoto link="../../ada.jpg" />
 
         <div className="mt-[3.375rem] flex flex-col items-center">
           <h4 className="font-bold text-xl lg:text-[1.75rem] mb-2">
