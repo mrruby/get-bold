@@ -161,9 +161,6 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
             <li>
               <Link to="/polityka-prywatnosci">Polityka prywatności & plików cookie</Link>
             </li>
-            <li>
-              <Link to="/regulamin">Regulamin</Link>
-            </li>
           </ul>
         </nav>
       </div>
