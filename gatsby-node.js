@@ -13,10 +13,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const result = await graphql(
     `
       {
-        postsRemark: allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: ASC }
-          limit: 1000
-        ) {
+        postsRemark: allMarkdownRemark(sort: { frontmatter: { date: ASC } }, limit: 1000) {
           nodes {
             id
             fields {
@@ -25,12 +22,12 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           }
         }
         tagsGroup: allMarkdownRemark(limit: 2000) {
-          group(field: frontmatter___tags) {
+          group(field: { frontmatter: { tags: SELECT } }) {
             fieldValue
           }
         }
         categories: allMarkdownRemark(limit: 2000) {
-          group(field: frontmatter___category) {
+          group(field: { frontmatter: { category: SELECT } }) {
             fieldValue
           }
         }
@@ -39,10 +36,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   );
 
   if (result.errors) {
-    reporter.panicOnBuild(
-      `There was an error loading your blog posts`,
-      result.errors
-    );
+    reporter.panicOnBuild(`There was an error loading your blog posts`, result.errors);
     return;
   }
 
@@ -58,8 +52,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         path: `/blog${post.fields.slug}`,
         component: blogPost,
         context: {
-          id: post.id,
-        },
+          id: post.id
+        }
       });
     });
   }
@@ -72,8 +66,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       path: `/tagi/${tag.fieldValue}/`,
       component: tagTemplate,
       context: {
-        tag: tag.fieldValue,
-      },
+        tag: tag.fieldValue
+      }
     });
   });
 
@@ -84,8 +78,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       path: `/kategorie/${cat.fieldValue}/`,
       component: catTemplate,
       context: {
-        cat: cat.fieldValue,
-      },
+        cat: cat.fieldValue
+      }
     });
   });
 };
@@ -99,7 +93,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     createNodeField({
       name: `slug`,
       node,
-      value,
+      value
     });
   }
 };

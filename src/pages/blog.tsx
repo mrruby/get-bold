@@ -4,6 +4,7 @@ import { HeadingBlog } from "../components/Blog/heading";
 import { PostsBlog } from "../components/Blog/posts";
 import { SidebarBlogPost } from "../components/BlogPost/sidebar";
 import Layout from "../components/Layout/Layout";
+import { SEO } from "../components/Seo";
 import { BlogProvider } from "../utils/context/blogContext";
 
 const BlogPage = () => {
@@ -11,7 +12,6 @@ const BlogPage = () => {
     <ParallaxProvider>
       <BlogProvider>
         <Layout
-          title={"Blog - GetBold"}
           yellowCircle={true}
           yellowCircle2={false}
           orangeHex={true}
@@ -49,5 +49,7 @@ const BlogPage = () => {
     </ParallaxProvider>
   );
 };
+
+export const Head = () => <SEO title="Blog - GetBold" />;
 
 export default BlogPage;

@@ -5,6 +5,7 @@ import { HeadingTagTemplate } from "../components/TagAndCatTemplate/heading";
 import { TagsPosts } from "../components/TagAndCatTemplate/tagsPosts";
 import Layout from "../components/Layout/Layout";
 import { ParallaxProvider } from "react-scroll-parallax";
+import { SEO } from "../components/Seo";
 
 interface Props {
   data: any;
@@ -20,7 +21,6 @@ const CatPage: React.FC<Props> = ({ data, pageContext }) => {
   return (
     <ParallaxProvider>
       <Layout
-        title={`${cat} - GetBold`}
         yellowCircle={true}
         yellowCircle2={false}
         orangeHex={false}
@@ -58,6 +58,8 @@ const CatPage: React.FC<Props> = ({ data, pageContext }) => {
   );
 };
 
+export const Head = ({ pageContext: { cat } }) => <SEO title={`${cat} - GetBold`} />;
+
 export default CatPage;
 
 export const pageQuery = graphql`
@@ -68,7 +70,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC } }
       filter: { frontmatter: { category: { in: [$cat] } } }
     ) {
       nodes {

@@ -14,6 +14,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { ParallaxProvider } from "react-scroll-parallax";
 import { WidthProvider } from "../utils/context/widthContext";
+import { SEO } from "../components/Seo";
 
 const IndexPage = () => {
   useEffect(() => {
@@ -26,7 +27,6 @@ const IndexPage = () => {
       <WidthProvider>
         <BlogProvider>
           <Layout
-            title={"Strona Główna - GetBold"}
             screenComponent={<HomeHeroComponent />}
             yellowCircle={true}
             yellowCircle2={false}
@@ -66,5 +66,7 @@ const IndexPage = () => {
     </ParallaxProvider>
   );
 };
+
+export const Head = () => <SEO title="Strona Główna - GetBold" />;
 
 export default IndexPage;

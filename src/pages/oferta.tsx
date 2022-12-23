@@ -3,13 +3,13 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import Layout from "../components/Layout/Layout";
 import { BoxesOffert } from "../components/Offert/boxes";
 import { OffertComponent } from "../components/Offert/offert";
+import { SEO } from "../components/Seo";
 import { PageHeading } from "../helpers/PageHeading";
 
 const OffertPage = () => {
   return (
     <ParallaxProvider>
       <Layout
-        title={"Oferta - GetBold"}
         yellowCircle={true}
         yellowCircle2={true}
         orangeHex={true}
@@ -54,5 +54,7 @@ const OffertPage = () => {
     </ParallaxProvider>
   );
 };
+
+export const Head = () => <SEO title="Oferta - GetBold" />;
 
 export default OffertPage;

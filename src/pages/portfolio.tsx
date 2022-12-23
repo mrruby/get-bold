@@ -4,12 +4,12 @@ import Layout from "../components/Layout/Layout";
 import { HeadingPortfolio } from "../components/Portfolio/heading";
 import { PortfolioPortfolio } from "../components/Portfolio/portfolio";
 import { QuotesPortfolio } from "../components/Portfolio/quotes";
+import { SEO } from "../components/Seo";
 
 const PortfolioPage = () => {
   return (
     <ParallaxProvider>
       <Layout
-        title={"Portfolio - GetBold"}
         yellowCircle={true}
         yellowCircle2={false}
         orangeHex={true}
@@ -44,4 +44,7 @@ const PortfolioPage = () => {
     </ParallaxProvider>
   );
 };
+
+export const Head = () => <SEO title="Portfolio - GetBold" />;
+
 export default PortfolioPage;

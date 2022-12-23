@@ -7,6 +7,7 @@ import { ContentBlogPost } from "../components/BlogPost/content";
 
 import Layout from "../components/Layout/Layout";
 import { ParallaxProvider } from "react-scroll-parallax";
+import { SEO } from "../components/Seo";
 
 type GraphQLResult = {
   markdownRemark: markdownRemark;
@@ -18,7 +19,6 @@ const BlogPost: React.FC<PageProps<GraphQLResult>> = ({ data }) => {
   return (
     <ParallaxProvider>
       <Layout
-        title={`${post.frontmatter.title} - GetBold`}
         yellowCircle={true}
         yellowCircle2={false}
         orangeHex={false}
@@ -67,6 +67,10 @@ const BlogPost: React.FC<PageProps<GraphQLResult>> = ({ data }) => {
     </ParallaxProvider>
   );
 };
+
+export const Head = ({ data }) => (
+  <SEO title={`${data.markdownRemark.frontmatter.title} - GetBold`} />
+);
 
 export default BlogPost;
 

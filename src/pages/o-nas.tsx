@@ -3,12 +3,12 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import { HeadingAbout } from "../components/About/heading";
 import { TeamAbout } from "../components/About/team";
 import Layout from "../components/Layout/Layout";
+import { SEO } from "../components/Seo";
 
 const AboutPage = () => {
   return (
     <ParallaxProvider>
       <Layout
-        title={"O nas - GetBold"}
         yellowCircle={true}
         yellowCircle2={false}
         orangeHex={true}
@@ -42,5 +42,7 @@ const AboutPage = () => {
     </ParallaxProvider>
   );
 };
+
+export const Head = () => <SEO title="O nas - GetBold" />;
 
 export default AboutPage;

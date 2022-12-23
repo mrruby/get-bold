@@ -13,7 +13,7 @@ export const BlogProvider = ({ children }) => {
           title
         }
       }
-      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
         nodes {
           excerpt
           fields {
@@ -35,8 +35,6 @@ export const BlogProvider = ({ children }) => {
   `);
 
   return (
-    <BlogContext.Provider value={blogData.allMarkdownRemark.nodes}>
-      {children}
-    </BlogContext.Provider>
+    <BlogContext.Provider value={blogData.allMarkdownRemark.nodes}>{children}</BlogContext.Provider>
   );
 };

@@ -5,13 +5,13 @@ export const SidebarBlogPost = () => {
   const tagsAndCats = useStaticQuery(graphql`
     query tagsAndCatsQuery {
       tags: allMarkdownRemark(limit: 2000) {
-        group(field: frontmatter___tags) {
+        group(field: { frontmatter: { tags: SELECT } }) {
           fieldValue
           totalCount
         }
       }
       cats: allMarkdownRemark(limit: 2000) {
-        group(field: frontmatter___category) {
+        group(field: { frontmatter: { category: SELECT } }) {
           fieldValue
         }
       }

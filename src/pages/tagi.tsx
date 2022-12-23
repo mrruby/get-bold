@@ -1,6 +1,7 @@
 import React from "react";
 import { ParallaxProvider } from "react-scroll-parallax";
 import Layout from "../components/Layout/Layout";
+import { SEO } from "../components/Seo";
 import { HeadingTags } from "../components/Tags/heading";
 import { TagsList } from "../components/Tags/tagsList";
 import { TagsProvider } from "../utils/context/tagsContext";
@@ -10,7 +11,6 @@ const TagsPage = () => {
     <ParallaxProvider>
       <TagsProvider>
         <Layout
-          title={"Tagi - GetBold"}
           yellowCircle={false}
           yellowCircle2={false}
           orangeHex={false}
@@ -45,5 +45,7 @@ const TagsPage = () => {
     </ParallaxProvider>
   );
 };
+
+export const Head = () => <SEO title="Tagi - GetBold" />;
 
 export default TagsPage;

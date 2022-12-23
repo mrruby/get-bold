@@ -3,6 +3,7 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import { CatsList } from "../components/Categories/catsList";
 import { HeadingCats } from "../components/Categories/heading";
 import Layout from "../components/Layout/Layout";
+import { SEO } from "../components/Seo";
 import { CatsProvider } from "../utils/context/catsContext";
 
 const TagsPage = () => {
@@ -10,7 +11,6 @@ const TagsPage = () => {
     <ParallaxProvider>
       <CatsProvider>
         <Layout
-          title={"Kategorie - GetBold"}
           yellowCircle={false}
           yellowCircle2={false}
           orangeHex={false}
@@ -45,5 +45,7 @@ const TagsPage = () => {
     </ParallaxProvider>
   );
 };
+
+export const Head = () => <SEO title="Kategorie - GetBold" />;
 
 export default TagsPage;

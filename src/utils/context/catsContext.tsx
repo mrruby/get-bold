@@ -12,7 +12,7 @@ export const CatsProvider = ({ children }) => {
   const catsData = useStaticQuery(graphql`
     query catsQuery {
       allMarkdownRemark(limit: 2000) {
-        group(field: frontmatter___category) {
+        group(field: { frontmatter: { category: SELECT } }) {
           fieldValue
         }
       }
@@ -20,8 +20,6 @@ export const CatsProvider = ({ children }) => {
   `);
 
   return (
-    <CatsContext.Provider value={catsData.allMarkdownRemark.group}>
-      {children}
-    </CatsContext.Provider>
+    <CatsContext.Provider value={catsData.allMarkdownRemark.group}>{children}</CatsContext.Provider>
   );
 };

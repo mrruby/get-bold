@@ -12,7 +12,7 @@ export const TagsProvider = ({ children }) => {
   const tagsData = useStaticQuery(graphql`
     query tagQuery {
       allMarkdownRemark(limit: 2000) {
-        group(field: frontmatter___tags) {
+        group(field: { frontmatter: { tags: SELECT } }) {
           fieldValue
           totalCount
         }
@@ -21,8 +21,6 @@ export const TagsProvider = ({ children }) => {
   `);
 
   return (
-    <TagsContext.Provider value={tagsData.allMarkdownRemark.group}>
-      {children}
-    </TagsContext.Provider>
+    <TagsContext.Provider value={tagsData.allMarkdownRemark.group}>{children}</TagsContext.Provider>
   );
 };
