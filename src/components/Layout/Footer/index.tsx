@@ -18,9 +18,7 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
         <nav className="2xl:px-[21rem] px-8 xl:px-[150px] h-full">
           <ul className="flex flex-col md:flex-row justify-center md:justify-start items-start md:items-center space-y-2 md:space-y-0 md:space-x-12 text-getbold-btn-pink text-xs h-full">
             <li>
-              <Link to="/polityka-prywatnosci">
-                Polityka prywatności & plików cookie
-              </Link>
+              <Link to="/polityka-prywatnosci">Polityka prywatności & plików cookie</Link>
             </li>
           </ul>
         </nav>
@@ -32,7 +30,7 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
       <div className="flex flex-col lg:flex-row mb-8">
         <div className="w-full lg:w-1/3 mb-20 lg:m-0 z-30">
           <StaticImage
-            placeholder="none" 
+            placeholder="none"
             src="../../../images/logo-footer.svg"
             alt="logo"
             className="mb-[3.5rem]"
@@ -81,9 +79,7 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
           <p className="tracking-[4px] text-xl font-bebas text-getbold-pink mb-4">
             Potrzebujesz wsparcia?
           </p>
-          <h4 className="font-bold text-4xl mb-[54px] ">
-            Daj znać, oddzwonimy!
-          </h4>
+          <h4 className="font-bold text-4xl mb-[54px] ">Daj znać, oddzwonimy!</h4>
           <form
             method="POST"
             data-netlify-recaptcha="true"
@@ -106,16 +102,19 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
                 placeholder="Nazwa firmy"
                 className="border-0 border-b-2 border-getbold-blue text-[#233176] placeholder:text-[#233176] focus:ring-0 focus:border-getbold-blue p-0 py-4 w-full text-sm bg-transparent"
               />
-              <select name="service" className="text-sm border-0 border-b-2 border-getbold-blue text-[#233176] placeholder:text-[#233176] focus:ring-0 focus:border-getbold-blue p-0 py-4 w-full bg-transparent">
+              <select
+                name="service"
+                className="text-sm border-0 border-b-2 border-getbold-blue text-[#233176] placeholder:text-[#233176] focus:ring-0 focus:border-getbold-blue p-0 py-4 w-full bg-transparent"
+              >
                 <option value="" selected disabled hidden>
                   Co Cię interesuje?
                 </option>
-                <option value={'Influencer marketing'}>Influencer marketing</option>
-                <option value={'Social media'}>Social media</option>
-                <option value={'Konsultacje kreatywne'}>Konsultacje kreatywne</option>
-                <option value={'Facebook Ads'}>Facebook Ads</option>
-                <option value={'TikTok Ads'}>TikTok Ads</option>
-                <option value={'Inne'}>Inne</option>
+                <option value={"Influencer marketing"}>Influencer marketing</option>
+                <option value={"Social media"}>Social media</option>
+                <option value={"Konsultacje kreatywne"}>Konsultacje kreatywne</option>
+                <option value={"Facebook Ads"}>Facebook Ads</option>
+                <option value={"TikTok Ads"}>TikTok Ads</option>
+                <option value={"Inne"}>Inne</option>
               </select>
             </div>
             <div>
@@ -135,24 +134,21 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
                   type="checkbox"
                 />
                 <p className="sm:w-[22rem] w-full text-xs">
-                  Wyrazam zgode na przetwarzanie moich danych osobowych zgodnie
-                  z ustawą o ochronie danych osobowych w celu (np wysyłania
-                  informacji handlowei). Podanie danych osobowych jest
-                  dobrowolne. Zostałem poinformowany, ze przysługuje mi prawo
-                  dostepu do swoich danych, mozliwosci ich poprawiania, zadania
-                  zaprzestania ich przetwarzania. Administratorem danych jest
-                  GetBold Agency z siedzibą w 41-500 Chorzów ul. Żołnierzy
-                  Września 79/6.
+                  Wyrazam zgode na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie
+                  danych osobowych w celu (np wysyłania informacji handlowei). Podanie danych
+                  osobowych jest dobrowolne. Zostałem poinformowany, ze przysługuje mi prawo dostepu
+                  do swoich danych, mozliwosci ich poprawiania, zadania zaprzestania ich
+                  przetwarzania. Administratorem danych jest GetBold Agency z siedzibą w 41-500
+                  Chorzów ul. Żołnierzy Września 79/6.
                 </p>
               </div>
               <input type="hidden" name="bot-field" />
               <input type="hidden" name="form-name" value="contact-main" />
               <div className="flex flex-col">
-              <ReCAPTCHA sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY} />
-              <button
-                  className="mt-3 rounded-3xl bg-getbold-blue w-full md:w-1/2 sm:ml-8 py-3 text-white font-semibold pointer hover:shadow-lg hover:bg-[#2d3786] transition-all">
-                Wyślij wiadomość!
-              </button>
+                <ReCAPTCHA sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY} />
+                <button className="mt-3 rounded-3xl bg-getbold-blue w-full md:w-1/2 sm:ml-8 py-3 text-white font-semibold pointer hover:shadow-lg hover:bg-[#2d3786] transition-all">
+                  Wyślij wiadomość!
+                </button>
               </div>
             </div>
           </form>
@@ -161,11 +157,12 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
 
       <div className="w-full h-[5.125rem] mt-[87px] bg-[#FFAAB7] absolute left-0 bottom-0">
         <nav className="2xl:px-[21rem] px-8 xl:px-[150px] h-full">
-          <ul className="flex flex-col md:flex-row justify-center md:justify-start items-start md:items-center space-y-2 md:space-y-0 md:space-x-12 text-getbold-btn-pink text-xs h-full">
+          <ul className="flex flex-col md:flex-row justify-center md:justify-end items-start md:items-center space-y-2 md:space-y-0 md:space-x-12 text-getbold-blue text-xs h-full">
             <li>
-              <Link to="/polityka-prywatnosci">
-                Polityka prywatności & plików cookie
-              </Link>
+              <Link to="/polityka-prywatnosci">Polityka prywatności & plików cookie</Link>
+            </li>
+            <li>
+              <Link to="/regulamin">Regulamin</Link>
             </li>
           </ul>
         </nav>
@@ -190,18 +187,9 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
         </svg>
       )}
 
-      <RightCloud
-        mobileTop="top-8"
-        top="md:top-0"
-        mobileRight="-right-24"
-        right="md:-right-0"
-      />
+      <RightCloud mobileTop="top-8" top="md:top-0" mobileRight="-right-24" right="md:-right-0" />
 
-      <LeftCloud
-        mobileTop="top-[500px]"
-        mobileLeft="-left-24"
-        left="md:-left-40"
-      />
+      <LeftCloud mobileTop="top-[500px]" mobileLeft="-left-24" left="md:-left-40" />
     </footer>
   );
 };
