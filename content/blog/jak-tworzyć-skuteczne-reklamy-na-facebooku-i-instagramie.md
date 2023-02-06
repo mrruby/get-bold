@@ -16,7 +16,7 @@ Skuteczne reklamy na Facebooku i Instagramie to klucz do sukcesu w dzisiejszym �
 
 ### Dlaczego warto inwestować w reklamy na Facebooku i Instagramie?
 
-Według statystyk podanych przez Hootsuite [Facebook](https://blog.hootsuite.com/facebook-statistics/#Facebook_usage_stats) posiada 2,93 miliardów aktywnych użytkowników i jest trzecią najczęściej odwiedzaną stroną na świecie. Z [Instagrama](http://targetowanie.) korzysta miesięcznie ponad 2 miliardy osób. Liczby te stale rosną, co oznacza, że z każdym rokiem na Facebooku i Instagramie pojawia się coraz więcej osób, które mogą stać się Twoimi klientami. 
+Według statystyk podanych przez Hootsuite [Facebook](https://blog.hootsuite.com/facebook-statistics/#Facebook_usage_stats) posiada 2,93 miliardów aktywnych użytkowników i jest trzecią najczęściej odwiedzaną stroną na świecie. Z [Instagrama](https://blog.hootsuite.com/instagram-statistics/) korzysta miesięcznie ponad 2 miliardy osób. Liczby te stale rosną, co oznacza, że z każdym rokiem na Facebooku i Instagramie pojawia się coraz więcej osób, które mogą stać się Twoimi klientami. 
 
 Właśnie dlatego warto korzystać z systemu reklamowego Meta. Aby jednak zdobyć nowych klientów, reklama musi być skuteczna!
 
@@ -24,10 +24,13 @@ Właśnie dlatego warto korzystać z systemu reklamowego Meta. Aby jednak zdoby�
 
 Istnieje wiele różnych czynników, które wpływają na skuteczność reklamy:
 
-* teksty reklamowe, 
-* targetowanie,
-* grafiki, 
-* filmy.
+ teksty reklamowe,
+
+ targetowanie,
+
+ grafiki, 
+
+filmy.
 
 Aby reklama była skuteczna, należy zadbać o każdy z tych elementów. 
 
