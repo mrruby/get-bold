@@ -24,13 +24,13 @@ Właśnie dlatego warto korzystać z systemu reklamowego Meta. Aby jednak zdoby�
 
 Istnieje wiele różnych czynników, które wpływają na skuteczność reklamy:
 
- teksty reklamowe,
+\-teksty reklamowe,
 
- targetowanie,
+\-targetowanie,
 
- grafiki, 
+\-grafiki, 
 
-filmy.
+\-filmy.
 
 Aby reklama była skuteczna, należy zadbać o każdy z tych elementów. 
 
