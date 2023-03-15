@@ -24,19 +24,13 @@ export const PostsBlog = () => {
                     </div>
                   </div>
 
-                  <div className="absolute bottom-0 flex flex-col justify-between h-3/5 w-full p-8 bg-white rounded-b-2xl">
+                  <div className="bottom-0 flex flex-col justify-between h-3/5 w-full p-8 bg-white rounded-b-2xl">
                     <div>
-                      <p className="mb-4 font-thin opacity-70">
-                        23rd April 2020
-                      </p>
+                      <p className="mb-4 font-thin opacity-70">{post.frontmatter.date}</p>
 
-                      <p className="font-extrabold mb-4">
-                        {post.frontmatter.title}
-                      </p>
+                      <p className="font-extrabold mb-4">{post.frontmatter.title}</p>
 
-                      <p className="font-medium">
-                        {post.frontmatter.description}
-                      </p>
+                      <p className="font-medium">{post.frontmatter.description}</p>
                     </div>
                     <div className="flex items-center space-x-4">
                       <img
@@ -46,9 +40,7 @@ export const PostsBlog = () => {
                       />
                       <div>
                         <p className="font-thin opacity-70">Autor: </p>
-                        <p className="font-bold text-getbold-btn-pink">
-                          {post.frontmatter.author}
-                        </p>
+                        <p className="font-bold text-getbold-btn-pink">{post.frontmatter.author}</p>
                       </div>
                     </div>
                   </div>

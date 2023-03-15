@@ -19,12 +19,12 @@ export const TeamMember: React.FC<Props> = ({
   isLeft = true,
   body,
   ps,
-  title,
+  title
 }) => {
   return (
     <div
       className={`flex flex-col ${
-        isLeft ? "lg:flex-row" : "lg:flex-row-reverse"
+        isLeft ? "lg:flex-row ml-4" : "lg:flex-row-reverse"
       } max-w-[1500px] mb-16 lg:mb-[168px] px-8 relative`}
     >
       <div

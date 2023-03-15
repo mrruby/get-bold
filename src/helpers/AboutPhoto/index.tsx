@@ -10,12 +10,12 @@ export const AboutPhoto: React.FC<Props> = ({ link }) => {
       <img
         src="../../../../about-light.png"
         alt=""
-        className="absolute -top-10 left-16 z-30 w-[64px] lg:w-[100px] h-auto"
+        className="absolute -top-12 left-16 z-30 w-[64px] lg:w-[80px] h-auto"
       />
       <img
         src="../../../../about-note.svg"
         alt=""
-        className="absolute top-20 lg:top-36 -left-8 lg:-left-32 z-30 w-[128px] lg:w-[200px] h-auto"
+        className="absolute top-16 lg:top-28 -left-8 lg:-left-12 z-30 w-[128px] lg:w-[180px] h-auto"
       />
 
       <div className="w-[18rem] h-[18rem] md:w-[24rem] md:h-[24rem] pt-1 pb-2 px-2 lg:p-0 bg-image-about-ada bg-cover flex items-start justify-center object-contain">
