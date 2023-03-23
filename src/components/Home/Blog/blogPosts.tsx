@@ -30,20 +30,16 @@ export const HomeBlogPosts = () => {
                   </div>
                 </div>
 
-                <div className="absolute bottom-0 flex flex-col justify-between w-full h-3/5 p-8 bg-white rounded-b-2xl">
+                <div className=" bottom-0 flex flex-col justify-between w-full h-3/5 p-8 bg-white rounded-b-2xl">
                   <div className="h-2/3">
                     <p className="mb-4 font-thin flex items-center">
                       <AiFillClockCircle className="mr-2 text-getbold-btn-pink" />
                       {post.frontmatter.date}
                     </p>
-                    <p className="font-extrabold mb-4">
-                      {post.frontmatter.title}
-                    </p>
-                    <p className="font-medium">
-                      {post.frontmatter.description}
-                    </p>
+                    <p className="font-extrabold mb-4">{post.frontmatter.title}</p>
+                    <p className="font-medium">{post.frontmatter.description}</p>
                   </div>
-                  <div className="flex items-end space-x-4 h-1/3">
+                  <div className="flex items-end space-x-4 h-1/3 pt-4">
                     <img
                       src={post.frontmatter.authorImg}
                       alt={post.frontmatter.author}
@@ -51,9 +47,7 @@ export const HomeBlogPosts = () => {
                     />
                     <div>
                       <p className="font-thin opacity-70">Autor: </p>
-                      <p className="font-bold text-getbold-btn-pink">
-                        {post.frontmatter.author}
-                      </p>
+                      <p className="font-bold text-getbold-btn-pink">{post.frontmatter.author}</p>
                     </div>
                   </div>
                 </div>
@@ -66,8 +60,7 @@ export const HomeBlogPosts = () => {
       <div className="flex justify-center mt-[5.75rem]">
         <Link to="/blog">
           <button className="font-medium py-3 px-8 rounded-2xl hover:text-getbold-btn-pink transition-all">
-            Zobacz wszystkie wpisy (
-            <span className="text-getbold-btn-pink">{blog.length}</span>)
+            Zobacz wszystkie wpisy (<span className="text-getbold-btn-pink">{blog.length}</span>)
           </button>
         </Link>
       </div>
