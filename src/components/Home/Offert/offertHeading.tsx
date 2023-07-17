@@ -3,7 +3,7 @@ import React from "react";
 export const HomeOffertHeading = () => {
   return (
     <div className="flex flex-col items-center lg:max-w-[71rem] lg:mb-14">
-      <h2 className="tracking-[4px] text-xl font-bebas text-getbold-pink mb-6">
+      <h2 className="tracking-[4px] text-xl font-poppins text-getbold-pink mb-6">
         Oferta
       </h2>
       <h3 className="text-3xl lg:text-4xl text-center font-medium mb-8">
