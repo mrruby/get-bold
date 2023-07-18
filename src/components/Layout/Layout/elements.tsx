@@ -22,6 +22,10 @@ import {
   SecMidBackground,
   YellowCircle,
   YellowSquare,
+  LeftSemicircle,
+  RightSemicircle,
+  FacebookIcon,
+  InstagramIcon,
 } from "../../../helpers/LayoutElements";
 import { ILayoutElements } from "../../../utils/types/layoutElements";
 
@@ -49,6 +53,10 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
   ball,
   pinkChart,
   blueCube,
+  leftSemicircle,
+  rightSemicircle,
+  facebookIcon,
+  instagramIcon,
 }) => {
   return (
     <>
@@ -213,6 +221,38 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
           mobileTop="top-[250px]"
           mobileRight="right-2"
           right="md:right-[400px]"
+        />
+      )}
+
+      {leftSemicircle && (
+        <LeftSemicircle
+          mobileTop="top-[300px]"
+          mobileLeft="left-0"
+          left="md:left-0"
+        />
+      )}
+
+      {rightSemicircle && (
+        <RightSemicircle
+          mobileTop="top-[250px]"
+          mobileRight="right-0"
+          right="md:right-0"
+        />
+      )}
+
+      {facebookIcon && (
+        <FacebookIcon
+          mobileTop="top-[300px]"
+          mobileRight="right-[274px]"
+          right="md:right-[274px]"
+        />
+      )}
+
+      {instagramIcon && (
+        <InstagramIcon
+          mobileTop="top-[250px]"
+          mobileRight="right-[384px]"
+          right="md:right-[384px]"
         />
       )}
     </>

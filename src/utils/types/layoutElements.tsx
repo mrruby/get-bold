@@ -22,4 +22,8 @@ export interface ILayoutElements {
   ball: boolean;
   pinkChart: boolean;
   blueCube: boolean;
+  leftSemicircle: boolean;
+  rightSemicircle: boolean;
+  facebookIcon: boolean;
+  instagramIcon: boolean;
 }

@@ -40,7 +40,11 @@ const Layout: React.FC<Props> = ({
   pinkChart,
   blueCube,
   isContactPage,
-  footerWhiteBg
+  footerWhiteBg,
+  leftSemicircle,
+  rightSemicircle,
+  facebookIcon,
+  instagramIcon,
 }) => {
   return (
     <div className="antialiased min-h-screen max-w-full overflow-hidden text-sm font-poppins text-getbold-blue flex flex-col scroll-smooth relative">
@@ -82,6 +86,10 @@ const Layout: React.FC<Props> = ({
         ball={ball}
         pinkChart={pinkChart}
         blueCube={blueCube}
+        leftSemicircle={leftSemicircle}
+        rightSemicircle={rightSemicircle}
+        facebookIcon={facebookIcon}
+        instagramIcon={instagramIcon}
       />
     </div>
   );
