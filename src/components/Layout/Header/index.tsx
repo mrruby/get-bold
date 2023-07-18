@@ -8,7 +8,7 @@ const Header: React.FC = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState<boolean>(false);
 
   return (
-    <header className="flex items-center justify-between w-full h-40 px-8">
+    <header className="flex items-center justify-between w-full h-28 px-24">
       <HeaderLogo />
       <HeaderNavigation />
       <HeaderHamburger

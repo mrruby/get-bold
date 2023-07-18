@@ -226,7 +226,7 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
 
       {leftSemicircle && (
         <LeftSemicircle
-          mobileTop="top-[300px]"
+          mobileTop="top-[468px]"
           mobileLeft="left-0"
           left="md:left-0"
         />
@@ -234,7 +234,7 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
 
       {rightSemicircle && (
         <RightSemicircle
-          mobileTop="top-[250px]"
+          mobileTop="top-[172px]"
           mobileRight="right-0"
           right="md:right-0"
         />
