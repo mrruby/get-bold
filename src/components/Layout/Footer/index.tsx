@@ -76,7 +76,7 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
           </ul>
         </div>
         <div className="w-full lg:w-2/3 z-30">
-          <p className="tracking-[4px] text-xl font-bebas text-getbold-pink mb-4">
+          <p className="tracking-[4px] text-xl font-poppins text-getbold-pink mb-4">
             Potrzebujesz wsparcia?
           </p>
           <h4 className="font-bold text-4xl mb-[54px] ">Daj znać, oddzwonimy!</h4>

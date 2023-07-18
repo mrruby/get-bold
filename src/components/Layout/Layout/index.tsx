@@ -43,7 +43,7 @@ const Layout: React.FC<Props> = ({
   footerWhiteBg
 }) => {
   return (
-    <div className="antialiased min-h-screen max-w-full overflow-hidden text-sm font-montserrat text-getbold-blue flex flex-col scroll-smooth relative">
+    <div className="antialiased min-h-screen max-w-full overflow-hidden text-sm font-poppins text-getbold-blue flex flex-col scroll-smooth relative">
       <div className="container mx-auto max-w-7xl z-20 overflow-x-hidden">
         {screenComponent ? (
           <div className="min-h-screen flex flex-col">

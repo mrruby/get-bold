@@ -3,7 +3,7 @@ import React from "react";
 export const HomePortfolioHeading = () => {
   return (
     <div className="flex flex-col items-center lg:w-[71rem] mb-14">
-      <h2 className="tracking-[4px] text-xl font-bebas text-getbold-pink mb-6">
+      <h2 className="tracking-[4px] text-xl font-poppins text-getbold-pink mb-6">
         Portfolio
       </h2>
       <h3 className="text-3xl lg:text-4xl lg:leading-normal font-medium mb-8 text-center">

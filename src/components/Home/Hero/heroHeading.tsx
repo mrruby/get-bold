@@ -14,7 +14,7 @@ export const HomeHeroHeading = () => {
       disabled={disableParallax}
       className="w-full mb-10 lg:m-0 lg:w-2/5 relative"
     >
-      <h3 className="text-getbold-btn-pink font-bebas text-2xl mb-4 lg:mb-8">
+      <h3 className="text-getbold-btn-pink font-poppins text-2xl mb-4 lg:mb-8">
         Getbold.Agency
       </h3>
       <h1 className="text-4xl lg:text-6xl text-[#1F2957] leading-none font-extrabold mb-3 lg:mb-8">
