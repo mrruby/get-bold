@@ -10,30 +10,7 @@ const OffertPage = () => {
   return (
     <ParallaxProvider>
       <Layout
-        yellowCircle={false}
-        yellowCircle2={false}
-        orangeHex={false}
-        grayTriangle={false}
-        pinkTriangle={false}
-        blueHex={false}
-        redCircle={false}
-        yellowSquare={false}
-        blueSquare={false}
-        heroBG={false}
-        firstMidBG={false}
-        secMidBG={false}
         isSubPage={true}
-        cube={false}
-        graph={false}
-        card={false}
-        leftCloud={false}
-        rightCloud={false}
-        flower={false}
-        coin={false}
-        chat={false}
-        ball={false}
-        pinkChart={false}
-        blueCube={false}
         isContactPage={false}
         footerWhiteBg={true}
         leftSemicircle={true}
@@ -58,7 +35,7 @@ const OffertPage = () => {
         <BoxesOffert />
         <OffertComponent />
       </Layout>
-    </ParallaxProvider>
+    </ParallaxProvider >
   );
 };
 

@@ -376,7 +376,7 @@ export const BgWave1: React.FC<Props> = ({
       className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
         } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
         } ${mobileBottom && mobileBottom
-        } h-[1000px] w-full bg-wave1 -z-20`}
+        } h-screen w-full bg-wave1 -z-20`}
     ></Parallax>
   );
 };
@@ -730,7 +730,7 @@ export const InstagramIcon: React.FC<Props> = ({
       alt="Blue Cube - GetBold Agency"
       className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
         } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
-        } ${mobileBottom && mobileBottom} rotate-45 -z-10 h-auto `}
+        } ${mobileBottom && mobileBottom} -z-20 h-auto `}
       ref={Parallax.ref}
     />
   );
