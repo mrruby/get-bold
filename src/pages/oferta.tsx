@@ -32,7 +32,7 @@ const OffertPage = () => {
           firstPartAdditionalParagraph="Zobacz, co konkretnie zrobimy, aby Twój biznes się "
           secPartAdditionalParagraph="rozkręcił!"
         />
-        <BoxesOffert />
+        {/* <BoxesOffert /> */}
         <OffertComponent />
       </Layout>
     </ParallaxProvider >
