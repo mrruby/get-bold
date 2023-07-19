@@ -10,48 +10,32 @@ const OffertPage = () => {
   return (
     <ParallaxProvider>
       <Layout
-        yellowCircle={true}
-        yellowCircle2={true}
-        orangeHex={true}
-        grayTriangle={true}
-        pinkTriangle={true}
-        blueHex={true}
-        redCircle={true}
-        yellowSquare={true}
-        blueSquare={true}
-        heroBG={true}
-        firstMidBG={true}
-        secMidBG={false}
         isSubPage={true}
-        cube={true}
-        graph={true}
-        card={true}
-        leftCloud={true}
-        rightCloud={true}
-        flower={true}
-        coin={true}
-        chat={false}
-        ball={false}
-        pinkChart={false}
-        blueCube={false}
         isContactPage={false}
         footerWhiteBg={true}
+        leftSemicircle={true}
+        rightSemicircle={true}
+        facebookIcon={true}
+        instagramIcon={true}
+        bgWave1={true}
       >
         <PageHeading
           pageName="OFERTA"
           firstPartTitle={
             <>
-              Docieramy do Twoich klientów <br />{" "}
+              Przyprowadzimy do <br />Ciebie{" "}
             </>
           }
-          circledText="najlepszą"
-          secPartTitle={<> możliwą drogą.</>}
-          paragraph="A Ty zawsze wiesz, jak nam idzie. Jak dokładnie wygląda współpraca z nami?"
+          secPartTitle={<> nowych klientów.</>}
+          firstPartParagraph="Nawet jeśli teraz zamiast osiągać sukcesy martwisz się o przyszłość swojej firmy. "
+          secPartParagraph="Głowa do góry!"
+          firstPartAdditionalParagraph="Zobacz, co konkretnie zrobimy, aby Twój biznes się "
+          secPartAdditionalParagraph="rozkręcił!"
         />
         <BoxesOffert />
         <OffertComponent />
       </Layout>
-    </ParallaxProvider>
+    </ParallaxProvider >
   );
 };
 

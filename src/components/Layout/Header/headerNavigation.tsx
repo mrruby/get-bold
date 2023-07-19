@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 export const HeaderNavigation = () => {
   return (
     <nav className="hidden lg:block">
-      <ul className="flex space-x-2 lg:space-x-12 font-bold items-center">
+      <ul className="flex space-x-2 lg:space-x-12 items-center text-lg">
         <Link
           to="/"
           activeStyle={{

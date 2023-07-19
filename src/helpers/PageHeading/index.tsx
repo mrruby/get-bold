@@ -4,7 +4,10 @@ interface Props {
   firstPartTitle?: string | ReactElement;
   circledText?: string;
   secPartTitle?: string | ReactElement;
-  paragraph?: string;
+  firstPartParagraph?: string;
+  secPartParagraph?: string;
+  firstPartAdditionalParagraph?: string;
+  secPartAdditionalParagraph?: string;
   pageName?: string;
 }
 
@@ -12,20 +15,22 @@ export const PageHeading: React.FC<Props> = ({
   firstPartTitle,
   circledText,
   secPartTitle,
-  paragraph,
+  firstPartParagraph,
+  secPartParagraph,
+  firstPartAdditionalParagraph,
+  secPartAdditionalParagraph,
   pageName,
 }) => {
   return (
-    <main className="p-8 -mt-40 pt-64 -z-10 flex flex-col items-center text-center">
-      <h2 className="text-xl font-poppins text-[#EF6278] mb-[22px] lg:w-[1024px]">
+    <main className="p-2 lg:p-24 pt-44 -z-10 flex flex-col text-left">
+      {/* <h2 className="text-xl font-poppins text-[#EF6278] mb-[22px] lg:w-[1024px]">
         {pageName}
-      </h2>
-      <h3 className="text-3xl lg:text-4xl lg:w-[1024px] leading-snug text-[#1F2957] font-medium mb-[30px]">
+      </h2> */}
+      <h2 className="text-3xl lg:text-[40px] lg:leading-normal lg:w-[1024px]  text-[#1F2957] font-bold max-w-[535px]">
         {firstPartTitle}
-        <span className="font-bold">
+        <span className="text-white">
           <span className="relative whitespace-pre">
             {circledText}
-
             <svg
               className="absolute -top-6 md:-top-4 left-0 -z-10 w-full"
               xmlns="http://www.w3.org/2000/svg"
@@ -48,8 +53,17 @@ export const PageHeading: React.FC<Props> = ({
           </span>
           {secPartTitle}
         </span>
-      </h3>
-      <p className="text-base font-medium">{paragraph}</p>
+      </h2>
+      <p className="text-[20px] leading-normal my-[30px] max-w-[535px]">{firstPartParagraph}
+        <span className="font-bold">
+          {secPartParagraph}
+        </span>
+      </p>
+      <p className="text-2xl leading-normal font-medium max-w-[535px]">{firstPartAdditionalParagraph}
+        <span className="font-bold">
+          {secPartAdditionalParagraph}
+        </span>
+      </p>
     </main>
   );
 };

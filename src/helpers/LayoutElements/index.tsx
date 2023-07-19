@@ -33,11 +33,9 @@ export const Coin: React.FC<Props> = ({
     <img
       src="../../../../assets/layout-elements/coin.png"
       alt="Coin - GetBold Agency"
-      className={`absolute ${top && top} ${right && right} ${left && left} ${
-        bottom && bottom
-      } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
-        mobileLeft && mobileLeft
-      } ${mobileBottom && mobileBottom} -z-10 h-auto}`}
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom} -z-10 h-auto}`}
       ref={Parallax.ref}
     />
   );
@@ -56,11 +54,9 @@ export const RedCircle: React.FC<Props> = ({
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`absolute ${top && top} ${right && right} ${left && left} ${
-        bottom && bottom
-      } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
-        mobileLeft && mobileLeft
-      } ${mobileBottom && mobileBottom} w-[6rem] md:w-[10rem] -z-10`}
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom} w-[6rem] md:w-[10rem] -z-10`}
       viewBox="0 0 196.422 196.422"
     >
       <circle
@@ -91,11 +87,9 @@ export const YellowSquare: React.FC<Props> = ({
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`absolute ${top && top} ${right && right} ${left && left} ${
-        bottom && bottom
-      } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
-        mobileLeft && mobileLeft
-      } ${mobileBottom && mobileBottom} w-[6rem] md:w-[10rem] -z-10`}
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom} w-[6rem] md:w-[10rem] -z-10`}
       viewBox="0 0 191.703 191.703"
     >
       <rect
@@ -126,13 +120,10 @@ export const OrangeHex: React.FC<Props> = ({
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 251.035 231.05"
-      className={`absolute top-[64rem] ${top && top} ${right && right} ${
-        left && left
-      } ${bottom && bottom} ${mobileTop && mobileTop} ${
-        mobileRight && mobileRight
-      } ${mobileLeft && mobileLeft} ${
-        mobileBottom && mobileBottom
-      } -right-6 md:-right-12 w-[6rem] md:w-[10rem] -z-10`}
+      className={`absolute top-[64rem] ${top && top} ${right && right} ${left && left
+        } ${bottom && bottom} ${mobileTop && mobileTop} ${mobileRight && mobileRight
+        } ${mobileLeft && mobileLeft} ${mobileBottom && mobileBottom
+        } -right-6 md:-right-12 w-[6rem] md:w-[10rem] -z-10`}
     >
       <path
         id="Path_461"
@@ -161,11 +152,9 @@ export const YellowCircle: React.FC<Props> = ({
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 196.422 196.422"
-      className={`absolute ${top && top} ${right && right} ${left && left} ${
-        bottom && bottom
-      } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
-        mobileLeft && mobileLeft
-      } ${mobileBottom && mobileBottom} -z-10 w-[6rem] md:w-[10rem] h-auto`}
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom} -z-10 w-[6rem] md:w-[10rem] h-auto`}
     >
       <circle
         id="Ellipse_9"
@@ -195,11 +184,9 @@ export const GrayTriangle: React.FC<Props> = ({
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`absolute ${top && top} ${right && right} ${left && left} ${
-        bottom && bottom
-      } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
-        mobileLeft && mobileLeft
-      } ${mobileBottom && mobileBottom} w-[6rem] md:w-[10rem] -z-10`}
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom} w-[6rem] md:w-[10rem] -z-10`}
       viewBox="0 0 190.402 164.897"
     >
       <path
@@ -228,11 +215,9 @@ export const PinkTriangle: React.FC<Props> = ({
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`absolute ${top && top} ${right && right} ${left && left} ${
-        bottom && bottom
-      } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
-        mobileLeft && mobileLeft
-      } ${mobileBottom && mobileBottom} w-[6rem] md:w-[10rem] -z-10`}
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom} w-[6rem] md:w-[10rem] -z-10`}
       viewBox="0 0 247.341 238.006"
     >
       <path
@@ -261,11 +246,9 @@ export const BlueHex: React.FC<Props> = ({
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`absolute ${top && top} ${right && right} ${left && left} ${
-        bottom && bottom
-      } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
-        mobileLeft && mobileLeft
-      } ${mobileBottom && mobileBottom} w-[6rem] md:w-[10rem] -z-30`}
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom} w-[6rem] md:w-[10rem] -z-30`}
       viewBox="0 0 238.582 238.582"
     >
       <rect
@@ -295,11 +278,9 @@ export const BlueSquare: React.FC<Props> = ({
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`absolute ${top && top} ${right && right} ${left && left} ${
-        bottom && bottom
-      } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
-        mobileLeft && mobileLeft
-      } ${mobileBottom && mobileBottom} w-[6rem] md:w-[10rem] -z-10`}
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom} w-[6rem] md:w-[10rem] -z-10`}
       viewBox="0 0 251.035 231.05"
     >
       <path
@@ -330,11 +311,9 @@ export const HeroBackground: React.FC<Props> = ({
 }) => {
   return (
     <div
-      className={`absolute ${top && top} ${right && right} ${left && left} ${
-        bottom && bottom
-      } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
-        mobileLeft && mobileLeft
-      } ${mobileBottom && mobileBottom} h-screen w-full bg-image-home -z-20`}
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom} h-screen w-full bg-image-home -z-20`}
     ></div>
   );
 };
@@ -352,13 +331,10 @@ export const FirstMidBackground: React.FC<Props> = ({
   return (
     <Parallax
       speed={20}
-      className={`absolute ${top && top} ${right && right} ${left && left} ${
-        bottom && bottom
-      } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
-        mobileLeft && mobileLeft
-      } ${
-        mobileBottom && mobileBottom
-      } h-[1800px] w-full bg-image-home-portfolio -z-20`}
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom
+        } h-[1800px] w-full bg-image-home-portfolio -z-20`}
     ></Parallax>
   );
 };
@@ -376,13 +352,31 @@ export const SecMidBackground: React.FC<Props> = ({
   return (
     <Parallax
       speed={20}
-      className={`absolute ${top && top} ${right && right} ${left && left} ${
-        bottom && bottom
-      } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
-        mobileLeft && mobileLeft
-      } ${
-        mobileBottom && mobileBottom
-      } h-[1000px] w-full bg-image-home-references -z-20`}
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom
+        } h-[1000px] w-full bg-image-home-references -z-20`}
+    ></Parallax>
+  );
+};
+
+export const BgWave1: React.FC<Props> = ({
+  top,
+  right,
+  left,
+  bottom,
+  mobileTop,
+  mobileRight,
+  mobileLeft,
+  mobileBottom,
+}) => {
+  return (
+    <Parallax
+      speed={20}
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom
+        } h-screen w-full bg-wave1 -z-20`}
     ></Parallax>
   );
 };
@@ -408,11 +402,9 @@ export const Cube: React.FC<Props> = ({
     <img
       src="../../../../assets/layout-elements/cube.svg"
       alt="Cube - GetBold Agency"
-      className={`absolute ${top && top} ${right && right} ${left && left} ${
-        bottom && bottom
-      } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
-        mobileLeft && mobileLeft
-      } ${mobileBottom && mobileBottom} -z-10 h-auto`}
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom} -z-10 h-auto`}
       ref={Parallax.ref}
     />
   );
@@ -435,11 +427,9 @@ export const Graph: React.FC<Props> = ({
     <img
       src="../../../../assets/layout-elements/graph.png"
       alt="Graph - GetBold Agency"
-      className={`absolute ${top && top} ${right && right} ${left && left} ${
-        bottom && bottom
-      } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
-        mobileLeft && mobileLeft
-      } ${mobileBottom && mobileBottom} -z-10 h-auto`}
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom} -z-10 h-auto`}
       ref={Parallax.ref}
     />
   );
@@ -462,11 +452,9 @@ export const Card: React.FC<Props> = ({
     <img
       src="../../../../assets/layout-elements/card.png"
       alt="Card - GetBold Agency"
-      className={`absolute ${top && top} ${right && right} ${left && left} ${
-        bottom && bottom
-      } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
-        mobileLeft && mobileLeft
-      } ${mobileBottom && mobileBottom} -z-10 h-auto`}
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom} -z-10 h-auto`}
       ref={Parallax.ref}
     />
   );
@@ -489,11 +477,9 @@ export const LeftCloud: React.FC<Props> = ({
     <img
       src="../../../../assets/layout-elements/footer-cloud-left.svg"
       alt="Left Cloud - GetBold Agency"
-      className={`absolute ${top && top} ${right && right} ${left && left} ${
-        bottom && bottom
-      } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
-        mobileLeft && mobileLeft
-      } ${mobileBottom && mobileBottom} z-10 w-[250px] md:w-[400px] h-auto`}
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom} z-10 w-[250px] md:w-[400px] h-auto`}
       ref={Parallax.ref}
     />
   );
@@ -516,11 +502,9 @@ export const RightCloud: React.FC<Props> = ({
     <img
       src="../../../../assets/layout-elements/footer-cloud-right.svg"
       alt="Right Cloud - GetBold Agency"
-      className={`absolute ${top && top} ${right && right} ${left && left} ${
-        bottom && bottom
-      } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
-        mobileLeft && mobileLeft
-      } ${mobileBottom && mobileBottom} z-10 w-[250px] md:w-[400px] h-auto`}
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom} z-10 w-[250px] md:w-[400px] h-auto`}
       ref={Parallax.ref}
     />
   );
@@ -543,11 +527,9 @@ export const Flower: React.FC<Props> = ({
     <img
       src="../../../../assets/layout-elements/flower.svg"
       alt="Flower - GetBold Agency"
-      className={`absolute ${top && top} ${right && right} ${left && left} ${
-        bottom && bottom
-      } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
-        mobileLeft && mobileLeft
-      } ${mobileBottom && mobileBottom} z-10`}
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom} z-10`}
       ref={Parallax.ref}
     />
   );
@@ -570,11 +552,9 @@ export const Chat: React.FC<Props> = ({
     <img
       src="../../../../assets/layout-elements/chat.png"
       alt="Chat - GetBold Agency"
-      className={`absolute ${top && top} ${right && right} ${left && left} ${
-        bottom && bottom
-      } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
-        mobileLeft && mobileLeft
-      } ${mobileBottom && mobileBottom} -z-10 h-auto`}
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom} -z-10 h-auto`}
       ref={Parallax.ref}
     />
   );
@@ -597,11 +577,9 @@ export const Ball: React.FC<Props> = ({
     <img
       src="../../../../assets/layout-elements/pinkball.png"
       alt="Pink Ball - GetBold Agency"
-      className={`absolute ${top && top} ${right && right} ${left && left} ${
-        bottom && bottom
-      } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
-        mobileLeft && mobileLeft
-      } ${mobileBottom && mobileBottom} -z-10 h-auto`}
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom} -z-10 h-auto`}
       ref={Parallax.ref}
     />
   );
@@ -624,11 +602,9 @@ export const PinkChart: React.FC<Props> = ({
     <img
       src="../../../../assets/layout-elements/pinkchart.png"
       alt="Pink Chart - GetBold Agency"
-      className={`absolute ${top && top} ${right && right} ${left && left} ${
-        bottom && bottom
-      } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
-        mobileLeft && mobileLeft
-      } ${mobileBottom && mobileBottom} -z-10 h-auto`}
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom} -z-10 h-auto`}
       ref={Parallax.ref}
     />
   );
@@ -651,11 +627,110 @@ export const BlueCube: React.FC<Props> = ({
     <img
       src="../../../../assets/layout-elements/bluecube.png"
       alt="Blue Cube - GetBold Agency"
-      className={`absolute ${top && top} ${right && right} ${left && left} ${
-        bottom && bottom
-      } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${
-        mobileLeft && mobileLeft
-      } ${mobileBottom && mobileBottom} -z-10 h-auto`}
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom} -z-10 h-auto`}
+      ref={Parallax.ref}
+    />
+  );
+};
+
+
+export const LeftSemicircle: React.FC<Props> = ({
+  top,
+  right,
+  left,
+  bottom,
+  mobileTop,
+  mobileRight,
+  mobileLeft,
+  mobileBottom,
+}) => {
+  const Parallax = useParallax<HTMLImageElement>({
+    translateX: ["0px", "0px"],
+  });
+  return (
+    <img
+      src="../../../../assets/layout-elements/semicircle2.svg"
+      alt="Blue Cube - GetBold Agency"
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom} -z-10 h-auto`}
+      ref={Parallax.ref}
+    />
+  );
+};
+
+export const RightSemicircle: React.FC<Props> = ({
+  top,
+  right,
+  left,
+  bottom,
+  mobileTop,
+  mobileRight,
+  mobileLeft,
+  mobileBottom,
+}) => {
+  const Parallax = useParallax<HTMLImageElement>({
+    translateX: ["0px", "0px"],
+  });
+  return (
+    <img
+      src="../../../../assets/layout-elements/semicircle1.svg"
+      alt="Blue Cube - GetBold Agency"
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom} -z-10 h-auto`}
+      ref={Parallax.ref}
+    />
+  );
+};
+
+export const FacebookIcon: React.FC<Props> = ({
+  top,
+  right,
+  left,
+  bottom,
+  mobileTop,
+  mobileRight,
+  mobileLeft,
+  mobileBottom,
+}) => {
+  const Parallax = useParallax<HTMLImageElement>({
+    translateX: ["0px", "0px"],
+  });
+  return (
+    <img
+      src="../../../../assets/layout-elements/facebook.svg"
+      alt="Blue Cube - GetBold Agency"
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom}  -z-10 h-auto`}
+      ref={Parallax.ref}
+    />
+  );
+};
+
+export const InstagramIcon: React.FC<Props> = ({
+  top,
+  right,
+  left,
+  bottom,
+  mobileTop,
+  mobileRight,
+  mobileLeft,
+  mobileBottom,
+}) => {
+  const Parallax = useParallax<HTMLImageElement>({
+    translateX: ["0px", "0px"],
+  });
+  return (
+    <img
+      src="../../../../assets/layout-elements/instagram.svg"
+      alt="Blue Cube - GetBold Agency"
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom} -z-20 h-auto `}
       ref={Parallax.ref}
     />
   );
