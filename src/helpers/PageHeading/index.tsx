@@ -22,7 +22,7 @@ export const PageHeading: React.FC<Props> = ({
   pageName,
 }) => {
   return (
-    <main className="p-24 -mt-40 pt-44 -z-10 flex flex-col text-left ">
+    <main className="p-2 lg:p-24 pt-44 -z-10 flex flex-col text-left">
       {/* <h2 className="text-xl font-poppins text-[#EF6278] mb-[22px] lg:w-[1024px]">
         {pageName}
       </h2> */}

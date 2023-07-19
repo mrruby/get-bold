@@ -50,16 +50,18 @@ body {
   background-position: center;
 }
 
-.bg-offert-wave1 {
+.bg-wave1 {
   background-image: url("../../static/bg-wave1.svg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
-.bg-offert-wave2 {
+.bg-wave2 {
   background-image: url("../../static/bg-wave2.svg");
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 .styled-blogpost-content h1 {

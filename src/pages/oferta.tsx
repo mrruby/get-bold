@@ -19,8 +19,8 @@ const OffertPage = () => {
         redCircle={false}
         yellowSquare={false}
         blueSquare={false}
-        heroBG={true}
-        firstMidBG={true}
+        heroBG={false}
+        firstMidBG={false}
         secMidBG={false}
         isSubPage={true}
         cube={false}
@@ -40,6 +40,7 @@ const OffertPage = () => {
         rightSemicircle={true}
         facebookIcon={true}
         instagramIcon={true}
+        bgWave1={true}
       >
         <PageHeading
           pageName="OFERTA"

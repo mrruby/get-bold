@@ -45,6 +45,7 @@ const Layout: React.FC<Props> = ({
   rightSemicircle,
   facebookIcon,
   instagramIcon,
+  bgWave1,
 }) => {
   return (
     <div className="antialiased min-h-screen max-w-full overflow-hidden text-sm font-poppins text-getbold-blue flex flex-col scroll-smooth relative">
@@ -90,6 +91,7 @@ const Layout: React.FC<Props> = ({
         rightSemicircle={rightSemicircle}
         facebookIcon={facebookIcon}
         instagramIcon={instagramIcon}
+        bgWave1={bgWave1}
       />
     </div>
   );

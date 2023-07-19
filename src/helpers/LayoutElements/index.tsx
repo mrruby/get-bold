@@ -360,6 +360,27 @@ export const SecMidBackground: React.FC<Props> = ({
   );
 };
 
+export const BgWave1: React.FC<Props> = ({
+  top,
+  right,
+  left,
+  bottom,
+  mobileTop,
+  mobileRight,
+  mobileLeft,
+  mobileBottom,
+}) => {
+  return (
+    <Parallax
+      speed={20}
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom
+        } h-[1000px] w-full bg-wave1 -z-20`}
+    ></Parallax>
+  );
+};
+
 {
   /* SubPage Elements */
 }
@@ -709,7 +730,7 @@ export const InstagramIcon: React.FC<Props> = ({
       alt="Blue Cube - GetBold Agency"
       className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
         } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
-        } ${mobileBottom && mobileBottom} -z-10 h-auto`}
+        } ${mobileBottom && mobileBottom} rotate-45 -z-10 h-auto `}
       ref={Parallax.ref}
     />
   );

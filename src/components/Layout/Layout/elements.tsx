@@ -26,6 +26,7 @@ import {
   RightSemicircle,
   FacebookIcon,
   InstagramIcon,
+  BgWave1,
 } from "../../../helpers/LayoutElements";
 import { ILayoutElements } from "../../../utils/types/layoutElements";
 
@@ -57,6 +58,7 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
   rightSemicircle,
   facebookIcon,
   instagramIcon,
+  bgWave1,
 }) => {
   return (
     <>
@@ -136,6 +138,8 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
       {heroBG && <HeroBackground top="top-0" left="left-0" />}
       {firstMidBG && <FirstMidBackground top="top-[1600px]" left="left-0" />}
       {secMidBG && <SecMidBackground top="top-[4481px]" left="left-0" />}
+
+      {bgWave1 && <BgWave1 top="top-0" left="left-0" />}
 
       {/* subpage elements */}
       {cube && (
@@ -242,17 +246,17 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
 
       {facebookIcon && (
         <FacebookIcon
-          mobileTop="top-[300px]"
-          mobileRight="right-[274px]"
-          right="md:right-[274px]"
+          mobileTop="top-[170px]"
+          mobileRight="right-[50px]"
+          right="md:right-[250px]"
         />
       )}
 
       {instagramIcon && (
         <InstagramIcon
-          mobileTop="top-[250px]"
-          mobileRight="right-[384px]"
-          right="md:right-[384px]"
+          mobileTop="top-[290px]"
+          mobileRight="right-[50px]"
+          right="md:right-[370px]"
         />
       )}
     </>

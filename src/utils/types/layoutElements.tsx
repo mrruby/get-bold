@@ -26,4 +26,5 @@ export interface ILayoutElements {
   rightSemicircle: boolean;
   facebookIcon: boolean;
   instagramIcon: boolean;
+  bgWave1: boolean;
 }
