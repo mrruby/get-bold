@@ -14,15 +14,22 @@ module.exports = {
           "btn-pink": "#DE6B7A",
           "btn-blue": "#212954",
           border: "rgb(112, 112, 112)",
-          boxShadow: "0px 4px 4px 0px #00000059",
-          "btn-border-radius": "40px",
-          "div-border-radius": "70px",
-          "item-border-radius": "45px",
-          "small-item-border-radius": "17px",
         },
+      },
+      borderRadius: {
+        "btn": "40px",
+        "div": "70px",
+        "item": "45px",
+        "small-item": "17px",
+      },
+      boxShadow: {
+        "div": "0px 4px 4px 0px #00000059",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+      },
+      fontSize: {
+        getBoldBase: "1.125rem",
       },
     },
   },
