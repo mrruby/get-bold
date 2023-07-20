@@ -23,7 +23,7 @@ export const OffertContent: React.FC<Props> = ({
 }) => {
   return (
     <div className="relative flex flex-col items-start lg:pb-[10px] pt-[100px]">
-      <h2 className="text-xl lg:text-[25px] lg:leading-normal lg:w-[1024px]  text-[#1F2957] max-w-[541px]">
+      <h2 className="text-xl lg:text-getBoldSubtitle lg:leading-normal lg:w-[1024px]  text-[#1F2957] max-w-[541px]">
         {firtPartTitle}
         <span className="font-bold">
           {secPartTitle}

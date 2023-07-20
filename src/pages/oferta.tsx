@@ -36,8 +36,8 @@ const OffertPage = () => {
           firstPartAdditionalParagraph="Zobacz, co konkretnie zrobimy, aby Twój biznes się "
           secPartAdditionalParagraph="rozkręcił!"
         />
-        {/* <BoxesOffert /> */}
         <OffertAds />
+        <BoxesOffert />
         <OffertAdsTikTok />
         <OffertPhotos />
         <OffertVideo />

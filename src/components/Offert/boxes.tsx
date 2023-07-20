@@ -4,33 +4,41 @@ import { OffertBox } from "../../helpers/OffertBox";
 
 export const BoxesOffert = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 w-full py-8 mx-auto px-8">
-      <OffertBox
-        img="../../../assets/offert/light.png"
-        title="Pomysł"
-        styling="w-[57px] h-auto mb-[30px]"
-        text="Omawiamy Twoją sytuację, cele i plan działania. Musimy wiedzieć, że
-          gramy do jednej bramki!"
-        isBigger={false}
-      />
-
-      <OffertBox
-        img="../../../assets/offert/sprocket.svg"
-        title="Działanie"
-        styling="w-[98px] h-auto mb-[30px]"
-        text="Otrzymujesz od nas harmonogram działań i odpowiedź na każde nurtujące
-        Cię pytanie. Pewność to podstawa!"
-        isBigger={true}
-      />
-
-      <OffertBox
-        img="../../../assets/offert/effect.png"
-        title="Efekt"
-        styling="w-[170px] h-auto mb-[30px]"
-        text="Na bieżąco przedstawiamy Ci raporty, z konkretnymi liczbami, bez
-        skomplikowanych marketingowych zwrotów."
-        isBigger={false}
-      />
+    <div className="display flex flex-col items-center bg-getbold-dark-pink text-center py-12">
+      <h2 className="text-xl lg:text-getBoldSubtitle text-white">
+        Wiesz już, czego potrzebujesz?
+        <span className="font-bold"> Kliknij i wybierz!</span>
+      </h2>
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 w-full py-8 mx-auto px-8">
+        <OffertBox
+          img="../../../assets/offert/social-media.svg"
+          title="Social media"
+          isBigger={false}
+          sectionId="social-media"
+        />
+        <OffertBox
+          img="../../../assets/offert/photos.svg"
+          title="Zdjęcia"
+          isBigger={false}
+          sectionId="zdjecia"
+        />
+        <OffertBox
+          img="../../../assets/offert/video.svg"
+          title="Video"
+          isBigger={false}
+          sectionId="video"
+        />
+        <OffertBox
+          img="../../../assets/offert/all.svg"
+          title="Pełna obsługa"
+          isBigger={false}
+          sectionId="pelna-obsluga"
+        />
+      </div>
+      <h2 className="text-3xl lg:text-[40px] text-white">
+        Nie wiesz, czego potrzebujesz?
+        <br /><span className="font-bold">Przeglądaj dalej!</span>
+      </h2>
     </div>
   );
 };
