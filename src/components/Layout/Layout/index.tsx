@@ -68,7 +68,7 @@ const Layout: React.FC<Props> = ({
 
         {children}
       </div>
-      {/* <Footer isContactPage={isContactPage} isWhiteBg={footerWhiteBg} /> */}
+      <Footer isContactPage={isContactPage} isWhiteBg={footerWhiteBg} />
 
       <LayoutElements {...layoutElementsProps} />
     </div>

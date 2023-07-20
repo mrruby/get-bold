@@ -1,7 +1,13 @@
 import React from "react";
 import { OffertContentList } from "../../helpers/OffertContentList";
 import { OffertContent } from "../../helpers/OffertContent";
-import { OffertBox } from "../../helpers/OffertBox";
+
+const items = [
+  { src: "../../../assets/offert/social-media.svg", alt: "GetBold-socialmedia" },
+  { src: "../../../assets/offert/photos.svg", alt: "GetBold-photos" },
+  { src: "../../../assets/offert/video.svg", alt: "GetBold-video" },
+  { src: "../../../assets/offert/all.svg", alt: "GetBold-all" },
+];
 
 export const OffertFull = () => {
   return (
@@ -15,18 +21,11 @@ export const OffertFull = () => {
             secParagraphBold="Ty tylko zaakceptujesz świetne materiały i otrzymasz jeszcze lepsze wyniki! "
           />
           <div className="flex gap-6">
-            <div className=" h-[84px] w-[84px] shadow-div rounded-small-item">
-              <img src="../../../assets/offert/social-media.svg" alt="GetBold-socialmedia" />
-            </div>
-            <div className="h-[84px] w-[84px] shadow-div rounded-small-item">
-              <img src="../../../assets/offert/photos.svg" alt="GetBold-photos" />
-            </div>
-            <div className="h-[84px] w-[84px] shadow-div rounded-small-item">
-              <img src="../../../assets/offert/video.svg" alt="GetBold-video" />
-            </div>
-            <div className="h-[84px] w-[84px] shadow-div rounded-small-item">
-              <img src="../../../assets/offert/all.svg" alt="GetBold-all" />
-            </div>
+            {items.map((item, index) => (
+              <div key={index} className="h-[84px] w-[84px] shadow-div rounded-small-item">
+                <img src={item.src} alt={item.alt} />
+              </div>
+            ))}
           </div>
         </div>
         <OffertContentList
