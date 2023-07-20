@@ -6,6 +6,7 @@ import { OffertAds } from "../components/Offert/offert-ads";
 import { OffertPhotos } from "../components/Offert/offert-photos";
 import { OffertAdsTikTok } from "../components/Offert/offert-ads-tiktok";
 import { OffertVideo } from "../components/Offert/offert-video";
+import { OffertFull } from "../components/Offert/offert-full";
 import { SEO } from "../components/Seo";
 import { PageHeading } from "../helpers/PageHeading";
 
@@ -40,6 +41,7 @@ const OffertPage = () => {
         <OffertAdsTikTok />
         <OffertPhotos />
         <OffertVideo />
+        <OffertFull />
       </Layout>
     </ParallaxProvider >
   );

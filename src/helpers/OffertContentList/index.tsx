@@ -3,7 +3,7 @@ import React from "react";
 import { Button } from "../Button";
 
 interface Props {
-  img: string;
+  img?: string;
   title: string;
   listItems: string[];
   firstPartshortText: string;
@@ -21,13 +21,15 @@ export const OffertContentList: React.FC<Props> = ({
 }) => {
   return (
     <div className="flex flex-col items-center text-left lg:min-w-[536px] shadow-div rounded-div min-h-[452px] bg-white relative lg:text-getBoldBase leading-normal px-8">
-      <div className="absolute top-[-90px]">
-        <img
-          src={img}
-          alt={`${title} | GetBold Agency`}
-          className="w-[150px] h-auto"
-        />
-      </div>
+      {img && (
+        <div className="absolute top-[-90px]">
+          <img
+            src={img}
+            alt={`${title} | GetBold Agency`}
+            className="w-[150px] h-auto"
+          />
+        </div>
+      )}
       <div className="items-left">
         <h3 className="font-bold mb-[24px] pt-[62px]">{title}</h3>
         <ul className="space-y-2 mb-[30px] list-disc pl-8 pr-4">
