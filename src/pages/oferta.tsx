@@ -2,7 +2,10 @@ import React from "react";
 import { ParallaxProvider } from "react-scroll-parallax";
 import Layout from "../components/Layout/Layout";
 import { BoxesOffert } from "../components/Offert/boxes";
-import { OffertComponent } from "../components/Offert/offert";
+import { OffertAds } from "../components/Offert/offert-ads";
+import { OffertPhotos } from "../components/Offert/offert-photos";
+import { OffertAdsTikTok } from "../components/Offert/offert-ads-tiktok";
+import { OffertVideo } from "../components/Offert/offert-video";
 import { SEO } from "../components/Seo";
 import { PageHeading } from "../helpers/PageHeading";
 
@@ -33,7 +36,10 @@ const OffertPage = () => {
           secPartAdditionalParagraph="rozkręcił!"
         />
         {/* <BoxesOffert /> */}
-        <OffertComponent />
+        <OffertAds />
+        <OffertAdsTikTok />
+        <OffertPhotos />
+        <OffertVideo />
       </Layout>
     </ParallaxProvider >
   );

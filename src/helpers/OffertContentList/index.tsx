@@ -20,7 +20,7 @@ export const OffertContentList: React.FC<Props> = ({
   buttonText,
 }) => {
   return (
-    <div className="flex flex-col items-center lg:min-w-[536px] shadow-div rounded-div max-h-[452px] bg-white relative lg:text-getBoldBase leading-normal">
+    <div className="flex flex-col items-center text-left lg:min-w-[536px] shadow-div rounded-div min-h-[452px] bg-white relative lg:text-getBoldBase leading-normal px-8">
       <div className="absolute top-[-90px]">
         <img
           src={img}
@@ -28,22 +28,26 @@ export const OffertContentList: React.FC<Props> = ({
           className="w-[150px] h-auto"
         />
       </div>
-      <h3 className="font-bold mb-[24px] px-8 pt-[62px]">{title}</h3>
-      <ul className="space-y-2 mb-[30px] list-disc pl-16 pr-4">
-        {listItems.map((item, index) => {
-          return (
-            <li key={index} className="my-[2px]">
-              {item}
-            </li>
-          );
-        })}
-      </ul>
-      <p className="mb-[50px] ">{firstPartshortText}
-        <span className="font-bold">{secPartshortText}</span>
-      </p>
-      <Link to="/kontakt">
-        <Button type="button" color="pink" isWFull={false} text={buttonText} />
-      </Link>
+      <div className="items-left">
+        <h3 className="font-bold mb-[24px] pt-[62px]">{title}</h3>
+        <ul className="space-y-2 mb-[30px] list-disc pl-8 pr-4">
+          {listItems.map((item, index) => {
+            return (
+              <li key={index} className="my-[2px]">
+                {item}
+              </li>
+            );
+          })}
+        </ul>
+        <p className="mb-[50px] m-auto">{firstPartshortText}
+          <span className="font-bold">{secPartshortText}</span>
+        </p>
+      </div>
+      <div className="absolute bottom-[-20px]">
+        <Link to="/kontakt">
+          <Button type="button" color="pink" isWFull={false} text={buttonText} />
+        </Link>
+      </div>
     </div>
   );
 };
