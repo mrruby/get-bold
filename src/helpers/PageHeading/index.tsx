@@ -22,11 +22,8 @@ export const PageHeading: React.FC<Props> = ({
   pageName,
 }) => {
   return (
-    <main className="p-2 lg:p-24 pt-44 -z-10 flex flex-col text-left">
-      {/* <h2 className="text-xl font-poppins text-[#EF6278] mb-[22px] lg:w-[1024px]">
-        {pageName}
-      </h2> */}
-      <h2 className="text-3xl lg:text-[40px] lg:leading-normal lg:w-[1024px]  text-[#1F2957] font-bold max-w-[535px]">
+    <main className="p-2 lg:px-24 lg:pt-6 lg:pb-[190px] -z-10 flex flex-col text-left min-h-[620px]">
+      <h1 className="text-3xl lg:text-[40px] lg:leading-normal lg:w-[1024px]  text-[#1F2957] font-bold max-w-[535px]">
         {firstPartTitle}
         <span className="text-white">
           <span className="relative whitespace-pre">
@@ -53,7 +50,7 @@ export const PageHeading: React.FC<Props> = ({
           </span>
           {secPartTitle}
         </span>
-      </h2>
+      </h1>
       <p className="text-[20px] leading-normal my-[30px] max-w-[535px]">{firstPartParagraph}
         <span className="font-bold">
           {secPartParagraph}

@@ -15,6 +15,7 @@ import { useEffect } from "react";
 import { ParallaxProvider } from "react-scroll-parallax";
 import { WidthProvider } from "../utils/context/widthContext";
 import { SEO } from "../components/Seo";
+import MaxWithBgColorContainer from "../components/Layout/Layout/MaxWithBgColorContainer";
 
 const IndexPage = () => {
   useEffect(() => {
@@ -55,11 +56,13 @@ const IndexPage = () => {
             isContactPage={false}
             footerWhiteBg={true}
           >
-            <HomeOffertComponent />
-            <HomePortfolioComponent />
-            <HomeAboutComponent />
-            <HomeReferencesComponent />
-            <HomeBlogComponent />
+            <MaxWithBgColorContainer>
+              <HomeOffertComponent />
+              <HomePortfolioComponent />
+              <HomeAboutComponent />
+              <HomeReferencesComponent />
+              <HomeBlogComponent />
+            </MaxWithBgColorContainer>
           </Layout>
         </BlogProvider>
       </WidthProvider>

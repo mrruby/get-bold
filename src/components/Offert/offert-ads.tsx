@@ -4,14 +4,14 @@ import { OffertContent } from "../../helpers/OffertContent";
 
 export const OffertAds = () => {
   return (
-    <div className="flex flex-col items-center ">
-      <div className="p-2 lg:p-24 pt-44 -z-10 flex flex-col gap-8 lg:flex-row text-left items-center" id="social-media">
+    <div className="flex flex-col items-center">
+      <div className="p-2 lg:px-24 flex flex-col gap-8 lg:flex-row text-left items-start" id="social-media">
         <OffertContent
           firtPartTitle="Przygotujemy dla Ciebie  "
           secPartTitle="kampanie reklamowe "
           thirdPartTitle="Facebook & Instagram Ads"
           firstParagraph="Dobrze wiesz, że na Facebooku i Instagramie są Twoi nowi klienci. Zastanawiasz się, jak do nich dotrzeć? Odpowiedź brzmi: dzięki kampaniom reklamowym."
-          secParagraph="Wykorzystamy potencjał Facebooka i Instagrama tak, by trafić do precyzyjnego grona odbiorców. To oni zamówią Twój produkt, zapiszą się na Twój kurs lub odwiedzą <strong>Twój lokal</strong>."
+          secParagraph="Wykorzystamy potencjał Facebooka i Instagrama tak, by trafić do precyzyjnego grona odbiorców. To oni zamówią Twój produkt, zapiszą się na Twój kurs lub odwiedzą Twój lokal."
         />
         <OffertContentList
           img="../../../assets/offert/social-media.svg"
@@ -25,9 +25,8 @@ export const OffertAds = () => {
           secPartshortText="nowi klienci?"
           buttonText="Wchodzę w to!"
         />
-
       </div>
     </div>
   );
 };
-7;
+

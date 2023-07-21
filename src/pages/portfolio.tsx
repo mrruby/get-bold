@@ -5,6 +5,7 @@ import { HeadingPortfolio } from "../components/Portfolio/heading";
 import { PortfolioPortfolio } from "../components/Portfolio/portfolio";
 import { QuotesPortfolio } from "../components/Portfolio/quotes";
 import { SEO } from "../components/Seo";
+import MaxWithBgColorContainer from "../components/Layout/Layout/MaxWithBgColorContainer";
 
 const PortfolioPage = () => {
   return (
@@ -37,9 +38,11 @@ const PortfolioPage = () => {
         isContactPage={false}
         footerWhiteBg={true}
       >
-        <HeadingPortfolio />
-        <PortfolioPortfolio />
-        <QuotesPortfolio />
+        <MaxWithBgColorContainer>
+          <HeadingPortfolio />
+          <PortfolioPortfolio />
+          <QuotesPortfolio />
+        </MaxWithBgColorContainer>
       </Layout>
     </ParallaxProvider>
   );

@@ -12,7 +12,7 @@ const items = [
 export const OffertFull = () => {
   return (
     <div className="flex flex-col items-center ">
-      <div className="p-2 lg:p-24 pt-44 -z-10 flex flex-col gap-8 lg:flex-row text-left items-center" id="pelna-obsluga">
+      <div className="p-2 lg:px-24 flex flex-col gap-8 lg:flex-row text-left items-start" id="pelna-obsluga">
         <div className="flex flex-col">
           <OffertContent
             firtPartTitle="Potrzebujesz wsparcia "
@@ -45,4 +45,3 @@ export const OffertFull = () => {
     </div>
   );
 };
-7;

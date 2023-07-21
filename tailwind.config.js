@@ -30,6 +30,7 @@ module.exports = {
       },
       fontSize: {
         getBoldBase: "1.125rem",
+        getBoldSubtitle: "1.5625rem",
       },
     },
   },
