@@ -6,6 +6,7 @@ import { SidebarBlogPost } from "../components/BlogPost/sidebar";
 import Layout from "../components/Layout/Layout";
 import { SEO } from "../components/Seo";
 import { BlogProvider } from "../utils/context/blogContext";
+import MaxWithBgColorContainer from "../components/Layout/Layout/MaxWithBgColorContainer";
 
 const BlogPage = () => {
   return (
@@ -39,11 +40,13 @@ const BlogPage = () => {
           isContactPage={false}
           footerWhiteBg={true}
         >
-          <HeadingBlog />
-          <div className="flex flex-col md:items-start md:flex-row space-y-12 md:space-y-0 md:space-x-12 pb-24 p-8 lg:max-w-[1176px]">
-            <PostsBlog />
-            <SidebarBlogPost />
-          </div>
+          <MaxWithBgColorContainer>
+            <HeadingBlog />
+            <div className="flex flex-col md:items-start md:flex-row space-y-12 md:space-y-0 md:space-x-12 pb-24 p-8 lg:max-w-[1176px]">
+              <PostsBlog />
+              <SidebarBlogPost />
+            </div>
+          </MaxWithBgColorContainer>
         </Layout>
       </BlogProvider>
     </ParallaxProvider>

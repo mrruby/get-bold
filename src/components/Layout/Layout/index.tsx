@@ -3,7 +3,7 @@ import { ILayoutElements } from "../../../utils/types/layoutElements";
 import Footer from "../Footer";
 import Header from "../Header";
 
-import { LayoutElements } from "./elements";
+import { LayoutElements } from "../Layout/elements";
 
 interface Props extends ILayoutElements {
   screenComponent?: React.ReactNode;
@@ -56,18 +56,15 @@ const Layout: React.FC<Props> = ({
 
   return (
     <div className="antialiased min-h-screen max-w-full overflow-hidden text-sm font-poppins text-getbold-blue flex flex-col scroll-smooth relative">
-      <div className="container mx-auto max-w-7xl z-20 overflow-x-hidden">
-        {screenComponent ? (
-          <div className="min-h-screen flex flex-col">
-            <Header />
-            {screenComponent}
-          </div>
-        ) : (
+      {screenComponent ? (
+        <div className="min-h-screen flex flex-col">
           <Header />
-        )}
-
-        {children}
-      </div>
+          {screenComponent}
+        </div>
+      ) : (
+        <Header />
+      )}
+      {children}
       <Footer isContactPage={isContactPage} isWhiteBg={footerWhiteBg} />
 
       <LayoutElements {...layoutElementsProps} />

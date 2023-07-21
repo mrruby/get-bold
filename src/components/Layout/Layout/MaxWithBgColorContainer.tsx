@@ -1,18 +1,16 @@
 import React from "react";
 
 interface Props {
-    children: React.ReactNode;
+    children: any;
     bgColor?: string;
-    height?: string;
 }
 
-const Container: React.FC<Props> = ({
+const MaxWithBgColorContainer: React.FC<Props> = ({
     children,
-    bgColor,
-    height,
+    bgColor = "transparent",
 }) => {
     return (
-        <div className={`w-screen ${bgColor} ${height}`}>
+        <div className={`w-screen ${bgColor}`}>
             <div className="container mx-auto max-w-7xl">
                 {children}
             </div>
@@ -20,4 +18,4 @@ const Container: React.FC<Props> = ({
     );
 };
 
-export default Container;
+export default MaxWithBgColorContainer;

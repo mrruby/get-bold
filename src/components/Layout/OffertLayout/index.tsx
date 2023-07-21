@@ -2,7 +2,7 @@ import React from "react";
 import { ILayoutElements } from "../../../utils/types/layoutElements";
 import Footer from "../Footer";
 import Header from "../Header";
-import Container from "./Container";
+import Container from "../Layout/MaxWithBgColorContainer";
 
 import { LayoutElements } from "../Layout/elements";
 

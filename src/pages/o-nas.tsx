@@ -4,6 +4,7 @@ import { HeadingAbout } from "../components/About/heading";
 import { TeamAbout } from "../components/About/team";
 import Layout from "../components/Layout/Layout";
 import { SEO } from "../components/Seo";
+import MaxWithBgColorContainer from "../components/Layout/Layout/MaxWithBgColorContainer";
 
 const AboutPage = () => {
   return (
@@ -36,8 +37,10 @@ const AboutPage = () => {
         isContactPage={false}
         footerWhiteBg={true}
       >
-        <HeadingAbout />
-        <TeamAbout />
+        <MaxWithBgColorContainer>
+          <HeadingAbout />
+          <TeamAbout />
+        </MaxWithBgColorContainer>
       </Layout>
     </ParallaxProvider>
   );
