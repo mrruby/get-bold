@@ -1,6 +1,5 @@
 import React from "react";
 import { ParallaxProvider } from "react-scroll-parallax";
-import Layout from "../components/Layout/Layout";
 import { BoxesOffert } from "../components/Offert/boxes";
 import { OffertAds } from "../components/Offert/offert-ads";
 import { OffertPhotos } from "../components/Offert/offert-photos";
@@ -9,14 +8,16 @@ import { OffertVideo } from "../components/Offert/offert-video";
 import { OffertFull } from "../components/Offert/offert-full";
 import { SEO } from "../components/Seo";
 import { PageHeading } from "../helpers/PageHeading";
+import OffertLayout from "../components/Layout/OffertLayout";
+import { Opinions } from "../components/Offert/opinions";
 
 const OffertPage = () => {
   return (
     <ParallaxProvider>
-      <Layout
+      <OffertLayout
         isSubPage={true}
         isContactPage={false}
-        footerWhiteBg={true}
+        footerWhiteBg={false}
         leftSemicircle={true}
         rightSemicircle={true}
         facebookIcon={true}
@@ -39,10 +40,11 @@ const OffertPage = () => {
         <OffertAds />
         <BoxesOffert />
         <OffertAdsTikTok />
+        <Opinions />
         <OffertPhotos />
         <OffertVideo />
         <OffertFull />
-      </Layout>
+      </OffertLayout>
     </ParallaxProvider >
   );
 };

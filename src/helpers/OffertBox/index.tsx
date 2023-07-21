@@ -4,14 +4,12 @@ import React from "react";
 interface Props {
   img: string;
   title: string;
-  isBigger: boolean;
   sectionId: string;
 }
 
 export const OffertBox: React.FC<Props> = ({
   img,
   title,
-  isBigger,
   sectionId,
 }) => {
 
@@ -25,15 +23,14 @@ export const OffertBox: React.FC<Props> = ({
   return (
     <button
       onClick={handleButtonClick}
-      className={`p-8 md:p-12 flex flex-col items-center justify-center w-full z-40 ${!isBigger && "my-10"
-        }`}
+      className={`p-4 flex flex-col items-center justify-center w-full z-40`}
     >
       <motion.div className="flex items-center justify-center h-[180px] w-[180px] px-4 py-4 bg-getbold-pink shadow-div rounded-item" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
         <img src={img} alt={`${title} - GetBold Agency`} className="lg w-auto" />
       </motion.div>
       <div className="bg-white h-[80px] w-1">
       </div>
-      <div className="flex flex-col items-center justify-center text-white shadow-div  bg-getbold-dark-pink hover:bg-getbold-pink hover:text-getbold-blue rounded-item w-full lg:min-w-[247px] lg:min-h-[55px]">
+      <div className="flex flex-col items-center justify-center text-white  bg-getbold-dark-pink hover:bg-getbold-pink hover:text-getbold-blue rounded-item w-full lg:min-w-[247px] lg:min-h-[55px]  shadow-div">
         <h3 className="text-getBoldBase">
           {title}
         </h3>

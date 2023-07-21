@@ -20,9 +20,9 @@ export const OffertContentList: React.FC<Props> = ({
   buttonText,
 }) => {
   return (
-    <div className="flex flex-col items-center text-left lg:min-w-[536px] shadow-div rounded-div lg:min-h-[452px] bg-white relative lg:text-getBoldBase leading-normal px-8">
+    <div className="flex flex-col items-center text-left lg:min-w-[536px] shadow-div rounded-div lg:min-h-[440px] bg-white lg:text-getBoldBase leading-normal px-8 relative lg:top-[-70px]">
       {img && (
-        <div className="absolute top-[-90px]">
+        <div className="lg:absolute lg:top-[-90px]">
           <img
             src={img}
             alt={`${title} | GetBold Agency`}
@@ -32,16 +32,16 @@ export const OffertContentList: React.FC<Props> = ({
       )}
       <div className="items-left">
         <h3 className="font-bold mb-[24px] pt-[62px]">{title}</h3>
-        <ul className="space-y-2 mb-[30px] list-disc pl-8 pr-4">
+        <ul className="mb-[10px] list-disc pl-8 pr-4">
           {listItems.map((item, index) => {
             return (
-              <li key={index} className="my-[2px]">
+              <li key={index}>
                 {item}
               </li>
             );
           })}
         </ul>
-        <p className="mb-[50px] m-auto">{firstPartshortText}
+        <p className="pb-[80px] m-auto">{firstPartshortText}
           <span className="font-bold">{secPartshortText}</span>
         </p>
       </div>

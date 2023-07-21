@@ -372,11 +372,11 @@ export const BgWave1: React.FC<Props> = ({
 }) => {
   return (
     <Parallax
-      speed={20}
+      speed={0}
       className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
         } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
         } ${mobileBottom && mobileBottom
-        } h-screen w-full bg-wave1 -z-20`}
+        } h-[728px] w-full bg-wave1 -z-50`}
     ></Parallax>
   );
 };
