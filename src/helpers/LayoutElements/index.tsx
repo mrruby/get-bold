@@ -705,7 +705,7 @@ export const FacebookIcon: React.FC<Props> = ({
       alt="Blue Cube - GetBold Agency"
       className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
         } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
-        } ${mobileBottom && mobileBottom}  -z-10 h-auto`}
+        } ${mobileBottom && mobileBottom} z-10 w-[166px]`}
       ref={Parallax.ref}
     />
   );
@@ -728,9 +728,9 @@ export const InstagramIcon: React.FC<Props> = ({
     <img
       src="../../../../assets/layout-elements/instagram.svg"
       alt="Blue Cube - GetBold Agency"
-      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+      className={`absolute rotate-[20deg] ${top && top} ${right && right} ${left && left} ${bottom && bottom
         } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
-        } ${mobileBottom && mobileBottom} -z-20 h-auto `}
+        } ${mobileBottom && mobileBottom} z-20 w-[166px]`}
       ref={Parallax.ref}
     />
   );

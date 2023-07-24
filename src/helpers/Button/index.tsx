@@ -5,9 +5,11 @@ interface Props {
   color: "pink" | "blue";
   text: string;
   isWFull: boolean;
+  textSize?: string;
 }
 
-export const Button: React.FC<Props> = ({ type, color, text, isWFull }) => {
+export const Button: React.FC<Props> = ({ type, color, text, isWFull, textSize }) => {
+  textSize = "lg:text-[25px]"
   return (
     <button
       type={type}
@@ -15,7 +17,7 @@ export const Button: React.FC<Props> = ({ type, color, text, isWFull }) => {
         ? "bg-getbold-btn-pink hover:bg-getbold-btn-light-pink"
         : "bg-getbold-blue hover:bg-getbold-btn-blue"
         } ${isWFull && "w-full"
-        } px-10 py-3 text-white font-semibold pointer hover:shadow-lg transition-all lg:text-[25px] shadow-div`}
+        } px-8 py-3 text-white font-semibold pointer hover:shadow-lg transition-all ${textSize} shadow-div`}
     >
       {text}
     </button>
