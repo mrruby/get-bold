@@ -22,7 +22,7 @@ export const OffertContent: React.FC<Props> = ({
   secParagraphSecPart,
 }) => {
   return (
-    <div className="relative flex flex-col items-start lg:pt-[50px]">
+    <div className="relative flex flex-col items-start pt-6 lg:pt-[50px]">
       <h2 className="text-xl lg:text-getBoldSubtitle lg:leading-normal lg:w-[1024px] text-[#1F2957] max-w-[541px]">
         {firtPartTitle}
         <span className="font-bold">

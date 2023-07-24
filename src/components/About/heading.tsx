@@ -1,4 +1,5 @@
 import React from "react";
+import MaxWithBgColorContainer from "../Layout/Layout/MaxWithBgColorContainer";
 
 export const HeadingAbout = () => {
   return (

@@ -284,18 +284,18 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
       )}
       {facebookIcon3 && (
         <FacebookIcon
-          mobileTop="top-[5500px]"
-          mobileRight="right-[60px]"
-          right="md:right-[254px]"
+          mobileTop="top-[5230px]"
+          mobileRight="right-[20px]"
+          right="md:right-[190px]"
           rotate="-21deg"
-          width="123px"
+          width="120px"
         />
       )}
 
       {instagramIcon1 && (
         <InstagramIcon
           mobileTop="top-[310px]"
-          mobileRight="right-[100px]"
+          mobileRight="right-[10px]"
           right="md:right-[480px]"
           rotate="19deg"
           width="105px"
@@ -304,7 +304,7 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
       {instagramIcon2 && (
         <InstagramIcon
           mobileTop="top-[4000px]"
-          mobileRight="right-[50px]"
+          mobileRight="right-[10px]"
           right="md:right-[370px]"
           rotate="19deg"
           width="166px"
@@ -312,9 +312,9 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
       )}
       {instagramIcon3 && (
         <InstagramIcon
-          mobileTop="top-[5500px]"
-          mobileRight="right-[50px]"
-          right="md:right-[370px]"
+          mobileTop="top-[5350px]"
+          mobileRight="right-[10px]"
+          right="md:right-[250px]"
           rotate="19deg"
           width="166px"
         />

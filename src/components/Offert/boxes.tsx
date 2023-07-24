@@ -3,7 +3,7 @@ import { OffertBox } from "../../helpers/OffertBox";
 
 export const BoxesOffert = () => {
   return (
-    <div className="display flex flex-col items-center text-center pt-12 pb-[166px]">
+    <div className="display flex flex-col items-center text-center pt-12 pb-12 lg:pb-[166px]">
       <h2 className="text-xl lg:text-getBoldSubtitle text-white">
         Wiesz już, czego potrzebujesz?
         <span className="font-bold"> Kliknij i wybierz!</span>

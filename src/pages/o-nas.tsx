@@ -37,8 +37,8 @@ const AboutPage = () => {
         isContactPage={false}
         footerWhiteBg={true}
       >
+        <HeadingAbout />
         <MaxWithBgColorContainer>
-          <HeadingAbout />
           <TeamAbout />
         </MaxWithBgColorContainer>
       </Layout>

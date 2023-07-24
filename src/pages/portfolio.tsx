@@ -38,8 +38,8 @@ const PortfolioPage = () => {
         isContactPage={false}
         footerWhiteBg={true}
       >
+        <HeadingPortfolio />
         <MaxWithBgColorContainer>
-          <HeadingPortfolio />
           <PortfolioPortfolio />
           <QuotesPortfolio />
         </MaxWithBgColorContainer>
