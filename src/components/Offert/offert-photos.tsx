@@ -5,7 +5,7 @@ import { OffertContent } from "../../helpers/OffertContent";
 export const OffertPhotos = () => {
   return (
     <div className="flex flex-col items-center ">
-      <div className="p-2 lg:px-24 flex flex-col gap-8 lg:flex-row text-left items-start" id="zdjecia">
+      <div className="p-4 lg:px-24 flex flex-col gap-8 lg:flex-row text-left lg:items-start" id="zdjecia">
         <OffertContent
           firtPartTitle="Zrobimy dla Ciebie "
           secPartTitle="kreatywne zdjęcia!"

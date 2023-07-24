@@ -5,7 +5,7 @@ import { OffertContent } from "../../helpers/OffertContent";
 export const OffertAds = () => {
   return (
     <div className="flex flex-col items-center">
-      <div className="p-2 lg:px-24 flex flex-col gap-8 lg:flex-row text-left items-start" id="social-media">
+      <div className="px-2 lg:px-24 flex flex-col gap-8 lg:flex-row text-left lg:items-start lg:m-h-[435px]" id="social-media">
         <OffertContent
           firtPartTitle="Przygotujemy dla Ciebie  "
           secPartTitle="kampanie reklamowe "

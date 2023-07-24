@@ -22,9 +22,15 @@ export interface ILayoutElements {
   ball?: boolean;
   pinkChart?: boolean;
   blueCube?: boolean;
-  leftSemicircle?: boolean;
-  rightSemicircle?: boolean;
-  facebookIcon?: boolean;
-  instagramIcon?: boolean;
+  leftSemicircle1?: boolean;
+  leftSemicircle2?: boolean;
+  rightSemicircle1?: boolean;
+  rightSemicircle2?: boolean;
+  facebookIcon1?: boolean;
+  facebookIcon2?: boolean;
+  facebookIcon3?: boolean;
+  instagramIcon1?: boolean;
+  instagramIcon2?: boolean;
+  instagramIcon3?: boolean;
   bgWave1?: boolean;
 }

@@ -5,7 +5,7 @@ import { OffertContent } from "../../helpers/OffertContent";
 export const OffertVideo = () => {
   return (
     <div className="flex flex-col items-center ">
-      <div className="p-2 lg:px-24 flex flex-col gap-8 lg:flex-row text-left items-start" id="video">
+      <div className="px-4 lg:px-24 flex flex-col gap-8 lg:flex-row text-left lg:items-start lg:min-h-[620px]" id="video">
         <OffertContentList
           img="../../../assets/offert/video.svg"
           title="Co dla Ciebie zrobimy? "

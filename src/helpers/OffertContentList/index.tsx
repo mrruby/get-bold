@@ -20,7 +20,7 @@ export const OffertContentList: React.FC<Props> = ({
   buttonText,
 }) => {
   return (
-    <div className="flex flex-col items-center text-left lg:min-w-[536px] shadow-div rounded-div lg:min-h-[440px] bg-white lg:text-getBoldBase leading-normal px-8 relative lg:top-[-70px]">
+    <div className="flex flex-col items-center justify-center text-left lg:min-w-[536px] shadow-div rounded-div lg:min-h-[440px] bg-white lg:text-getBoldBase leading-normal px-8 relative lg:top-[-80px] mb-[-28px]">
       {img && (
         <div className="lg:absolute lg:top-[-90px]">
           <img

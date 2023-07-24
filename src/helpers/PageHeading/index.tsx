@@ -22,7 +22,7 @@ export const PageHeading: React.FC<Props> = ({
   pageName,
 }) => {
   return (
-    <main className="p-2 lg:px-24 lg:pt-6 lg:pb-[190px] -z-10 flex flex-col text-left min-h-[620px]">
+    <main className="p-2 lg:px-24 lg:pt-6 lg:pb-[190px] z-10 flex flex-col text-left min-h-[620px]">
       <h1 className="text-3xl lg:text-[40px] lg:leading-normal lg:w-[1024px]  text-[#1F2957] font-bold max-w-[535px]">
         {firstPartTitle}
         <span className="text-white">

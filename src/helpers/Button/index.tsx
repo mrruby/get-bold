@@ -18,7 +18,7 @@ export const Button: React.FC<Props> = ({ type, color, text, isWFull,
         ? "bg-getbold-btn-pink hover:bg-getbold-btn-light-pink"
         : "bg-getbold-blue hover:bg-getbold-btn-blue"
         } ${isWFull && "w-full"
-        } px-8 py-3 text-white font-semibold pointer hover:shadow-lg transition-all ${textSize} shadow-div`}
+        } px-8 py-3 text-white leading-snug pointer hover:shadow-lg transition-all ${textSize} shadow-div`}
     >
       {text}
     </button>

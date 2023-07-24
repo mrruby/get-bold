@@ -20,7 +20,7 @@ export const OffertConsultations: React.FC<Props> = ({
   buttonText,
 }) => {
   return (
-    <main className="p-2 lg:pl-24 lg:pt-6 lg:pb-[190px] -z-10 flex flex-col text-left max-w-[1160px]">
+    <main className="lg:pl-24 lg:pt-[180px] lg:pb-[330px] -z-10 flex flex-col text-left max-w-[1160px]">
       <h2 className="text-3xl lg:text-[40px] lg:leading-normal text-[#1F2957] font-bold">
         {title}
       </h2>

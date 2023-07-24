@@ -12,7 +12,7 @@ const items = [
 export const OffertFull = () => {
   return (
     <div className="flex flex-col items-center ">
-      <div className="p-2 lg:px-24 flex flex-col gap-8 lg:flex-row text-left items-start" id="pelna-obsluga">
+      <div className="p-4 lg:px-24 flex flex-col gap-8 lg:flex-row text-left lg:items-start" id="pelna-obsluga">
         <div className="flex flex-col">
           <OffertContent
             firtPartTitle="Potrzebujesz wsparcia "
@@ -20,7 +20,7 @@ export const OffertFull = () => {
             firstParagraph="Zastanawiasz się, co zrobić, aby zdobyć nowych klientów? Chcesz działać w internecie, ale Twoja lista „to do” nigdy się nie kończy? Zrobimy za Ciebie kampanie reklamowe w social mediach od A do Z."
             secParagraphBold="Ty tylko zaakceptujesz świetne materiały i otrzymasz jeszcze lepsze wyniki! "
           />
-          <div className="flex gap-6">
+          <div className="flex gap-6 px-1">
             {items.map((item, index) => (
               <div key={index} className="h-[84px] w-[84px] shadow-div rounded-small-item">
                 <img src={item.src} alt={item.alt} />

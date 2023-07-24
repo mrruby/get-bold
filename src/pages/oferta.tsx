@@ -21,10 +21,16 @@ const OffertPage = () => {
         isSubPage={true}
         isContactPage={false}
         footerWhiteBg={false}
-        leftSemicircle={true}
-        rightSemicircle={true}
-        facebookIcon={true}
-        instagramIcon={true}
+        leftSemicircle1={true}
+        leftSemicircle2={true}
+        rightSemicircle1={true}
+        rightSemicircle2={true}
+        facebookIcon1={true}
+        facebookIcon2={true}
+        facebookIcon3={true}
+        instagramIcon1={true}
+        instagramIcon2={true}
+        instagramIcon3={true}
         bgWave1={true}
       >
         {/* <MaxWithBgColorContainer bgColor="bg-getbold-pink"> */}
@@ -71,8 +77,7 @@ const OffertPage = () => {
             ]}
             listEnd="i pochwalimy się w raporcie, co nam z tego wyszło!"
             secParagraph="To jak, chcesz, aby Twój profil w social mediach sprzedawał?"
-            bonusFirstPartParagraph="Cześć. Chce zamówić "
-            bonusSecPartParagraph="niezobowiązującą ofertę."
+            bonusParagraph={<>Cześć. Chce zamówić <span className="font-bold">niezobowiązującą ofertę.</span>  </>}
             buttonText="Chcę wiedzieć więcej"
           />
         </MaxWithBgColorContainer>
