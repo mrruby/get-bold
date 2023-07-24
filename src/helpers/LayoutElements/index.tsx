@@ -728,9 +728,9 @@ export const InstagramIcon: React.FC<Props> = ({
     <img
       src="../../../../assets/layout-elements/instagram.svg"
       alt="Blue Cube - GetBold Agency"
-      className={`absolute rotate-[20deg] ${top && top} ${right && right} ${left && left} ${bottom && bottom
+      className={`absolute  ${top && top} ${right && right} ${left && left} ${bottom && bottom
         } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
-        } ${mobileBottom && mobileBottom} z-20 w-[166px]`}
+        } ${mobileBottom && mobileBottom} z-20 w-[166px] rotate-[20deg]`}
       ref={Parallax.ref}
     />
   );

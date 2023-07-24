@@ -59,14 +59,14 @@ body {
 
 .bg-wave2 {
   background-image: url("../../static/bg-wave2.svg");
-  background-size: cover;
+  background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
 }
 
 .bg-wave3 {
   background-image: url("../../static/bg-wave3.svg");
-  background-size: cover;
+  background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
 }

@@ -239,8 +239,8 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
       {rightSemicircle && (
         <RightSemicircle
           mobileTop="top-[172px]"
-          mobileRight="right-0"
-          right="md:right-0"
+          mobileRight="right-[-10px]"
+          right="md:right-[-10px]"
         />
       )}
 

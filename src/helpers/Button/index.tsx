@@ -8,8 +8,9 @@ interface Props {
   textSize?: string;
 }
 
-export const Button: React.FC<Props> = ({ type, color, text, isWFull, textSize }) => {
+export const Button: React.FC<Props> = ({ type, color, text, isWFull,
   textSize = "lg:text-[25px]"
+}) => {
   return (
     <button
       type={type}
