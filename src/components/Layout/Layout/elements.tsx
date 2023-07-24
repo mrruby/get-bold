@@ -314,7 +314,7 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
         <InstagramIcon
           mobileTop="top-[5350px]"
           mobileRight="right-[10px]"
-          right="md:right-[250px]"
+          right="md:right-[100px]"
           rotate="19deg"
           width="166px"
         />

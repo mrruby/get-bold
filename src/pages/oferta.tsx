@@ -81,10 +81,10 @@ const OffertPage = () => {
             buttonText="Chcę wiedzieć więcej"
           />
         </MaxWithBgColorContainer>
-        <MaxWithBgColorContainer extraStyle="bg-wave2">
+        <MaxWithBgColorContainer bgColor="bg-white" extraStyle="bg-wave2 z-20">
           <OffertVideo />
         </MaxWithBgColorContainer>
-        <MaxWithBgColorContainer>
+        <MaxWithBgColorContainer extraStyle="z-50">
           <OffertFull />
         </MaxWithBgColorContainer>
         <MaxWithBgColorContainer bgColor="bg-getbold-pink" extraStyle="bg-wave3 -z-50">
