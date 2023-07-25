@@ -11,7 +11,7 @@ import { OffertFull } from "../components/Offert/offert-full";
 import { SEO } from "../components/Seo";
 import { PageHeading } from "../helpers/PageHeading";
 import Layout from "../components/Layout/Layout/index";
-import { Opinions } from "../components/Offert/opinions";
+import { OffertReferences } from "../components/Offert/offert-references";
 import MaxWithBgColorContainer from "../components/Layout/Layout/MaxWithBgColorContainer";
 
 const OffertPage = () => {
@@ -59,7 +59,7 @@ const OffertPage = () => {
           <OffertAdsTikTok />
         </MaxWithBgColorContainer>
         <MaxWithBgColorContainer bgColor="bg-getbold-pink">
-          <Opinions />
+          <OffertReferences />
         </MaxWithBgColorContainer>
         <MaxWithBgColorContainer>
           <OffertPhotos />

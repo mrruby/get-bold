@@ -7,6 +7,7 @@ module.exports = {
         getbold: {
           blue: "#212954",
           pink: "#F4BCC4",
+          "pink-ref": "rgba(209, 101, 115, 0.60)",
           "dark-pink": "#DE6B7A",
           white: "#FFFFFF",
           bg: "#FFFFFF",
