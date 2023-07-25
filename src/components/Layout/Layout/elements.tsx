@@ -54,10 +54,16 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
   ball,
   pinkChart,
   blueCube,
-  leftSemicircle,
-  rightSemicircle,
-  facebookIcon,
-  instagramIcon,
+  leftSemicircle1,
+  leftSemicircle2,
+  rightSemicircle1,
+  rightSemicircle2,
+  facebookIcon1,
+  facebookIcon2,
+  facebookIcon3,
+  instagramIcon1,
+  instagramIcon2,
+  instagramIcon3,
   bgWave1,
 }) => {
   return (
@@ -228,35 +234,89 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
         />
       )}
 
-      {leftSemicircle && (
+      {leftSemicircle1 && (
         <LeftSemicircle
           mobileTop="top-[468px]"
           mobileLeft="left-0"
           left="md:left-0"
         />
       )}
-
-      {rightSemicircle && (
+      {leftSemicircle2 && (
+        <LeftSemicircle
+          mobileTop="top-[6090px]"
+          mobileLeft="left-0"
+          left="md:left-0"
+        />
+      )}
+      {rightSemicircle1 && (
         <RightSemicircle
           mobileTop="top-[172px]"
-          mobileRight="right-0"
-          right="md:right-0"
+          mobileRight="right-[-10px]"
+          right="md:right-[-10px]"
         />
       )}
 
-      {facebookIcon && (
+      {rightSemicircle1 && (
+        <RightSemicircle
+          mobileTop="top-[5820px]"
+          mobileRight="right-[-10px]"
+          right="md:right-[-10px]"
+        />
+      )}
+
+      {facebookIcon1 && (
         <FacebookIcon
           mobileTop="top-[170px]"
           mobileRight="right-[50px]"
-          right="md:right-[250px]"
+          right="md:right-[400px]"
+          rotate="-21deg"
+          width="90px"
+        />
+      )}
+      {facebookIcon2 && (
+        <FacebookIcon
+          mobileTop="top-[3400px]"
+          mobileRight="right-[70px]"
+          right="md:right-[252px]"
+          rotate="24deg"
+          width="200px"
+        />
+      )}
+      {facebookIcon3 && (
+        <FacebookIcon
+          mobileTop="top-[5230px]"
+          mobileRight="right-[20px]"
+          right="md:right-[190px]"
+          rotate="-21deg"
+          width="120px"
         />
       )}
 
-      {instagramIcon && (
+      {instagramIcon1 && (
         <InstagramIcon
-          mobileTop="top-[290px]"
-          mobileRight="right-[50px]"
+          mobileTop="top-[310px]"
+          mobileRight="right-[10px]"
+          right="md:right-[480px]"
+          rotate="19deg"
+          width="105px"
+        />
+      )}
+      {instagramIcon2 && (
+        <InstagramIcon
+          mobileTop="top-[4000px]"
+          mobileRight="right-[10px]"
           right="md:right-[370px]"
+          rotate="19deg"
+          width="166px"
+        />
+      )}
+      {instagramIcon3 && (
+        <InstagramIcon
+          mobileTop="top-[5350px]"
+          mobileRight="right-[10px]"
+          right="md:right-[100px]"
+          rotate="19deg"
+          width="166px"
         />
       )}
     </>

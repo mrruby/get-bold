@@ -12,6 +12,8 @@ interface Props {
   mobileRight?: string;
   mobileLeft?: string;
   mobileBottom?: string;
+  rotate?: string;
+  width?: string;
 }
 
 export const Coin: React.FC<Props> = ({
@@ -652,7 +654,7 @@ export const LeftSemicircle: React.FC<Props> = ({
   return (
     <img
       src="../../../../assets/layout-elements/semicircle2.svg"
-      alt="Blue Cube - GetBold Agency"
+      alt="Left Semicircle - GetBold Agency"
       className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
         } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
         } ${mobileBottom && mobileBottom} -z-10 h-auto`}
@@ -677,10 +679,10 @@ export const RightSemicircle: React.FC<Props> = ({
   return (
     <img
       src="../../../../assets/layout-elements/semicircle1.svg"
-      alt="Blue Cube - GetBold Agency"
+      alt="Right Semicircle - GetBold Agency"
       className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
         } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
-        } ${mobileBottom && mobileBottom} -z-10 h-auto`}
+        } ${mobileBottom && mobileBottom} -z-20 h-auto`}
       ref={Parallax.ref}
     />
   );
@@ -695,17 +697,20 @@ export const FacebookIcon: React.FC<Props> = ({
   mobileRight,
   mobileLeft,
   mobileBottom,
+  rotate = "0deg",
+  width,
 }) => {
   const Parallax = useParallax<HTMLImageElement>({
-    translateX: ["0px", "0px"],
+    translateX: ["0px", "200px"],
+    rotate: [rotate, rotate],
   });
   return (
     <img
       src="../../../../assets/layout-elements/facebook.svg"
-      alt="Blue Cube - GetBold Agency"
+      alt="Facebook Icon - GetBold Agency"
       className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
         } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
-        } ${mobileBottom && mobileBottom}  -z-10 h-auto`}
+        } ${mobileBottom && mobileBottom} -z-10 w-[${width}] max-w-[150px]`}
       ref={Parallax.ref}
     />
   );
@@ -720,17 +725,20 @@ export const InstagramIcon: React.FC<Props> = ({
   mobileRight,
   mobileLeft,
   mobileBottom,
+  rotate = "0deg",
+  width = "40px",
 }) => {
   const Parallax = useParallax<HTMLImageElement>({
-    translateX: ["0px", "0px"],
+    translateX: ["0px", "200px"],
+    rotate: [rotate, rotate],
   });
   return (
     <img
       src="../../../../assets/layout-elements/instagram.svg"
-      alt="Blue Cube - GetBold Agency"
+      alt="Instagram Icon - GetBold Agency"
       className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
         } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
-        } ${mobileBottom && mobileBottom} -z-20 h-auto `}
+        } ${mobileBottom && mobileBottom} -z-10 w-[${width}] max-w-[140px]`}
       ref={Parallax.ref}
     />
   );

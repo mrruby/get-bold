@@ -5,7 +5,7 @@ import { OffertContent } from "../../helpers/OffertContent";
 export const OffertAdsTikTok = () => {
   return (
     <div className="flex flex-col items-center ">
-      <div className="p-2 lg:px-24 flex flex-col gap-8 lg:flex-row text-left items-start" id="tik-tok">
+      <div className="px-2 lg:px-24 flex flex-col gap-8 lg:flex-row text-left lg:items-start lg:pt-5" id="tik-tok">
         <OffertContentList
           img="../../../assets/offert/tiktok.svg"
           title="Co dla Ciebie zrobimy? "
