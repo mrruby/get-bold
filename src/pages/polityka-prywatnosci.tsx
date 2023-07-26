@@ -33,7 +33,6 @@ export const PrivacyPolicyPage = () => {
         pinkChart={false}
         blueCube={false}
         isContactPage={false}
-        footerWhiteBg={true}
       >
         <div className="flex flex-col items-center w-full">
           <PageHeading pageName="Polityka prywatności & plików cookies" />

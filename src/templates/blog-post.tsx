@@ -44,7 +44,6 @@ const BlogPost: React.FC<PageProps<GraphQLResult>> = ({ data }) => {
         pinkChart={false}
         blueCube={false}
         isContactPage={false}
-        footerWhiteBg={true}
       >
         <div className="flex flex-col">
           <HeadingBlogPost

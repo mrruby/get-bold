@@ -7,11 +7,10 @@ import { IoMdMail } from "react-icons/io";
 import { LeftCloud, RightCloud } from "../../../helpers/LayoutElements";
 
 interface Props {
-  isWhiteBg: boolean;
   isContactPage: boolean;
 }
 
-const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
+const Footer: React.FC<Props> = ({ isContactPage }) => {
   if (isContactPage)
     return (
       <div className="w-full h-[5.125rem] mt-[87px] bg-[#FFAAB7]">
@@ -104,25 +103,6 @@ const Footer: React.FC<Props> = ({ isWhiteBg, isContactPage }) => {
           </ul>
         </nav>
       </div>
-
-      {/* white bg */}
-      {isWhiteBg && (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="2814.801"
-          height="895.874"
-          className="absolute -top-[800px] lg:-top-[770px] -left-[450px] z-10"
-          viewBox="0 0 2814.801 895.874"
-        >
-          <path
-            id="Path_4472"
-            data-name="Path 4472"
-            d="M388.7,158.531,2233.4,34l547.685,102.629L2814.8,656.623,2616.09,683.547l-152.7,162.182-1080.17,34.926L619.231,929.873,438.964,880.655,0,739.529Z"
-            transform="translate(0 -34)"
-            fill="#fff"
-          />
-        </svg>
-      )}
     </footer>
   );
 };

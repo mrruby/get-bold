@@ -35,8 +35,6 @@ const TagsPage = () => {
           ball={false}
           pinkChart={false}
           blueCube={false}
-          isContactPage={false}
-          footerWhiteBg={false}
         >
           <HeadingCats />
           <CatsList />

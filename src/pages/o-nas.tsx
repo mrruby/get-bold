@@ -35,7 +35,6 @@ const AboutPage = () => {
         pinkChart={false}
         blueCube={false}
         isContactPage={false}
-        footerWhiteBg={true}
       >
         <HeadingAbout />
         <MaxWithBgColorContainer>

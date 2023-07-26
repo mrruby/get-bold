@@ -38,7 +38,6 @@ const BlogPage = () => {
           pinkChart={false}
           blueCube={false}
           isContactPage={false}
-          footerWhiteBg={true}
         >
           <HeadingBlog />
           <MaxWithBgColorContainer>

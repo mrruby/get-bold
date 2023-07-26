@@ -20,7 +20,6 @@ const OffertPage = () => {
       <Layout
         isSubPage={true}
         isContactPage={false}
-        footerWhiteBg={false}
         leftSemicircle1={true}
         leftSemicircle2={true}
         rightSemicircle1={true}
