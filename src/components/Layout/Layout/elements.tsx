@@ -244,6 +244,7 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
       {leftSemicircle2 && (
         <LeftSemicircle
           mobileTop="top-[6090px]"
+          top="top-[7700px]"
           mobileLeft="left-0"
           left="md:left-0"
         />
@@ -258,7 +259,8 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
 
       {rightSemicircle1 && (
         <RightSemicircle
-          mobileTop="top-[5820px]"
+          mobileTop="top-[7600px]"
+          top="top-[5820px]"
           mobileRight="right-[-10px]"
           right="md:right-[-10px]"
         />
@@ -276,7 +278,8 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
       {facebookIcon2 && (
         <FacebookIcon
           mobileTop="top-[3400px]"
-          mobileRight="right-[70px]"
+          top="top-[5440px]"
+          mobileRight="right-[0px]"
           right="md:right-[252px]"
           rotate="24deg"
           width="200px"
@@ -284,7 +287,8 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
       )}
       {facebookIcon3 && (
         <FacebookIcon
-          mobileTop="top-[5230px]"
+          mobileTop="top-[8130px]"
+          top="top-[5350px]"
           mobileRight="right-[20px]"
           right="md:right-[190px]"
           rotate="-21deg"
@@ -303,8 +307,9 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
       )}
       {instagramIcon2 && (
         <InstagramIcon
-          mobileTop="top-[4000px]"
-          mobileRight="right-[10px]"
+          mobileTop="top-[5620px]"
+          top="top-[4000px]"
+          mobileRight="right-[0px]"
           right="md:right-[370px]"
           rotate="19deg"
           width="166px"
@@ -312,7 +317,8 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
       )}
       {instagramIcon3 && (
         <InstagramIcon
-          mobileTop="top-[5350px]"
+          mobileTop="top-[8040px]"
+          top="top-[5350px]"
           mobileRight="right-[10px]"
           right="md:right-[100px]"
           rotate="19deg"

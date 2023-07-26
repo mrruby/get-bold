@@ -34,7 +34,7 @@ const OffertPage = () => {
         bgWave1={true}
       >
         {/* <MaxWithBgColorContainer bgColor="bg-getbold-pink"> */}
-        <MaxWithBgColorContainer>
+        <MaxWithBgColorContainer extraStyle="z-10">
           <PageHeading
             pageName="OFERTA"
             firstPartTitle={
@@ -49,7 +49,7 @@ const OffertPage = () => {
             secPartAdditionalParagraph="rozkręcił!"
           />
         </MaxWithBgColorContainer>
-        <MaxWithBgColorContainer>
+        <MaxWithBgColorContainer extraStyle="z-10">
           <OffertAds />
         </MaxWithBgColorContainer>
         <MaxWithBgColorContainer bgColor="bg-getbold-dark-pink">
@@ -64,7 +64,7 @@ const OffertPage = () => {
         <MaxWithBgColorContainer>
           <OffertPhotos />
         </MaxWithBgColorContainer>
-        <MaxWithBgColorContainer bgColor="bg-getbold-dark-pink" extraStyle="-z-50">
+        <MaxWithBgColorContainer bgColor="bg-getbold-dark-pink" extraStyle="z-0">
           <OffertSocialMedia
             title={<>Przyprowadzimy Cię przez <span className="text-white">meandry social mediów.</span> </>}
             firstPartParagraph="Kojarzysz takie fanpejdże, które aż chce się czytać, nawet gdy nie znasz jeszcze samego produktu? Takie, na które wchodzisz przez przypadek i już zostajesz? Wybierzemy najlepsze social media dla Twojej marki i obsłużymy od A do Z. Także od postaw."
@@ -87,7 +87,7 @@ const OffertPage = () => {
         <MaxWithBgColorContainer extraStyle="z-50">
           <OffertFull />
         </MaxWithBgColorContainer>
-        <MaxWithBgColorContainer bgColor="bg-getbold-pink" extraStyle="bg-wave3 -z-50">
+        <MaxWithBgColorContainer bgColor="bg-getbold-pink" extraStyle="bg-wave3 z-0">
           <OffertConsultations
             title={<>Umówimy się na <span className="text-white">konsultacje marketingowe</span> (Facebook & Instagram Ads)</>}
             firstParagraph={<> Potrzebujesz wsparcia w marketingu, ale budżet ostatnio się nie spina? <span className="font-bold">Wybierz konsultacje.</span> Specjalistka <span className="font-bold">z 6-letnim doświadczeniem</span> w reklamach przeprowadzi Cię przez meandry Managera Reklam aż do nowych klientów. Nawet jeśli do tej pory myślałeś, że Ty i Facebook nie tworzycie zgranej pary.</>}
