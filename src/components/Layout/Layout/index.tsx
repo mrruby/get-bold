@@ -9,7 +9,6 @@ interface Props extends ILayoutElements {
   screenComponent?: React.ReactNode;
   isSubPage: boolean;
   isContactPage: boolean;
-  footerWhiteBg: boolean;
   children: React.ReactNode;
 }
 
@@ -55,7 +54,6 @@ const Layout: React.FC<Props> = ({
   screenComponent,
   isSubPage,
   isContactPage,
-  footerWhiteBg,
   ...layoutElements
 }) => {
   const layoutElementsProps: ILayoutElements = { ...defaultProps, ...layoutElements };
@@ -71,8 +69,7 @@ const Layout: React.FC<Props> = ({
         <Header />
       )}
       {children}
-      <Footer isContactPage={isContactPage} isWhiteBg={footerWhiteBg} />
-
+      <Footer isContactPage={isContactPage} />
       <LayoutElements {...layoutElementsProps} />
     </div>
   );

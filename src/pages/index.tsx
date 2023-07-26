@@ -54,7 +54,6 @@ const IndexPage = () => {
             pinkChart={false}
             blueCube={false}
             isContactPage={false}
-            footerWhiteBg={true}
           >
             <MaxWithBgColorContainer>
               <HomeOffertComponent />

@@ -36,7 +36,6 @@ const PortfolioPage = () => {
         pinkChart={true}
         blueCube={true}
         isContactPage={false}
-        footerWhiteBg={true}
       >
         <HeadingPortfolio />
         <MaxWithBgColorContainer>

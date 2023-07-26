@@ -34,7 +34,6 @@ const ContactPage = () => {
         pinkChart={false}
         blueCube={false}
         isContactPage={true}
-        footerWhiteBg={true}
       >
         <HeadingContact />
         <ContactForm />

@@ -46,7 +46,6 @@ const TagPage: React.FC<Props> = ({ data, pageContext }) => {
         pinkChart={false}
         blueCube={false}
         isContactPage={false}
-        footerWhiteBg={true}
       >
         <HeadingTagTemplate head={tag} tag={true} />
         <div className="flex flex-col md:items-start md:flex-row space-y-12 md:space-y-0 md:space-x-12 pb-24 p-8 lg:max-w-[1176px]">

@@ -36,7 +36,6 @@ const TagsPage = () => {
           pinkChart={false}
           blueCube={false}
           isContactPage={false}
-          footerWhiteBg={false}
         >
           <HeadingTags />
           <TagsList />

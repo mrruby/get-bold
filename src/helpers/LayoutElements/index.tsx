@@ -657,7 +657,7 @@ export const LeftSemicircle: React.FC<Props> = ({
       alt="Left Semicircle - GetBold Agency"
       className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
         } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
-        } ${mobileBottom && mobileBottom} -z-10 h-auto`}
+        } ${mobileBottom && mobileBottom} z-0 h-auto`}
       ref={Parallax.ref}
     />
   );
@@ -682,7 +682,7 @@ export const RightSemicircle: React.FC<Props> = ({
       alt="Right Semicircle - GetBold Agency"
       className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
         } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
-        } ${mobileBottom && mobileBottom} -z-20 h-auto`}
+        } ${mobileBottom && mobileBottom} z-0 h-auto`}
       ref={Parallax.ref}
     />
   );
@@ -710,7 +710,7 @@ export const FacebookIcon: React.FC<Props> = ({
       alt="Facebook Icon - GetBold Agency"
       className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
         } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
-        } ${mobileBottom && mobileBottom} -z-10 w-[${width}] max-w-[150px]`}
+        } ${mobileBottom && mobileBottom} z-0 w-[${width}] max-w-[150px]`}
       ref={Parallax.ref}
     />
   );
@@ -738,7 +738,7 @@ export const InstagramIcon: React.FC<Props> = ({
       alt="Instagram Icon - GetBold Agency"
       className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
         } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
-        } ${mobileBottom && mobileBottom} -z-10 w-[${width}] max-w-[140px]`}
+        } ${mobileBottom && mobileBottom} z-0 w-[${width}] max-w-[140px]`}
       ref={Parallax.ref}
     />
   );
