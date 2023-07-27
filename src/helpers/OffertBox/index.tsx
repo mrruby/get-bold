@@ -16,7 +16,17 @@ export const OffertBox: React.FC<Props> = ({
   const handleButtonClick = () => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      const isDesktop = window.innerWidth > 768;
+      if (isDesktop) {
+        const scrollOffset = 250;
+        const topOffset = section.getBoundingClientRect().top;
+        window.scrollTo({
+          top: window.scrollY + topOffset - scrollOffset,
+          behavior: "smooth",
+        });
+      } else {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
 

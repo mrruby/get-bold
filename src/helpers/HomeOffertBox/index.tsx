@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "gatsby";
 import React, { ReactElement } from "react";
+import { StaticImage } from "gatsby-plugin-image";
 
 interface Props {
   img: string;

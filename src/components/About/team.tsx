@@ -1,5 +1,6 @@
 import React from "react";
 import { TeamMember } from "./teamMember";
+import { StaticImage } from "gatsby-plugin-image";
 
 export const TeamAbout = () => {
   return (
@@ -25,11 +26,16 @@ export const TeamAbout = () => {
           </>
         }
         title="Po długim czasie pracy w agencjach marketingowych, stawiam na siebie."
-        photoLink="../../ada.jpg"
+        photoLink="../../../static/ada.jpg"
         name="Adrianna Promis"
         ps="A ten dreszczyk emocji, gdy widzę wyniki prowadzonych kampanii?
         Bezcenny!"
         linkedin="https://www.linkedin.com/in/adriannapromis/"
+      />
+      <StaticImage
+        src="../../../static/ada.jpg"
+        alt="ada"
+        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20"
       />
       <TeamMember
         isLeft={false}

@@ -55,9 +55,7 @@ export const OffertSocialMedia: React.FC<Props> = ({
         <h2 className="lg:text-[30px] lg:leading-normal text-[#1F2957]">
           {bonusParagraph}</h2>
         <div className="flex w-full justify-end">
-          <Link to="#contact-form">
-            <Button type="button" color="blue" isWFull={false} text={buttonText} textSize="text-[15px]" />
-          </Link>
+          <Button type="button" color="blue" isWFull={false} text={buttonText} textSize="text-[15px]" sectionId="contact-form" />
         </div>
       </div>
     </main>

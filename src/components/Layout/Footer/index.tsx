@@ -39,6 +39,7 @@ const Footer: React.FC<Props> = ({ isContactPage }) => {
                 type="text"
                 name="name"
                 required
+                id="name"
                 className="border-0 bg-getbold-pink-input rounded-input shadow-div focus:ring-0 focus:border-getbold-blue px-4 py-5 w-full text-sm mb-[20px]"
               />
             </div>
@@ -48,6 +49,7 @@ const Footer: React.FC<Props> = ({ isContactPage }) => {
                 type="email"
                 name="mail"
                 required
+                id="mail"
                 className="border-0 bg-getbold-pink-input rounded-input shadow-div focus:ring-0 focus:border-getbold-blue px-4 py-5 w-full text-sm mb-[20px]"
               />
             </div>
@@ -58,6 +60,7 @@ const Footer: React.FC<Props> = ({ isContactPage }) => {
                   required
                   name="text"
                   rows={8}
+                  id="text"
                   className="border-0 bg-getbold-pink-input rounded-input shadow-div focus:ring-0 focus:border-getbold-blue px-4 py-5 w-full text-sm"
                 ></textarea>
               </div>
@@ -81,14 +84,14 @@ const Footer: React.FC<Props> = ({ isContactPage }) => {
                 id="consent"
                 name="consent"
               />
-              <p className="text-[14px] w-full text-xs leading-normal">
+              <label htmlFor="consent" className="text-[14px] w-full text-xs leading-normal">
                 Wyrazam zgode na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie
                 danych osobowych w celu (np wysyłania informacji handlowei). Podanie danych
                 osobowych jest dobrowolne. Zostałem poinformowany, ze przysługuje mi prawo dostepu
                 do swoich danych, mozliwosci ich poprawiania, zadania zaprzestania ich
                 przetwarzania. Administratorem danych jest GetBold Agency z siedzibą w 41-500
                 Chorzów ul. Żołnierzy Września 79/6.
-              </p>
+              </label>
             </div>
           </form>
         </div>
