@@ -26,6 +26,7 @@ import {
   RightSemicircle,
   FacebookIcon,
   InstagramIcon,
+  TiktokIcon,
   BgWave1,
 } from "../../../helpers/LayoutElements";
 import { ILayoutElements } from "../../../utils/types/layoutElements";
@@ -64,6 +65,7 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
   instagramIcon1,
   instagramIcon2,
   instagramIcon3,
+  tikttokIcon,
   bgWave1,
 }) => {
   return (
@@ -243,8 +245,7 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
       )}
       {leftSemicircle2 && (
         <LeftSemicircle
-          mobileTop="top-[6090px]"
-          top="top-[6090px]"
+          mobileTop="top-[7700px] lg:top-[6090px]"
           mobileLeft="left-0"
           left="md:left-0"
         />
@@ -257,10 +258,9 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
         />
       )}
 
-      {rightSemicircle1 && (
+      {rightSemicircle2 && (
         <RightSemicircle
-          mobileTop="top-[7600px]"
-          top="top-[5820px]"
+          mobileTop="top-[7600px] lg:top-[5820px]"
           mobileRight="right-[-10px]"
           right="md:right-[-10px]"
         />
@@ -268,17 +268,16 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
 
       {facebookIcon1 && (
         <FacebookIcon
-          mobileTop="top-[170px]"
-          mobileRight="right-[50px]"
-          right="md:right-[400px]"
+          top="top-[170px]"
+          right="right-[50px] sm:right-[200px] lg:right-[400px]"
           rotate="-21deg"
           width="90px"
         />
       )}
       {facebookIcon2 && (
         <FacebookIcon
-          mobileTop="top-[3400px]"
-          mobileRight="right-[70px]"
+          top="top-[5500px] lg:top-[3400px]"
+          mobileRight="right-[30px]"
           right="md:right-[252px]"
           rotate="24deg"
           width="200px"
@@ -286,7 +285,7 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
       )}
       {facebookIcon3 && (
         <FacebookIcon
-          mobileTop="top-[5230px]"
+          top="top-[8100px] lg:top-[5230px]"
           mobileRight="right-[20px]"
           right="md:right-[190px]"
           rotate="-21deg"
@@ -296,28 +295,35 @@ export const LayoutElements: React.FC<ILayoutElements> = ({
 
       {instagramIcon1 && (
         <InstagramIcon
-          mobileTop="top-[310px]"
-          mobileRight="right-[10px]"
-          right="md:right-[480px]"
+          top="top-[310px]"
+          right="right-[10px] sm:right-[260px] lg:right-[480px]"
           rotate="19deg"
           width="105px"
         />
       )}
       {instagramIcon2 && (
         <InstagramIcon
-          mobileTop="top-[4000px]"
-          mobileRight="right-[10px]"
-          right="md:right-[370px]"
+          top="top-[5400px] lg:top-[4000px]"
+          right="right-[10px] sm:right-[260px] lg:right-[370px]"
           rotate="19deg"
           width="166px"
         />
       )}
       {instagramIcon3 && (
         <InstagramIcon
-          mobileTop="top-[5350px]"
+          top="top-[8250px] lg:top-[5350px]"
           mobileRight="right-[10px]"
           right="md:right-[100px]"
           rotate="19deg"
+          width="166px"
+        />
+      )}
+
+      {tikttokIcon && (
+        <TiktokIcon
+          top="top-[5000px] lg:top-[3400px]"
+          right="right-[5px] sm:right-[200px] lg:right-[410px]"
+          rotate="-19deg"
           width="166px"
         />
       )}

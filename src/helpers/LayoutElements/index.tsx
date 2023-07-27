@@ -710,7 +710,7 @@ export const FacebookIcon: React.FC<Props> = ({
       alt="Facebook Icon - GetBold Agency"
       className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
         } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
-        } ${mobileBottom && mobileBottom} z-0 w-[${width}] max-w-[150px]`}
+        } ${mobileBottom && mobileBottom} z-0 w-[${width}] max-w-[140px]`}
       ref={Parallax.ref}
     />
   );
@@ -736,6 +736,34 @@ export const InstagramIcon: React.FC<Props> = ({
     <img
       src="../../../../assets/layout-elements/instagram.svg"
       alt="Instagram Icon - GetBold Agency"
+      className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
+        } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
+        } ${mobileBottom && mobileBottom} z-0 w-[${width}] max-w-[140px]`}
+      ref={Parallax.ref}
+    />
+  );
+};
+
+export const TiktokIcon: React.FC<Props> = ({
+  top,
+  right,
+  left,
+  bottom,
+  mobileTop,
+  mobileRight,
+  mobileLeft,
+  mobileBottom,
+  rotate = "0deg",
+  width = "40px",
+}) => {
+  const Parallax = useParallax<HTMLImageElement>({
+    translateX: ["0px", "200px"],
+    rotate: [rotate, rotate],
+  });
+  return (
+    <img
+      src="../../../../assets/offert/tiktok.svg"
+      alt="Tik Tok Icon - GetBold Agency"
       className={`absolute ${top && top} ${right && right} ${left && left} ${bottom && bottom
         } ${mobileTop && mobileTop} ${mobileRight && mobileRight} ${mobileLeft && mobileLeft
         } ${mobileBottom && mobileBottom} z-0 w-[${width}] max-w-[140px]`}

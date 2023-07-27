@@ -19,8 +19,7 @@ export const OffertAdsTikTok = () => {
           buttonText="Wchodzę w to!"
         />
         <OffertContent
-          firtPartTitle="Ustawimy dla Ciebie  "
-          secPartTitle="kampanie reklamowe na TikToku"
+          title={<> Ustawimy dla Ciebie<span className="font-bold"> kampanie reklamowe na TikToku</span></>}
           firstParagraph="Postaw na nowoczesną reklamę i patrz, jak dziwią się Ci, którzy mówili, że TikTok to zabawa dla nastolatków. Czy TikTok sprawdzi się w Twoim biznesie? Nasza w tym głowa, by doradzić Ci, czy warto w to iść." />
       </div>
     </div>

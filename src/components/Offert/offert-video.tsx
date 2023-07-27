@@ -19,11 +19,9 @@ export const OffertVideo = () => {
           buttonText="Wchodzę w to!"
         />
         <OffertContent
-          firtPartTitle="Nagramy dla Ciebie "
-          secPartTitle="video sprzedażowe"
+          title={<>Nagramy dla Ciebie <span className="font-bold"> video sprzedażowe</span></>}
           firstParagraph="Jeszcze niedawno mówiliśmy, że kogo nie ma na Facebooku, ten nie istnieje. Teraz mówimy, jeśli nie publikujesz video, nie istniejesz."
-          secParagraph="Czy rolki i tiktoki mogą sprzedawać? "
-          secParagraphBold="Zdziwisz się, jak bardzo skutecznie!"
+          secParagraph={<>Czy rolki i tiktoki mogą sprzedawać? <span className="font-bold">Zdziwisz się, jak bardzo skutecznie!</span></>}
         />
       </div>
     </div>

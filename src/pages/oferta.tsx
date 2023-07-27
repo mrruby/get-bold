@@ -30,6 +30,7 @@ const OffertPage = () => {
         instagramIcon1={true}
         instagramIcon2={true}
         instagramIcon3={true}
+        tikttokIcon={true}
         bgWave1={true}
       >
         {/* <MaxWithBgColorContainer bgColor="bg-getbold-pink"> */}
@@ -42,10 +43,9 @@ const OffertPage = () => {
               </>
             }
             secPartTitle={<> nowych klientów.</>}
-            firstPartParagraph="Nawet jeśli teraz zamiast osiągać sukcesy martwisz się o przyszłość swojej firmy. "
-            secPartParagraph="Głowa do góry!"
-            firstPartAdditionalParagraph="Zobacz, co konkretnie zrobimy, aby Twój biznes się "
-            secPartAdditionalParagraph="rozkręcił!"
+            paragraph={<> Nawet jeśli teraz zamiast osiągać sukcesy martwisz się o przyszłość swojej firmy.
+              <span className="font-bold">"Głowa do góry!"</span></>}
+            additionalParagraph={<> Zobacz, co konkretnie zrobimy, aby Twój biznes się <span className="font-bold">rozkręcił!</span></>}
           />
         </MaxWithBgColorContainer>
         <MaxWithBgColorContainer extraStyle="z-10">
@@ -66,7 +66,7 @@ const OffertPage = () => {
         <MaxWithBgColorContainer bgColor="bg-getbold-dark-pink" extraStyle="z-0">
           <OffertSocialMedia
             title={<>Przyprowadzimy Cię przez <span className="text-white">meandry social mediów.</span> </>}
-            firstPartParagraph="Kojarzysz takie fanpejdże, które aż chce się czytać, nawet gdy nie znasz jeszcze samego produktu? Takie, na które wchodzisz przez przypadek i już zostajesz? Wybierzemy najlepsze social media dla Twojej marki i obsłużymy od A do Z. Także od postaw."
+            firstParagraph="Kojarzysz takie fanpejdże, które aż chce się czytać, nawet gdy nie znasz jeszcze samego produktu? Takie, na które wchodzisz przez przypadek i już zostajesz? Wybierzemy najlepsze social media dla Twojej marki i obsłużymy od A do Z. Także od postaw."
             listTitle="Poprowadzimy dla Ciebie sociale, które przyciągną nowych klientów:"
             listItems={[
               "zaplanujemy jakościowy, przemyślany content,",
