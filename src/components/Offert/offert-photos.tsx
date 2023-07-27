@@ -7,12 +7,9 @@ export const OffertPhotos = () => {
     <div className="flex flex-col items-center ">
       <div className="p-4 lg:px-24 flex flex-col gap-8 lg:flex-row text-left lg:items-start" id="zdjecia">
         <OffertContent
-          firtPartTitle="Zrobimy dla Ciebie "
-          secPartTitle="kreatywne zdjęcia!"
+          title={<>Zrobimy dla Ciebie <span className="font-bold"> kreatywne zdjęcia!</span></>}
           firstParagraph="Ty wiesz, że masz świetną ofertę. My też to wiemy. A klienci? Cóż, klienci muszą zobaczyć produkt, zobaczyć migawki z Twojej usługi i poczuć, że warto."
-          secParagraph="Zrobimy dla Ciebie "
-          secParagraphBold="zdjęcia produktowe i/lub wizerunkowe"
-          secParagraphSecPart=", na widok których klienci krzykną: „kupuję!”."
+          secParagraph={<>Zrobimy dla Ciebie <span className="font-bold"> zdjęcia produktowe i/lub wizerunkowe,</span> na widok których klienci krzykną: „kupuję!”</>}
         />
         <OffertContentList
           img="../../../assets/offert/photos.svg"

@@ -4,10 +4,8 @@ interface Props {
   firstPartTitle?: string | ReactElement;
   circledText?: string;
   secPartTitle?: string | ReactElement;
-  firstPartParagraph?: string;
-  secPartParagraph?: string;
-  firstPartAdditionalParagraph?: string;
-  secPartAdditionalParagraph?: string;
+  paragraph?: string | ReactElement;
+  additionalParagraph?: string | ReactElement;
   pageName?: string;
 }
 
@@ -15,14 +13,12 @@ export const PageHeading: React.FC<Props> = ({
   firstPartTitle,
   circledText,
   secPartTitle,
-  firstPartParagraph,
-  secPartParagraph,
-  firstPartAdditionalParagraph,
-  secPartAdditionalParagraph,
+  paragraph,
+  additionalParagraph,
   pageName,
 }) => {
   return (
-    <main className="p-2 lg:px-24 lg:pt-6 lg:pb-[190px] z-10 flex flex-col text-left min-h-[620px]">
+    <main className="p-2 sm:px-8 lg:px-24 lg:pt-6 lg:pb-[190px] z-10 flex flex-col text-left min-h-[620px]">
       <h1 className="text-3xl lg:text-[40px] lg:leading-normal lg:w-[1024px]  text-[#1F2957] font-bold max-w-[535px]">
         {firstPartTitle}
         <span className="text-white">
@@ -51,15 +47,10 @@ export const PageHeading: React.FC<Props> = ({
           {secPartTitle}
         </span>
       </h1>
-      <p className="text-[20px] leading-normal my-[30px] max-w-[535px]">{firstPartParagraph}
-        <span className="font-bold">
-          {secPartParagraph}
-        </span>
+      <p className="text-[20px] leading-normal my-[30px] max-w-[535px]">
+        {paragraph}
       </p>
-      <p className="text-2xl leading-normal font-medium max-w-[535px]">{firstPartAdditionalParagraph}
-        <span className="font-bold">
-          {secPartAdditionalParagraph}
-        </span>
+      <p className="text-2xl leading-normal font-medium max-w-[535px]">{additionalParagraph}
       </p>
     </main>
   );

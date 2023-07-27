@@ -19,7 +19,7 @@ export const HeaderHamburger: React.FC<Props> = ({
 
   return (
     <nav className="lg:hidden z-30">
-      <button onClick={() => hamburgerMenuToggle()}>
+      <button onClick={() => hamburgerMenuToggle()} aria-label="Otwórz menu nawigacyjne">
         {isMobileNavOpen ? (
           <svg
             className="block h-6 w-6"

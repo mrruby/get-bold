@@ -32,5 +32,6 @@ export interface ILayoutElements {
   instagramIcon1?: boolean;
   instagramIcon2?: boolean;
   instagramIcon3?: boolean;
+  tikttokIcon?: boolean;
   bgWave1?: boolean;
 }

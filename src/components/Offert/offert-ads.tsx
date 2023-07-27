@@ -7,9 +7,7 @@ export const OffertAds = () => {
     <div className="flex flex-col items-center">
       <div className="px-2 lg:px-24 flex flex-col gap-8 lg:flex-row text-left lg:items-start lg:m-h-[435px]" id="social-media">
         <OffertContent
-          firtPartTitle="Przygotujemy dla Ciebie  "
-          secPartTitle="kampanie reklamowe "
-          thirdPartTitle="Facebook & Instagram Ads"
+          title={<> Przygotujemy dla Ciebie<span className="font-bold"> kampanie reklamowe</span> Facebook & Instagram Ads</>}
           firstParagraph="Dobrze wiesz, że na Facebooku i Instagramie są Twoi nowi klienci. Zastanawiasz się, jak do nich dotrzeć? Odpowiedź brzmi: dzięki kampaniom reklamowym."
           secParagraph="Wykorzystamy potencjał Facebooka i Instagrama tak, by trafić do precyzyjnego grona odbiorców. To oni zamówią Twój produkt, zapiszą się na Twój kurs lub odwiedzą Twój lokal."
         />
