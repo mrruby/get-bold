@@ -26,16 +26,11 @@ export const TeamAbout = () => {
           </>
         }
         title="Po długim czasie pracy w agencjach marketingowych, stawiam na siebie."
-        photoLink="../../../static/ada.jpg"
+        photoLink="../../ada.jpg"
         name="Adrianna Promis"
         ps="A ten dreszczyk emocji, gdy widzę wyniki prowadzonych kampanii?
         Bezcenny!"
         linkedin="https://www.linkedin.com/in/adriannapromis/"
-      />
-      <StaticImage
-        src="../../../static/ada.jpg"
-        alt="ada"
-        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20"
       />
       <TeamMember
         isLeft={false}

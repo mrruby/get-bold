@@ -2,9 +2,18 @@ import React from "react";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { StaticImage } from "gatsby-plugin-image";
 
-export const AboutPhoto: React.FC<{ imageData: IGatsbyImageData }> = ({ imageData }) => {
+interface Props {
+  link: string;
+}
 
-
+// export const AboutPhoto: React.FC<{
+//   imageData: IGatsbyImageData 
+//   link: string,
+// }> = ({
+//   imageData
+// }) 
+// =>
+export const AboutPhoto: React.FC<Props> = ({ link }) => {
   return (
     <div className="relative max-w-full h-[312px] md:h-full">
       <StaticImage
@@ -19,8 +28,13 @@ export const AboutPhoto: React.FC<{ imageData: IGatsbyImageData }> = ({ imageDat
       />
 
       <div className="w-[18rem] h-[18rem] md:w-[24rem] md:h-[24rem] pt-1 pb-2 px-2 lg:p-0 bg-image-about-ada bg-cover flex items-start justify-center object-contain">
-        <GatsbyImage
+        {/* <GatsbyImage
           image={imageData}
+          alt="team member photo"
+          className="h-[95%] w-[95%] mt-1 rounded-[100px] md:rounded-[143px] object-cover"
+        /> */}
+        <img
+          src={link}
           alt="team member photo"
           className="h-[95%] w-[95%] mt-1 rounded-[100px] md:rounded-[143px] object-cover"
         />

@@ -26,7 +26,7 @@ export const OffertContentList: React.FC<Props> = ({
           <img
             src={img}
             alt={`${title} | GetBold Agency`}
-            className="w-[100px] lg:w-[150px] h-auto"
+            className="w-[100px] lg:w-[150px] h-[100px] lg:h-[150px]"
           />
         </div>
       )}

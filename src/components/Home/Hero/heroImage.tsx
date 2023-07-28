@@ -15,7 +15,7 @@ export const HomeHeroImage = () => {
       className="w-full lg:w-3/5 flex items-center justify-center"
     >
       <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-        <img src="../../hero.png" alt="Hero" className="w-full h-auto" />
+        <StaticImage src="../../../../static/hero.png" alt="Hero" className="w-full h-auto" />
       </motion.div>
     </Parallax>
   );
