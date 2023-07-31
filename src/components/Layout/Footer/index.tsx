@@ -47,9 +47,9 @@ const Footer: React.FC<Props> = ({ isContactPage }) => {
               <label htmlFor="email" className="lg:text-getBoldBase">Adres e-mail</label>
               <input
                 type="email"
-                name="mail"
+                name="email"
                 required
-                id="mail"
+                id="email"
                 className="border-0 bg-getbold-pink-input rounded-input shadow-div focus:ring-0 focus:border-getbold-blue px-4 py-5 w-full text-sm mb-[20px]"
               />
             </div>
@@ -58,9 +58,9 @@ const Footer: React.FC<Props> = ({ isContactPage }) => {
                 <label htmlFor="message" className="lg:text-getBoldBase">Czego potrzebujesz?</label>
                 <textarea
                   required
-                  name="text"
+                  name="message"
                   rows={8}
-                  id="text"
+                  id="message"
                   className="border-0 bg-getbold-pink-input rounded-input shadow-div focus:ring-0 focus:border-getbold-blue px-4 py-5 w-full text-sm"
                 ></textarea>
               </div>
