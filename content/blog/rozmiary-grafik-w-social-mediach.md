@@ -8,7 +8,7 @@ tags:
 date: 2022-06-28T14:22:06.583Z
 category: Marketing
 author: Wiktoria
-authorImg: /img/8.jpg
+authorImg: /img/8.webp
 ---
 Byłoby świetnie, gdyby platformy społecznościowe same podpowiadały nam jakie rozmiary grafik są dla nich odpowiednie, ale niestety życie nie jest aż takie piękne. \
 Zatem wpisujesz w wyszukiwarkę po raz 10: „rozmiar cover photo Facebook”, „rozmiar grafik na LinkedIna” i nadal nie do końca wiesz, czy to, co czytasz, jest właściwe. 

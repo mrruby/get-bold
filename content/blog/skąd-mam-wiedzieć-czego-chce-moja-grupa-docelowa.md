@@ -10,7 +10,7 @@ tags:
 date: 2022-06-22T13:43:58.224Z
 category: Marketing
 author: Wiktoria
-authorImg: /img/8.jpg
+authorImg: /img/8.webp
 ---
 Odwieczne pytanie, które pojawia się w kontekście publikowania treści w mediach społecznościowych, to **„Skąd mam wiedzieć, co chciałaby przeczytać moja grupa docelowa?”** To pytanie słyszałam zadają sobie zarówno członkowie kół naukowych raczkujących w social mediach, ale podejrzewam, że znalazłaby się niejedna młoda firma, która również ma z tym kłopot. 
 

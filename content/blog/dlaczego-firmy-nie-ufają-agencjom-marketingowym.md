@@ -10,13 +10,13 @@ tags:
 date: 2022-07-15T14:17:49.244Z
 category: Marketing
 author: Wiktoria
-authorImg: /img/8.jpg
+authorImg: /img/8.webp
 ---
 Dlaczego firmy nie ufają agencjom marketingowym?
 
 Ostatnim razem podczas spotkania zespołowego miałyśmy burzę mózgów na temat współpracy z agencją marketingową i tego jak to może wyglądać ze strony klienta. Dzięki tej dyskusji rozpoczęłyśmy wewnętrzne badanie przyczyn, przez które firmy mogą mieć obawy związane ze współpracą z agencjami. 
 
-![brainstorm](/img/7.png)
+![brainstorm](/img/7.webp)
 
 Prowadzenie swojego biznesu w dzisiejszych czasach nie może się już odbyć bez posiadania kont w mediach społecznościowych. Co za tym idzie - jeśli sami nie znamy się na marketingu, z chęcią oddajemy to zadanie innym: pracownikom lub agencjom kreatywnym. 
 

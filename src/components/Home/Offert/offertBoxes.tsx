@@ -35,7 +35,7 @@ export const HomeOffertBoxes = () => {
       />
 
       <HomeOffertBox
-        img="../../../assets/offert/fbads.png"
+        img="../../../assets/offert/fbads.webp"
         imgAlt="Facebook Ads - GetBold Agency"
         title={
           <>
@@ -45,7 +45,7 @@ export const HomeOffertBoxes = () => {
       />
 
       <HomeOffertBox
-        img="../../../assets/offert/tiktokads.png"
+        img="../../../assets/offert/tiktokads.webp"
         imgAlt="TikTok Ads - GetBold Agency"
         title={
           <>
