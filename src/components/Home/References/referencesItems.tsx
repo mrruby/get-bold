@@ -1,6 +1,6 @@
 import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import { Reference } from "../../../helpers/Reference";
 
 interface IReferencesList {
@@ -42,15 +42,43 @@ const referencesList: IReferencesList[] = [
   },
 ];
 
-export const HomeReferencesItems = () => (
-  <Carousel autoPlay infiniteLoop showIndicators={false} showStatus={false}>
-    {referencesList.map((reference, index) => (
-      <Reference
-        key={index}
-        reference={reference.reference}
-        name={reference.name}
-        company={reference.company}
-      />
-    ))}
-  </Carousel>
-);
+const responsive = {
+  superLargeDesktop: {
+    breakpoint: { max: 4000, min: 3000 },
+    items: 1
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 1
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 1
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1
+  }
+};
+
+export const HomeReferencesItems = () => {
+  return (
+    <Carousel
+      responsive={responsive}
+      infinite={true}
+      autoPlay={true}
+      autoPlaySpeed={1000}
+      ssr={true}
+    >
+      {referencesList.map((reference, index) => (
+        <Reference
+          key={index}
+          reference={reference.reference}
+          name={reference.name}
+          company={reference.company}
+        />
+      ))}
+    </Carousel>
+  );
+}
+

@@ -13,21 +13,34 @@ export const OffertBox: React.FC<Props> = ({
   sectionId,
 }) => {
 
+  const getSection = (sectionId) => document.getElementById(sectionId);
+
+  const isDesktopView = () => window.innerWidth > 768;
+
+  const getScrollOffset = (section, offset = 250) => {
+    const topOffset = section.getBoundingClientRect().top;
+    return window.scrollY + topOffset - offset;
+  };
+
+  const scrollToSectionDesktop = (section) => {
+    const scrollOffset = getScrollOffset(section);
+    window.scrollTo({
+      top: scrollOffset,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollToSectionOther = (section) => {
+    section.scrollIntoView({ behavior: "smooth" });
+  };
+
   const handleButtonClick = () => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      const isDesktop = window.innerWidth > 768;
-      if (isDesktop) {
-        const scrollOffset = 250;
-        const topOffset = section.getBoundingClientRect().top;
-        window.scrollTo({
-          top: window.scrollY + topOffset - scrollOffset,
-          behavior: "smooth",
-        });
-      } else {
-        section.scrollIntoView({ behavior: "smooth" });
-      }
-    }
+    const section = getSection(sectionId);
+    if (!section) return;
+
+    isDesktopView()
+      ? scrollToSectionDesktop(section)
+      : scrollToSectionOther(section);
   };
 
   return (

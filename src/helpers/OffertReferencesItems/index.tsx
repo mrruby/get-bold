@@ -96,6 +96,7 @@ export const OffertReferencesItems = () => {
       infinite={true}
       customLeftArrow={<CustomLeftArrow />}
       customRightArrow={<CustomRightArrow />}
+      ssr={true}
     >
       {referencesList.map((reference, index) => (
         <OffertReference
