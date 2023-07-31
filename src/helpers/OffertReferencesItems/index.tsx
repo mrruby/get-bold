@@ -1,6 +1,6 @@
 import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import { OffertReference } from "../OffertReference";
 
 interface IReferencesList {
@@ -42,44 +42,69 @@ const referencesList: IReferencesList[] = [
   },
 ];
 
-export const OffertReferencesItems = () => (
-  <Carousel infiniteLoop showIndicators={false} showStatus={false}
-    renderArrowPrev={(clickHandler, hasPrev) => {
-      return (
-        <div
-          className={`${hasPrev ? "absolute" : "hidden"
-            } top-0 md:top-[-60px] bottom-0 left-0 flex justify-center items-center p-1 opacity-70 hover:opacity-100 cursor-pointer z-20`}
-          onClick={clickHandler}
-        >
-          <img
-            src="../../../../left-arrow.svg"
-            alt="Left Arrow - GetBold Agency"
-          />
-        </div>
-      );
-    }}
-    renderArrowNext={(clickHandler, hasNext) => {
-      return (
-        <div
-          className={`${hasNext ? "absolute" : "hidden"
-            } top-0 md:top-[-60px] bottom-0 right-0 flex justify-center items-center p-1 opacity-70 hover:opacity-100 cursor-pointer z-20`}
-          onClick={clickHandler}
-        >
-          <img
-            src="../../../../right-arrow.svg"
-            alt="Right Arrow - GetBold Agency"
-          />
-        </div>
-      );
-    }}
-  >
-    {referencesList.map((reference, index) => (
-      <OffertReference
-        key={index}
-        reference={reference.reference}
-        name={reference.name}
-        company={reference.company}
+const CustomLeftArrow = ({ onClick, ...rest }: any) => {
+  return (
+    <div
+      className={`absolute top-0 md:top-[-60px] bottom-0 left-0 flex justify-center items-center p-1 opacity-70 hover:opacity-100 cursor-pointer z-20`}
+      onClick={onClick}
+    >
+      <img
+        src="../../../../left-arrow.svg"
+        alt="Left Arrow - GetBold Agency"
       />
-    ))}
-  </Carousel>
-);
+    </div>
+  );
+}
+
+const CustomRightArrow = ({ onClick, ...rest }: any) => {
+  return (
+    <div
+      className={`absolute top-0 md:top-[-60px] bottom-0 right-0 flex justify-center items-center p-1 opacity-70 hover:opacity-100 cursor-pointer z-20`}
+      onClick={onClick}
+    >
+      <img
+        src="../../../../right-arrow.svg"
+        alt="Right Arrow - GetBold Agency"
+      />
+    </div>
+  );
+}
+
+const responsive = {
+  superLargeDesktop: {
+    breakpoint: { max: 4000, min: 3000 },
+    items: 1
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 1
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 1
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1
+  }
+};
+
+export const OffertReferencesItems = () => {
+  return (
+    <Carousel
+      responsive={responsive}
+      infinite={true}
+      customLeftArrow={<CustomLeftArrow />}
+      customRightArrow={<CustomRightArrow />}
+    >
+      {referencesList.map((reference, index) => (
+        <OffertReference
+          key={index}
+          reference={reference.reference}
+          name={reference.name}
+          company={reference.company}
+        />
+      ))}
+    </Carousel>
+  );
+};
