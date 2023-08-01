@@ -26,7 +26,7 @@ export const OffertContentList: React.FC<Props> = ({
           <img
             src={img}
             alt={`${title} | GetBold Agency`}
-            className="w-[100px] lg:w-[150px] h-auto"
+            className="w-[100px] lg:w-[150px] h-[100px] lg:h-[150px]"
           />
         </div>
       )}
@@ -46,9 +46,7 @@ export const OffertContentList: React.FC<Props> = ({
         </p>
       </div>
       <div className="absolute bottom-[-20px]">
-        <Link to="#contact-form">
-          <Button type="button" color="pink" isWFull={false} text={buttonText} />
-        </Link>
+        <Button type="button" color="pink" isWFull={false} text={buttonText} sectionId="contact-form" />
       </div>
     </div>
   );

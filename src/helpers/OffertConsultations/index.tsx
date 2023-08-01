@@ -41,9 +41,10 @@ export const OffertConsultations: React.FC<Props> = ({
       </div>
       <p className="lg:text-[20px] leading-normal mt-[20px] mb-[30px] text-[#1F2957] font-bold">{secParagraph}
       </p>
-      <Link to="#contact-form">
-        <Button type="button" color="pink" isWFull={false} text={buttonText} />
-      </Link>
+      <div className="max-w-[300px]">
+        <Button type="button" color="pink" isWFull={false} text={buttonText} sectionId="contact-form" />
+      </div>
+
     </main>
   );
 };

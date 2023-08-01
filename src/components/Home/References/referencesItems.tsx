@@ -1,6 +1,6 @@
 import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import { Reference } from "../../../helpers/Reference";
 
 interface IReferencesList {
@@ -24,12 +24,6 @@ const referencesList: IReferencesList[] = [
   },
   {
     reference:
-      "Polecamy współpracę z Adrianną. Jesteśmy zadowoleni z efektów przeprowadzonych kampanii oraz liczby pozyskanych adresów mailowych.",
-    name: "Crystal Academy",
-    company: "",
-  },
-  {
-    reference:
       "Nasza współpraca z Get Bold przebiegła super. Polecam, jako właściciel sklepu internetowego 🙂",
     name: "Ewa Bartkowiak",
     company: "Lavelio",
@@ -40,17 +34,57 @@ const referencesList: IReferencesList[] = [
     name: "Sylwia Dziadek",
     company: "Dylwia ma plan",
   },
+  {
+    reference:
+      "Bardzo dobrze prowadzone i jakościowe kampanie, które pomogły nam dotrzeć do dużej grupy nowych odbiorców. Koncepcja slow marketingu bardzo się wpasowała w nasze potrzeby. Polecamy z całego serca współpracę z Adą.",
+    name: "Stan Skupienia",
+    company: "",
+  },
+  {
+    reference:
+      "Czuć, że Ada przepracowała już masę kampanii. Jesteśmy bardzo zadowolone, bo ma podobne do nas podejście do marketingu — w rytmie slow. Bez nagabywania, sztucznych promocji, na rzecz poznania marki i przedstawienia jej wartości.",
+    name: "Ziołowa Wyspa",
+    company: "",
+  },
 ];
 
-export const HomeReferencesItems = () => (
-  <Carousel autoPlay infiniteLoop showIndicators={false} showStatus={false}>
-    {referencesList.map((reference, index) => (
-      <Reference
-        key={index}
-        reference={reference.reference}
-        name={reference.name}
-        company={reference.company}
-      />
-    ))}
-  </Carousel>
-);
+const responsive = {
+  superLargeDesktop: {
+    breakpoint: { max: 4000, min: 3000 },
+    items: 1
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 1
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 1
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1
+  }
+};
+
+export const HomeReferencesItems = () => {
+  return (
+    <Carousel
+      responsive={responsive}
+      infinite={true}
+      autoPlay={true}
+      autoPlaySpeed={1000}
+      ssr={true}
+    >
+      {referencesList.map((reference, index) => (
+        <Reference
+          key={index}
+          reference={reference.reference}
+          name={reference.name}
+          company={reference.company}
+        />
+      ))}
+    </Carousel>
+  );
+}
+

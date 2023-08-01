@@ -2,7 +2,7 @@
 title: Jak tworzyć skuteczne reklamy na Facebooku i Instagramie?
 description: Obie platformy są jednymi z największych w Internecie. Jak
   wykorzystać ich potencjał?
-thumbnail: /img/skuteczne-reklamy-facebook.png
+thumbnail: /img/skuteczne-reklamy-facebook.webp
 tags:
   - skutecznareklama
   - facebookads
@@ -10,7 +10,7 @@ tags:
 date: 2023-02-06T21:12:26.229Z
 category: reklamy
 author: Justyna Wysowska
-authorImg: /img/justyna.jpg
+authorImg: /img/justyna.webp
 ---
 Skuteczne reklamy na Facebooku i Instagramie to klucz do sukcesu w dzisiejszym świecie marketingu. Obie platformy są jednymi z największych w Internecie. 
 

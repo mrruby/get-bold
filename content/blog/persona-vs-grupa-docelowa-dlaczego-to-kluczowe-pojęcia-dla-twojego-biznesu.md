@@ -7,7 +7,7 @@ tags:
 date: 2022-04-22T08:08:56.047Z
 category: Marketing
 author: Wiktoria
-authorImg: /img/8.jpg
+authorImg: /img/8.webp
 ---
 Persona i grupa docelowa to dwa pojęcia w marketingu, które bywają mylnie używane jako swoje równoważniki. Mają one swoje punkty styku, jednakże trzeba je od siebie stanowczo rozdzielić. 
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { TeamMember } from "./teamMember";
+import { StaticImage } from "gatsby-plugin-image";
 
 export const TeamAbout = () => {
   return (
@@ -25,7 +26,7 @@ export const TeamAbout = () => {
           </>
         }
         title="Po długim czasie pracy w agencjach marketingowych, stawiam na siebie."
-        photoLink="../../ada.jpg"
+        photoLink="../../ada.webp"
         name="Adrianna Promis"
         ps="A ten dreszczyk emocji, gdy widzę wyniki prowadzonych kampanii?
         Bezcenny!"
@@ -49,7 +50,7 @@ export const TeamAbout = () => {
           </>
         }
         title="Jestem socjolożką i działaczką społeczną, a jakiś czas temu odnalazłam się w marketingu."
-        photoLink="../../justyna.jpg"
+        photoLink="../../justyna.webp"
         name="Justyna Wysowska"
         ps="W Get Bold piszę & tworzę z uśmiechem. Podobno pozytywną energię widać w tym, co wychodzi spod mojej klawiatury. Chcesz się przekonać? 😄"
         linkedin="https://www.linkedin.com/in/justyna-wysowska/"
@@ -71,7 +72,7 @@ export const TeamAbout = () => {
           </>
         }
         title="Z wykształcenia jestem magistrem biotechnologii farmaceutycznej, a z zamiłowania lubię tworzyć komunikację dla marek."
-        photoLink="../../wiktoria.jpg"
+        photoLink="../../wiktoria.webp"
         name="Wiktoria Budziar"
         ps="Tak dotarłam do dnia dzisiejszego - działam w marketingu, odnalazłam branżę, która sprawia mi największą frajdę, a w międzyczasie projektuję i działam kreatywnie. W GetBold tworzę grafiki reklamowe oraz tworzę social media klientów."
         linkedin="https://www.linkedin.com/in/wiktoria-budziar-7bb4811a0/"
@@ -85,7 +86,7 @@ export const TeamAbout = () => {
           </p>
         }
         title="Jestem fotografką, twórczynią wideo i innych, kreatywnych treści."
-        photoLink="../../michalina.jpg"
+        photoLink="../../michalina.webp"
         name="Michalina Kuczyńska"
         ps="Potrzebujesz zdjęć produktowych? Spędzę cały dzień z aparatem
         w dłoni, aby pokazać Twoje produkty w jak najlepszym świetle. Podobnie z relsami czy
