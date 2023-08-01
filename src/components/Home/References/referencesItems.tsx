@@ -24,12 +24,6 @@ const referencesList: IReferencesList[] = [
   },
   {
     reference:
-      "Polecamy współpracę z Adrianną. Jesteśmy zadowoleni z efektów przeprowadzonych kampanii oraz liczby pozyskanych adresów mailowych.",
-    name: "Crystal Academy",
-    company: "",
-  },
-  {
-    reference:
       "Nasza współpraca z Get Bold przebiegła super. Polecam, jako właściciel sklepu internetowego 🙂",
     name: "Ewa Bartkowiak",
     company: "Lavelio",
@@ -39,6 +33,18 @@ const referencesList: IReferencesList[] = [
       "Dziewczyny stworzyły dla mnie kampanię promującą moje świąteczne rękodzieło i warsztaty kaligraficzne. Udało się spełnić zarówno moje założone cele, jak i budżet, jaki planowałam wydać na kampanię. Były niezwykle pomocne w każdej najmniejszej rzeczy. Wspomogły mnie w założeniu konta reklamowego, jak i w dobraniu grafik. Miejsca na warsztaty się rozeszły super szybko, a na moim koncie wzrosły zasięgi, ruch i sprzedaż. Miło było się czuć tak zaopiekowaną.",
     name: "Sylwia Dziadek",
     company: "Dylwia ma plan",
+  },
+  {
+    reference:
+      "Bardzo dobrze prowadzone i jakościowe kampanie, które pomogły nam dotrzeć do dużej grupy nowych odbiorców. Koncepcja slow marketingu bardzo się wpasowała w nasze potrzeby. Polecamy z całego serca współpracę z Adą.",
+    name: "Stan Skupienia",
+    company: "",
+  },
+  {
+    reference:
+      "Czuć, że Ada przepracowała już masę kampanii. Jesteśmy bardzo zadowolone, bo ma podobne do nas podejście do marketingu — w rytmie slow. Bez nagabywania, sztucznych promocji, na rzecz poznania marki i przedstawienia jej wartości.",
+    name: "Ziołowa Wyspa",
+    company: "",
   },
 ];
 

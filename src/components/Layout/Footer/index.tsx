@@ -55,7 +55,7 @@ const Footer: React.FC<Props> = ({ isContactPage }) => {
             </div>
             <div className="flex flex-col lg:flex-row w-full">
               <div className="flex flex-col gap-y-3 lg:gap-y-4 items-center w-11/12 lg:w-[387px] mx-auto mt-6 flex-auto mb-6">
-                <label htmlFor="message" className="lg:text-getBoldBase">Czego potrzebujesz?</label>
+                <label htmlFor="message" className="lg:text-getBoldBase">Twoja wiadomość</label>
                 <textarea
                   required
                   name="message"
