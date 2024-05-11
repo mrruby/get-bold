@@ -10,7 +10,11 @@ export const ContactForm: React.FC = () => {
     <main className="flex flex-col items-center mx-8">
       <div className="lg:max-w-[1176px] mt-32 bg-white pt-6 lg:pt-0 px-8 lg:px-[123px] rounded-lg shadow-[0_-81px_50px_#0000000D] flex flex-col space-y-16 md:flex-row md:space-x-20 md:space-y-0">
         <div className="w-full md:w-1/2 flex flex-col items-end">
-          <StaticImage placeholder="none" src="../../images/contact-img.svg" alt="Kontakt" />
+          <StaticImage
+            placeholder="none"
+            src="../../images/contact-img.svg"
+            alt="Kontakt"
+          />
           <p className="text-lg text-right font-medium">
             Skontaktuj się z nami, jeśli wiesz dobrze, czego chcesz lub…
             kompletnie nie masz pojęcia, czego potrzebujesz. W końcu jesteśmy tu
@@ -93,8 +97,8 @@ export const ContactForm: React.FC = () => {
                   dobrowolne. Zostałem poinformowany, ze przysługuje mi prawo
                   dostepu do swoich danych, mozliwosci ich poprawiania, zadania
                   zaprzestania ich przetwarzania. Administratorem danych jest
-                  GetBold Agency z siedzibą w 41-500 Chorzów ul. Żołnierzy
-                  Września 79/6.
+                  Slow Marketing Adrianna Promis-Urbas z siedzibą w 47-400
+                  Racibórz, Ul. Mała 2.
                 </p>
               </div>
               <ReCAPTCHA sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY} />
