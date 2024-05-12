@@ -13,7 +13,9 @@ const Footer: React.FC<Props> = ({ isContactPage }) => {
         <nav className="2xl:px-[21rem] px-8 xl:px-[150px] h-full">
           <ul className="flex flex-col md:flex-row justify-center md:justify-start items-start md:items-center space-y-2 md:space-y-0 md:space-x-12 text-getbold-btn-pink text-xs h-full">
             <li>
-              <Link to="/polityka-prywatnosci">Polityka prywatności & plików cookie</Link>
+              <Link to="/polityka-prywatnosci">
+                Polityka prywatności & plików cookie
+              </Link>
             </li>
           </ul>
         </nav>
@@ -24,7 +26,9 @@ const Footer: React.FC<Props> = ({ isContactPage }) => {
     <footer className="2xl:px-[21rem] px-8 xl:px-[150px] py-12 lg:py-14 relative bg-[#FFB9C4]">
       <div className="flex flex-col lg:flex-row mb-8 bg-contact">
         <div className="w-full lg:w-2/3 z-30 flex flex-col items-center m-auto">
-          <h2 className="font-bold text-4xl mb-[36px]">Zostaw kontakt, odezwiemy się!</h2>
+          <h2 className="font-bold text-4xl mb-[36px]">
+            Zostaw kontakt, odezwiemy się!
+          </h2>
           <form
             method="POST"
             data-netlify-recaptcha="true"
@@ -34,7 +38,9 @@ const Footer: React.FC<Props> = ({ isContactPage }) => {
             id="contact-form"
           >
             <div className="flex flex-col gap-y-3 lg:gap-y-4 items-center m-auto lg:ml-0 w-11/12 lg:max-w-[387px]">
-              <label htmlFor="name" className="lg:text-getBoldBase">Imię i nazwisko</label>
+              <label htmlFor="name" className="lg:text-getBoldBase">
+                Imię i nazwisko
+              </label>
               <input
                 type="text"
                 name="name"
@@ -44,7 +50,9 @@ const Footer: React.FC<Props> = ({ isContactPage }) => {
               />
             </div>
             <div className="flex flex-col gap-y-3 lg:gap-y-4 items-center m-auto lg:ml-0 w-11/12 lg:max-w-[387px]">
-              <label htmlFor="email" className="lg:text-getBoldBase">Adres e-mail</label>
+              <label htmlFor="email" className="lg:text-getBoldBase">
+                Adres e-mail
+              </label>
               <input
                 type="email"
                 name="email"
@@ -55,7 +63,9 @@ const Footer: React.FC<Props> = ({ isContactPage }) => {
             </div>
             <div className="flex flex-col lg:flex-row w-full">
               <div className="flex flex-col gap-y-3 lg:gap-y-4 items-center w-11/12 lg:w-[387px] mx-auto mt-6 flex-auto mb-6">
-                <label htmlFor="message" className="lg:text-getBoldBase">Twoja wiadomość</label>
+                <label htmlFor="message" className="lg:text-getBoldBase">
+                  Twoja wiadomość
+                </label>
                 <textarea
                   required
                   name="message"
@@ -68,9 +78,15 @@ const Footer: React.FC<Props> = ({ isContactPage }) => {
                 <input type="hidden" name="bot-field" />
                 <input type="hidden" name="form-name" value="contact-main" />
                 <div className="flow-root">
-                  <ReCAPTCHA sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY} id="recaptcha"
-                    name="recaptcha" />
-                  <button className="mt-4 lg:text-getBoldBase rounded-3xl bg-getbold-dark-pink px-6 py-3 text-white pointer hover:shadow-lg hover:bg-getbold-btn-light-pink transition-all" aria-label="Wyślij wiadomość">
+                  <ReCAPTCHA
+                    sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY}
+                    id="recaptcha"
+                    name="recaptcha"
+                  />
+                  <button
+                    className="mt-4 lg:text-getBoldBase rounded-3xl bg-getbold-dark-pink px-6 py-3 text-white pointer hover:shadow-lg hover:bg-getbold-btn-light-pink transition-all"
+                    aria-label="Wyślij wiadomość"
+                  >
                     Wysyłam
                   </button>
                 </div>
@@ -84,13 +100,17 @@ const Footer: React.FC<Props> = ({ isContactPage }) => {
                 id="consent"
                 name="consent"
               />
-              <label htmlFor="consent" className="text-[14px] w-full text-xs leading-normal">
-                Wyrazam zgode na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie
-                danych osobowych w celu (np wysyłania informacji handlowei). Podanie danych
-                osobowych jest dobrowolne. Zostałem poinformowany, ze przysługuje mi prawo dostepu
-                do swoich danych, mozliwosci ich poprawiania, zadania zaprzestania ich
-                przetwarzania. Administratorem danych jest GetBold Agency z siedzibą w 41-500
-                Chorzów ul. Żołnierzy Września 79/6.
+              <label
+                htmlFor="consent"
+                className="text-[14px] w-full text-xs leading-normal"
+              >
+                Wyrazam zgode na przetwarzanie moich danych osobowych zgodnie z
+                ustawą o ochronie danych osobowych w celu (np wysyłania
+                informacji handlowei). Podanie danych osobowych jest dobrowolne.
+                Zostałem poinformowany, ze przysługuje mi prawo dostepu do
+                swoich danych, mozliwosci ich poprawiania, zadania zaprzestania
+                ich przetwarzania. Administratorem danych jest Slow Marketing
+                Adrianna Promis-Urbas z siedzibą w 47-400 Racibórz, Ul. Mała 2.
               </label>
             </div>
           </form>
@@ -101,7 +121,9 @@ const Footer: React.FC<Props> = ({ isContactPage }) => {
         <nav className="2xl:px-[21rem] px-8 xl:px-[150px] h-full">
           <ul className="flex flex-col md:flex-row justify-center md:justify-end items-start md:items-center space-y-2 md:space-y-0 md:space-x-12 text-getbold-blue text-xs h-full">
             <li>
-              <Link to="/polityka-prywatnosci">Polityka prywatności & plików cookie</Link>
+              <Link to="/polityka-prywatnosci">
+                Polityka prywatności & plików cookie
+              </Link>
             </li>
           </ul>
         </nav>
